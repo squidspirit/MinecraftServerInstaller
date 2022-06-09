@@ -30,13 +30,12 @@ namespace MinecraftServerInstaller
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.statusTitleLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.basicOptionsTabPage = new System.Windows.Forms.TabPage();
             this.basicOptionsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.installPathButton = new System.Windows.Forms.Button();
-            this.modVersionButton = new System.Windows.Forms.Button();
+            this.forgeVersionButton = new System.Windows.Forms.Button();
             this.gameVersionLabel = new System.Windows.Forms.Label();
             this.modVersionLabel = new System.Windows.Forms.Label();
             this.installPathLabel = new System.Windows.Forms.Label();
@@ -54,10 +53,10 @@ namespace MinecraftServerInstaller
             this.gameVersionButton = new System.Windows.Forms.Button();
             this.maxRamTextBox = new System.Windows.Forms.TextBox();
             this.minRamTextBox = new System.Windows.Forms.TextBox();
-            this.intallButton = new System.Windows.Forms.Button();
+            this.installButton = new System.Windows.Forms.Button();
             this.resetBasicOptionsButton = new System.Windows.Forms.Button();
             this.modVersionTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.modVersionTextBox = new System.Windows.Forms.TextBox();
+            this.forgeVersionTextBox = new System.Windows.Forms.TextBox();
             this.modVersionComboBox = new System.Windows.Forms.ComboBox();
             this.installPathTextBox = new System.Windows.Forms.TextBox();
             this.advancedOptionsTabPage = new System.Windows.Forms.TabPage();
@@ -108,14 +107,14 @@ namespace MinecraftServerInstaller
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.programNameLabel = new System.Windows.Forms.Label();
             this.versionLabel = new System.Windows.Forms.Label();
-            this.releaseLabel = new System.Windows.Forms.Label();
+            this.copyrightLabel = new System.Windows.Forms.Label();
             this.emailLabel = new System.Windows.Forms.Label();
             this.tutorialLabel = new System.Windows.Forms.Label();
             this.websiteLabel = new System.Windows.Forms.Label();
             this.tutorialTextBox = new System.Windows.Forms.TextBox();
             this.websiteTextBox = new System.Windows.Forms.TextBox();
             this.checkNewButton = new System.Windows.Forms.Button();
-            this.releaseTextBox = new System.Windows.Forms.TextBox();
+            this.copyrightTextBox = new System.Windows.Forms.TextBox();
             this.versionTextBox = new System.Windows.Forms.TextBox();
             this.programNameTextBox = new System.Windows.Forms.TextBox();
             this.statusStrip.SuspendLayout();
@@ -146,7 +145,6 @@ namespace MinecraftServerInstaller
             resources.ApplyResources(this.statusStrip, "statusStrip");
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLabel,
-            this.statusTitleLabel,
             this.statusProgressBar});
             this.statusStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.statusStrip.Name = "statusStrip";
@@ -155,18 +153,12 @@ namespace MinecraftServerInstaller
             // statusLabel
             // 
             resources.ApplyResources(this.statusLabel, "statusLabel");
-            this.statusLabel.Margin = new System.Windows.Forms.Padding(0, 3, 20, 3);
+            this.statusLabel.Margin = new System.Windows.Forms.Padding(0, 3, 15, 3);
             this.statusLabel.Name = "statusLabel";
-            // 
-            // statusTitleLabel
-            // 
-            resources.ApplyResources(this.statusTitleLabel, "statusTitleLabel");
-            this.statusTitleLabel.Margin = new System.Windows.Forms.Padding(20, 3, 0, 3);
-            this.statusTitleLabel.Name = "statusTitleLabel";
             // 
             // statusProgressBar
             // 
-            this.statusProgressBar.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.statusProgressBar.Margin = new System.Windows.Forms.Padding(0, 10, 20, 10);
             this.statusProgressBar.Name = "statusProgressBar";
             resources.ApplyResources(this.statusProgressBar, "statusProgressBar");
             // 
@@ -190,7 +182,7 @@ namespace MinecraftServerInstaller
             // 
             resources.ApplyResources(this.basicOptionsTableLayoutPanel, "basicOptionsTableLayoutPanel");
             this.basicOptionsTableLayoutPanel.Controls.Add(this.installPathButton, 2, 2);
-            this.basicOptionsTableLayoutPanel.Controls.Add(this.modVersionButton, 2, 1);
+            this.basicOptionsTableLayoutPanel.Controls.Add(this.forgeVersionButton, 2, 1);
             this.basicOptionsTableLayoutPanel.Controls.Add(this.gameVersionLabel, 0, 0);
             this.basicOptionsTableLayoutPanel.Controls.Add(this.modVersionLabel, 0, 1);
             this.basicOptionsTableLayoutPanel.Controls.Add(this.installPathLabel, 0, 2);
@@ -208,7 +200,7 @@ namespace MinecraftServerInstaller
             this.basicOptionsTableLayoutPanel.Controls.Add(this.gameVersionButton, 2, 0);
             this.basicOptionsTableLayoutPanel.Controls.Add(this.maxRamTextBox, 2, 7);
             this.basicOptionsTableLayoutPanel.Controls.Add(this.minRamTextBox, 2, 8);
-            this.basicOptionsTableLayoutPanel.Controls.Add(this.intallButton, 2, 10);
+            this.basicOptionsTableLayoutPanel.Controls.Add(this.installButton, 2, 10);
             this.basicOptionsTableLayoutPanel.Controls.Add(this.resetBasicOptionsButton, 1, 10);
             this.basicOptionsTableLayoutPanel.Controls.Add(this.modVersionTableLayoutPanel, 1, 1);
             this.basicOptionsTableLayoutPanel.Controls.Add(this.installPathTextBox, 1, 2);
@@ -221,12 +213,12 @@ namespace MinecraftServerInstaller
             this.installPathButton.UseVisualStyleBackColor = true;
             this.installPathButton.Click += new System.EventHandler(this.installPathButton_Click);
             // 
-            // modVersionButton
+            // forgeVersionButton
             // 
-            resources.ApplyResources(this.modVersionButton, "modVersionButton");
-            this.modVersionButton.Name = "modVersionButton";
-            this.modVersionButton.UseVisualStyleBackColor = true;
-            this.modVersionButton.Click += new System.EventHandler(this.modVersionButton_Click);
+            resources.ApplyResources(this.forgeVersionButton, "forgeVersionButton");
+            this.forgeVersionButton.Name = "forgeVersionButton";
+            this.forgeVersionButton.UseVisualStyleBackColor = true;
+            this.forgeVersionButton.Click += new System.EventHandler(this.forgeVersionButton_Click);
             // 
             // gameVersionLabel
             // 
@@ -268,6 +260,7 @@ namespace MinecraftServerInstaller
             resources.ApplyResources(this.eulaLinkLabel, "eulaLinkLabel");
             this.eulaLinkLabel.Name = "eulaLinkLabel";
             this.eulaLinkLabel.TabStop = true;
+            this.eulaLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.eulaLinkLabel_LinkClicked);
             // 
             // gameVersionTextBox
             // 
@@ -286,40 +279,44 @@ namespace MinecraftServerInstaller
             resources.ApplyResources(this.eulaCheckBox, "eulaCheckBox");
             this.eulaCheckBox.Name = "eulaCheckBox";
             this.eulaCheckBox.UseVisualStyleBackColor = true;
+            this.eulaCheckBox.CheckedChanged += new System.EventHandler(this.eulaCheckBox_CheckedChanged);
             // 
             // ramSettingCheckBox
             // 
             resources.ApplyResources(this.ramSettingCheckBox, "ramSettingCheckBox");
             this.ramSettingCheckBox.Name = "ramSettingCheckBox";
             this.ramSettingCheckBox.UseVisualStyleBackColor = true;
+            this.ramSettingCheckBox.CheckedChanged += new System.EventHandler(this.ramSettingCheckBox_CheckedChanged);
             // 
             // maxRamTrackBar
             // 
             resources.ApplyResources(this.maxRamTrackBar, "maxRamTrackBar");
             this.maxRamTrackBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.maxRamTrackBar.LargeChange = 1024;
+            this.maxRamTrackBar.LargeChange = 1;
             this.maxRamTrackBar.Maximum = 10240;
             this.maxRamTrackBar.Minimum = 512;
             this.maxRamTrackBar.Name = "maxRamTrackBar";
-            this.maxRamTrackBar.SmallChange = 512;
             this.maxRamTrackBar.TickFrequency = 512;
             this.maxRamTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
             this.maxRamTrackBar.Value = 2048;
             this.maxRamTrackBar.Scroll += new System.EventHandler(this.maxRamTrackBar_Scroll);
+            this.maxRamTrackBar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.maxRamTrackBar_KeyUp);
+            this.maxRamTrackBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.maxRamTrackBar_MouseUp);
             // 
             // minRamTrackBar
             // 
             resources.ApplyResources(this.minRamTrackBar, "minRamTrackBar");
             this.minRamTrackBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.minRamTrackBar.LargeChange = 1024;
+            this.minRamTrackBar.LargeChange = 1;
             this.minRamTrackBar.Maximum = 10240;
             this.minRamTrackBar.Minimum = 512;
             this.minRamTrackBar.Name = "minRamTrackBar";
-            this.minRamTrackBar.SmallChange = 512;
             this.minRamTrackBar.TickFrequency = 512;
             this.minRamTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
             this.minRamTrackBar.Value = 2048;
             this.minRamTrackBar.Scroll += new System.EventHandler(this.minRamTrackBar_Scroll);
+            this.minRamTrackBar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.minRamTrackBar_KeyUp);
+            this.minRamTrackBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.minRamTrackBar_MouseUp);
             // 
             // gameVersionButton
             // 
@@ -332,20 +329,22 @@ namespace MinecraftServerInstaller
             // 
             resources.ApplyResources(this.maxRamTextBox, "maxRamTextBox");
             this.maxRamTextBox.Name = "maxRamTextBox";
-            this.maxRamTextBox.TextChanged += new System.EventHandler(this.maxRamTextBox_TextChanged);
+            this.maxRamTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maxRamTextBox_KeyPress);
+            this.maxRamTextBox.LostFocus += new System.EventHandler(this.maxRamTextBox_LostFocus);
             // 
             // minRamTextBox
             // 
             resources.ApplyResources(this.minRamTextBox, "minRamTextBox");
             this.minRamTextBox.Name = "minRamTextBox";
-            this.minRamTextBox.TextChanged += new System.EventHandler(this.minRamTextBox_TextChanged);
+            this.minRamTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.minRamTextBox_KeyPress);
+            this.minRamTextBox.LostFocus += new System.EventHandler(this.minRamTextBox_LostFocus);
             // 
-            // intallButton
+            // installButton
             // 
-            resources.ApplyResources(this.intallButton, "intallButton");
-            this.intallButton.Name = "intallButton";
-            this.intallButton.UseVisualStyleBackColor = true;
-            this.intallButton.Click += new System.EventHandler(this.intallButton_Click);
+            resources.ApplyResources(this.installButton, "installButton");
+            this.installButton.Name = "installButton";
+            this.installButton.UseVisualStyleBackColor = true;
+            this.installButton.Click += new System.EventHandler(this.installButton_Click);
             // 
             // resetBasicOptionsButton
             // 
@@ -357,22 +356,27 @@ namespace MinecraftServerInstaller
             // modVersionTableLayoutPanel
             // 
             resources.ApplyResources(this.modVersionTableLayoutPanel, "modVersionTableLayoutPanel");
-            this.modVersionTableLayoutPanel.Controls.Add(this.modVersionTextBox, 1, 0);
+            this.modVersionTableLayoutPanel.Controls.Add(this.forgeVersionTextBox, 1, 0);
             this.modVersionTableLayoutPanel.Controls.Add(this.modVersionComboBox, 0, 0);
             this.modVersionTableLayoutPanel.Name = "modVersionTableLayoutPanel";
             // 
-            // modVersionTextBox
+            // forgeVersionTextBox
             // 
-            resources.ApplyResources(this.modVersionTextBox, "modVersionTextBox");
-            this.modVersionTextBox.Name = "modVersionTextBox";
-            this.modVersionTextBox.ReadOnly = true;
+            resources.ApplyResources(this.forgeVersionTextBox, "forgeVersionTextBox");
+            this.forgeVersionTextBox.Name = "forgeVersionTextBox";
+            this.forgeVersionTextBox.ReadOnly = true;
             // 
             // modVersionComboBox
             // 
             resources.ApplyResources(this.modVersionComboBox, "modVersionComboBox");
             this.modVersionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.modVersionComboBox.FormattingEnabled = true;
+            this.modVersionComboBox.Items.AddRange(new object[] {
+            resources.GetString("modVersionComboBox.Items"),
+            resources.GetString("modVersionComboBox.Items1"),
+            resources.GetString("modVersionComboBox.Items2")});
             this.modVersionComboBox.Name = "modVersionComboBox";
+            this.modVersionComboBox.SelectedIndexChanged += new System.EventHandler(this.modVersionComboBox_SelectedIndexChanged);
             // 
             // installPathTextBox
             // 
@@ -423,6 +427,9 @@ namespace MinecraftServerInstaller
             resources.ApplyResources(this.onlineModeComboBox, "onlineModeComboBox");
             this.onlineModeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.onlineModeComboBox.FormattingEnabled = true;
+            this.onlineModeComboBox.Items.AddRange(new object[] {
+            resources.GetString("onlineModeComboBox.Items"),
+            resources.GetString("onlineModeComboBox.Items1")});
             this.onlineModeComboBox.Name = "onlineModeComboBox";
             // 
             // enableCommandBlockComboBox
@@ -430,6 +437,9 @@ namespace MinecraftServerInstaller
             resources.ApplyResources(this.enableCommandBlockComboBox, "enableCommandBlockComboBox");
             this.enableCommandBlockComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.enableCommandBlockComboBox.FormattingEnabled = true;
+            this.enableCommandBlockComboBox.Items.AddRange(new object[] {
+            resources.GetString("enableCommandBlockComboBox.Items"),
+            resources.GetString("enableCommandBlockComboBox.Items1")});
             this.enableCommandBlockComboBox.Name = "enableCommandBlockComboBox";
             // 
             // difficultyComboBox
@@ -437,6 +447,11 @@ namespace MinecraftServerInstaller
             resources.ApplyResources(this.difficultyComboBox, "difficultyComboBox");
             this.difficultyComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.difficultyComboBox.FormattingEnabled = true;
+            this.difficultyComboBox.Items.AddRange(new object[] {
+            resources.GetString("difficultyComboBox.Items"),
+            resources.GetString("difficultyComboBox.Items1"),
+            resources.GetString("difficultyComboBox.Items2"),
+            resources.GetString("difficultyComboBox.Items3")});
             this.difficultyComboBox.Name = "difficultyComboBox";
             // 
             // gamemodeComboBox
@@ -444,6 +459,11 @@ namespace MinecraftServerInstaller
             resources.ApplyResources(this.gamemodeComboBox, "gamemodeComboBox");
             this.gamemodeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.gamemodeComboBox.FormattingEnabled = true;
+            this.gamemodeComboBox.Items.AddRange(new object[] {
+            resources.GetString("gamemodeComboBox.Items"),
+            resources.GetString("gamemodeComboBox.Items1"),
+            resources.GetString("gamemodeComboBox.Items2"),
+            resources.GetString("gamemodeComboBox.Items3")});
             this.gamemodeComboBox.Name = "gamemodeComboBox";
             // 
             // pvpComboBox
@@ -451,31 +471,38 @@ namespace MinecraftServerInstaller
             resources.ApplyResources(this.pvpComboBox, "pvpComboBox");
             this.pvpComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.pvpComboBox.FormattingEnabled = true;
+            this.pvpComboBox.Items.AddRange(new object[] {
+            resources.GetString("pvpComboBox.Items"),
+            resources.GetString("pvpComboBox.Items1")});
             this.pvpComboBox.Name = "pvpComboBox";
             // 
             // viewDistanceTextBox
             // 
             resources.ApplyResources(this.viewDistanceTextBox, "viewDistanceTextBox");
             this.viewDistanceTextBox.Name = "viewDistanceTextBox";
-            this.viewDistanceTextBox.TextChanged += new System.EventHandler(this.viewDistanceTextBox_TextChanged);
+            this.viewDistanceTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.viewDistanceTextBox_KeyPress);
+            this.viewDistanceTextBox.LostFocus += new System.EventHandler(this.viewDistanceTextBox_LostFocus);
             // 
             // spawnProtectionTextBox
             // 
             resources.ApplyResources(this.spawnProtectionTextBox, "spawnProtectionTextBox");
             this.spawnProtectionTextBox.Name = "spawnProtectionTextBox";
-            this.spawnProtectionTextBox.TextChanged += new System.EventHandler(this.spawnProtectionTextBox_TextChanged);
+            this.spawnProtectionTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.spawnProtectionTextBox_KeyPress);
+            this.spawnProtectionTextBox.LostFocus += new System.EventHandler(this.spawnProtectionTextBox_LostFocus);
             // 
             // maxPlayerTextBox
             // 
             resources.ApplyResources(this.maxPlayerTextBox, "maxPlayerTextBox");
             this.maxPlayerTextBox.Name = "maxPlayerTextBox";
-            this.maxPlayerTextBox.TextChanged += new System.EventHandler(this.maxPlayerTextBox_TextChanged);
+            this.maxPlayerTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maxPlayerTextBox_KeyPress);
+            this.maxPlayerTextBox.LostFocus += new System.EventHandler(this.maxPlayerTextBox_LostFocus);
             // 
             // serverPortTextBox
             // 
             resources.ApplyResources(this.serverPortTextBox, "serverPortTextBox");
             this.serverPortTextBox.Name = "serverPortTextBox";
-            this.serverPortTextBox.TextChanged += new System.EventHandler(this.serverPortTextBox_TextChanged);
+            this.serverPortTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.serverPortTextBox_KeyPress);
+            this.serverPortTextBox.LostFocus += new System.EventHandler(this.serverPortTextBox_LostFocus);
             // 
             // serverPortFlowLayoutPanel
             // 
@@ -667,14 +694,14 @@ namespace MinecraftServerInstaller
             this.informationTableLayoutPanel.Controls.Add(this.emailTextBox, 1, 3);
             this.informationTableLayoutPanel.Controls.Add(this.programNameLabel, 0, 0);
             this.informationTableLayoutPanel.Controls.Add(this.versionLabel, 0, 1);
-            this.informationTableLayoutPanel.Controls.Add(this.releaseLabel, 0, 2);
+            this.informationTableLayoutPanel.Controls.Add(this.copyrightLabel, 0, 2);
             this.informationTableLayoutPanel.Controls.Add(this.emailLabel, 0, 3);
             this.informationTableLayoutPanel.Controls.Add(this.tutorialLabel, 0, 4);
             this.informationTableLayoutPanel.Controls.Add(this.websiteLabel, 0, 5);
             this.informationTableLayoutPanel.Controls.Add(this.tutorialTextBox, 1, 4);
             this.informationTableLayoutPanel.Controls.Add(this.websiteTextBox, 1, 5);
             this.informationTableLayoutPanel.Controls.Add(this.checkNewButton, 1, 10);
-            this.informationTableLayoutPanel.Controls.Add(this.releaseTextBox, 1, 2);
+            this.informationTableLayoutPanel.Controls.Add(this.copyrightTextBox, 1, 2);
             this.informationTableLayoutPanel.Controls.Add(this.versionTextBox, 1, 1);
             this.informationTableLayoutPanel.Controls.Add(this.programNameTextBox, 1, 0);
             this.informationTableLayoutPanel.Name = "informationTableLayoutPanel";
@@ -695,10 +722,10 @@ namespace MinecraftServerInstaller
             resources.ApplyResources(this.versionLabel, "versionLabel");
             this.versionLabel.Name = "versionLabel";
             // 
-            // releaseLabel
+            // copyrightLabel
             // 
-            resources.ApplyResources(this.releaseLabel, "releaseLabel");
-            this.releaseLabel.Name = "releaseLabel";
+            resources.ApplyResources(this.copyrightLabel, "copyrightLabel");
+            this.copyrightLabel.Name = "copyrightLabel";
             // 
             // emailLabel
             // 
@@ -734,11 +761,11 @@ namespace MinecraftServerInstaller
             this.checkNewButton.UseVisualStyleBackColor = true;
             this.checkNewButton.Click += new System.EventHandler(this.checkNewButton_Click);
             // 
-            // releaseTextBox
+            // copyrightTextBox
             // 
-            resources.ApplyResources(this.releaseTextBox, "releaseTextBox");
-            this.releaseTextBox.Name = "releaseTextBox";
-            this.releaseTextBox.ReadOnly = true;
+            resources.ApplyResources(this.copyrightTextBox, "copyrightTextBox");
+            this.copyrightTextBox.Name = "copyrightTextBox";
+            this.copyrightTextBox.ReadOnly = true;
             // 
             // versionTextBox
             // 
@@ -762,7 +789,6 @@ namespace MinecraftServerInstaller
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "MainForm";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.tabControl.ResumeLayout(false);
@@ -807,7 +833,6 @@ namespace MinecraftServerInstaller
 
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel;
-        private System.Windows.Forms.ToolStripStatusLabel statusTitleLabel;
         private System.Windows.Forms.ToolStripProgressBar statusProgressBar;
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage basicOptionsTabPage;
@@ -817,15 +842,12 @@ namespace MinecraftServerInstaller
         private System.Windows.Forms.TableLayoutPanel advancedOptionsTableLayoutPanel;
         private System.Windows.Forms.TableLayoutPanel informationTableLayoutPanel;
         private System.Windows.Forms.Label gameVersionLabel;
-        private System.Windows.Forms.Label modVersionLabel;
         private System.Windows.Forms.Label installPathLabel;
         private System.Windows.Forms.Label guiLabel;
         private System.Windows.Forms.Label ramSettingLabel;
         private System.Windows.Forms.Label maxRamLabel;
         private System.Windows.Forms.Label minRamLabel;
         private System.Windows.Forms.LinkLabel eulaLinkLabel;
-        private System.Windows.Forms.Button installPathButton;
-        private System.Windows.Forms.Button modVersionButton;
         private System.Windows.Forms.TextBox gameVersionTextBox;
         private System.Windows.Forms.TextBox installPathTextBox;
         private System.Windows.Forms.CheckBox guiCheckBox;
@@ -835,11 +857,11 @@ namespace MinecraftServerInstaller
         private System.Windows.Forms.TrackBar minRamTrackBar;
         private System.Windows.Forms.Button gameVersionButton;
         private System.Windows.Forms.TableLayoutPanel modVersionTableLayoutPanel;
-        private System.Windows.Forms.TextBox modVersionTextBox;
+        private System.Windows.Forms.TextBox forgeVersionTextBox;
         private System.Windows.Forms.ComboBox modVersionComboBox;
         private System.Windows.Forms.TextBox maxRamTextBox;
         private System.Windows.Forms.TextBox minRamTextBox;
-        private System.Windows.Forms.Button intallButton;
+        private System.Windows.Forms.Button installButton;
         private System.Windows.Forms.Button resetBasicOptionsButton;
         private System.Windows.Forms.FlowLayoutPanel serverPortFlowLayoutPanel;
         private System.Windows.Forms.Label serverPortLabel;
@@ -885,16 +907,19 @@ namespace MinecraftServerInstaller
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.Label programNameLabel;
         private System.Windows.Forms.Label versionLabel;
-        private System.Windows.Forms.Label releaseLabel;
+        private System.Windows.Forms.Label copyrightLabel;
         private System.Windows.Forms.Label emailLabel;
         private System.Windows.Forms.Label tutorialLabel;
         private System.Windows.Forms.Label websiteLabel;
         private System.Windows.Forms.TextBox tutorialTextBox;
         private System.Windows.Forms.TextBox websiteTextBox;
         private System.Windows.Forms.Button checkNewButton;
-        private System.Windows.Forms.TextBox releaseTextBox;
+        private System.Windows.Forms.TextBox copyrightTextBox;
         private System.Windows.Forms.TextBox versionTextBox;
         private System.Windows.Forms.TextBox programNameTextBox;
+        private System.Windows.Forms.Button installPathButton;
+        private System.Windows.Forms.Button forgeVersionButton;
+        private System.Windows.Forms.Label modVersionLabel;
     }
 }
 

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 組件的一般資訊是由下列的屬性集控制。
 // 變更這些屬性的值即可修改組件的相關
 // 資訊。
-[assembly: AssemblyTitle("MinecraftServerInstaller")]
+[assembly: AssemblyTitle("Minecraft Server Installer")]
 [assembly: AssemblyDescription("Minecraft 伺服器安裝器")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("魚之魷魂 SquidSpirit")]
-[assembly: AssemblyProduct("Minecraft 伺服器安裝器")]
+[assembly: AssemblyCompany("SquidSpirit")]
+[assembly: AssemblyProduct("Minecraft Server Installer")]
 [assembly: AssemblyCopyright("Copyright ©  2022 魚之魷魂 SquidSpirit")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

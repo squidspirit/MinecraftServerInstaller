@@ -37,6 +37,10 @@ namespace MinecraftServerInstaller {
             public static readonly string FORGE_VERSION = "https://www.dropbox.com/s/0ioc3d0m6lfitlr/ForgeVersions.txt?dl=1";
             public static readonly string FABRIC_VERSION = "https://www.dropbox.com/s/p5le9abdiwx10wi/FabricInstallerVersion.txt?dl=1";
             public static readonly string EULA = "https://www.minecraft.net/en-us/eula";
+
+            public static string forgeVersionToUrl(string version) {
+                return String.Format("https://maven.minecraftforge.net/net/minecraftforge/forge/{0}/forge-{0}-installer.jar", version);
+            }
         }
 
         public static class Path {
@@ -55,8 +59,9 @@ namespace MinecraftServerInstaller {
             public static readonly string INTERNET_ERROR = "請檢常網路設備是否連接正常。";
             public static readonly string INSTALL_PATH_DESCRIPT = "請選擇安裝伺服器的資料夾，建議此資料夾為空。";
             public static readonly string INSTALL_PATH_WARNING = "您選擇的資料夾內已有其他檔案，確定要繼續嗎？";
-            public static readonly string GAME_VERSION_DESCRIPT = "請選擇主遊戲版本";
-            public static readonly string FORGE_VERSION_DESCRIPT = "請選擇 Forge 版本";
+            public static readonly string GAME_VERSION_DESCRIPT = "請選擇主遊戲版本。";
+            public static readonly string FORGE_VERSION_DESCRIPT = "請選擇 Forge 版本。";
+            public static readonly string FORGE_VERSION_INFO = "找不到此版本的 Forge，請嘗試其他遊戲版本。";
             public static readonly string RAM_WARNING = "更改伺服器記憶體限制可能會影響伺服器的穩定性，或甚至無法正常啟動，請小心調整。";
             public static readonly string SERVER_PORT_INFO = "請輸入 1025 ~ 65535 內的值。";
             public static readonly string SERVER_PORT_WARNING = "更改伺服器連接埠可能與其他應用程式產生衝突，造成無法連線或系統不穩定，請確認設置的連接埠是否為空連接埠，並為其設置防火牆通道允許通過。";

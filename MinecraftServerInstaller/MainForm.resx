@@ -180,11 +180,1379 @@
   <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;basicOptionsTableLayoutPanel.Name" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;basicOptionsTableLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;basicOptionsTableLayoutPanel.Parent" xml:space="preserve">
+    <value>basicOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;basicOptionsTableLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="basicOptionsTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="installPathButton" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="forgeVersionButton" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="gameVersionLabel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="modVersionLabel" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="installPathLabel" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="guiLabel" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ramSettingLabel" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="maxRamLabel" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="minRamLabel" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="eulaLinkLabel" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="gameVersionTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="guiCheckBox" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="eulaCheckBox" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ramSettingCheckBox" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="maxRamTrackBar" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="minRamTrackBar" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="gameVersionButton" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="maxRamTextBox" Row="7" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="minRamTextBox" Row="8" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="installButton" Row="10" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="resetBasicOptionsButton" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="modVersionTableLayoutPanel" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="installPathTextBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,55,Percent,20" /&gt;&lt;Rows Styles="Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.909909" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="basicOptionsTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="basicOptionsTabPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="basicOptionsTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="basicOptionsTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 518</value>
+  </data>
+  <data name="basicOptionsTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="basicOptionsTabPage.Text" xml:space="preserve">
+    <value>基本設定</value>
+  </data>
+  <data name="&gt;&gt;basicOptionsTabPage.Name" xml:space="preserve">
+    <value>basicOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;basicOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;basicOptionsTabPage.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;basicOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="advancedOptionsTableLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="advancedOptionsTableLayoutPanel.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="motdTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="motdTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 415</value>
+  </data>
+  <data name="motdTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 25</value>
+  </data>
+  <data name="motdTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;motdTextBox.Name" xml:space="preserve">
+    <value>motdTextBox</value>
+  </data>
+  <data name="&gt;&gt;motdTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;motdTextBox.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;motdTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="onlineModeComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="onlineModeComboBox.Items" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="onlineModeComboBox.Items1" xml:space="preserve">
+    <value>true</value>
+  </data>
+  <data name="onlineModeComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 372</value>
+  </data>
+  <data name="onlineModeComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 25</value>
+  </data>
+  <data name="onlineModeComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;onlineModeComboBox.Name" xml:space="preserve">
+    <value>onlineModeComboBox</value>
+  </data>
+  <data name="&gt;&gt;onlineModeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;onlineModeComboBox.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;onlineModeComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="enableCommandBlockComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="enableCommandBlockComboBox.Items" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="enableCommandBlockComboBox.Items1" xml:space="preserve">
+    <value>true</value>
+  </data>
+  <data name="enableCommandBlockComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 327</value>
+  </data>
+  <data name="enableCommandBlockComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 25</value>
+  </data>
+  <data name="enableCommandBlockComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;enableCommandBlockComboBox.Name" xml:space="preserve">
+    <value>enableCommandBlockComboBox</value>
+  </data>
+  <data name="&gt;&gt;enableCommandBlockComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;enableCommandBlockComboBox.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;enableCommandBlockComboBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="difficultyComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="difficultyComboBox.Items" xml:space="preserve">
+    <value>peaceful</value>
+  </data>
+  <data name="difficultyComboBox.Items1" xml:space="preserve">
+    <value>easy</value>
+  </data>
+  <data name="difficultyComboBox.Items2" xml:space="preserve">
+    <value>normal</value>
+  </data>
+  <data name="difficultyComboBox.Items3" xml:space="preserve">
+    <value>hard</value>
+  </data>
+  <data name="difficultyComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 282</value>
+  </data>
+  <data name="difficultyComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 25</value>
+  </data>
+  <data name="difficultyComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;difficultyComboBox.Name" xml:space="preserve">
+    <value>difficultyComboBox</value>
+  </data>
+  <data name="&gt;&gt;difficultyComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;difficultyComboBox.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;difficultyComboBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="gamemodeComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="gamemodeComboBox.Items" xml:space="preserve">
+    <value>survival</value>
+  </data>
+  <data name="gamemodeComboBox.Items1" xml:space="preserve">
+    <value>creative</value>
+  </data>
+  <data name="gamemodeComboBox.Items2" xml:space="preserve">
+    <value>adventure</value>
+  </data>
+  <data name="gamemodeComboBox.Items3" xml:space="preserve">
+    <value>spectator</value>
+  </data>
+  <data name="gamemodeComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 237</value>
+  </data>
+  <data name="gamemodeComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 25</value>
+  </data>
+  <data name="gamemodeComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;gamemodeComboBox.Name" xml:space="preserve">
+    <value>gamemodeComboBox</value>
+  </data>
+  <data name="&gt;&gt;gamemodeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gamemodeComboBox.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;gamemodeComboBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pvpComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="pvpComboBox.Items" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="pvpComboBox.Items1" xml:space="preserve">
+    <value>true</value>
+  </data>
+  <data name="pvpComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 192</value>
+  </data>
+  <data name="pvpComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 25</value>
+  </data>
+  <data name="pvpComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;pvpComboBox.Name" xml:space="preserve">
+    <value>pvpComboBox</value>
+  </data>
+  <data name="&gt;&gt;pvpComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pvpComboBox.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;pvpComboBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="viewDistanceTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="viewDistanceTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 145</value>
+  </data>
+  <data name="viewDistanceTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 25</value>
+  </data>
+  <data name="viewDistanceTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;viewDistanceTextBox.Name" xml:space="preserve">
+    <value>viewDistanceTextBox</value>
+  </data>
+  <data name="&gt;&gt;viewDistanceTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;viewDistanceTextBox.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;viewDistanceTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="spawnProtectionTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="spawnProtectionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 100</value>
+  </data>
+  <data name="spawnProtectionTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 25</value>
+  </data>
+  <data name="spawnProtectionTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;spawnProtectionTextBox.Name" xml:space="preserve">
+    <value>spawnProtectionTextBox</value>
+  </data>
+  <data name="&gt;&gt;spawnProtectionTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;spawnProtectionTextBox.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;spawnProtectionTextBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="maxPlayerTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="maxPlayerTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 55</value>
+  </data>
+  <data name="maxPlayerTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 25</value>
+  </data>
+  <data name="maxPlayerTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;maxPlayerTextBox.Name" xml:space="preserve">
+    <value>maxPlayerTextBox</value>
+  </data>
+  <data name="&gt;&gt;maxPlayerTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maxPlayerTextBox.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;maxPlayerTextBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="serverPortTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="serverPortTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 10</value>
+  </data>
+  <data name="serverPortTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 25</value>
+  </data>
+  <data name="serverPortTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;serverPortTextBox.Name" xml:space="preserve">
+    <value>serverPortTextBox</value>
+  </data>
+  <data name="&gt;&gt;serverPortTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;serverPortTextBox.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;serverPortTextBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="serverPortFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="serverPortFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;serverPortLabel.Name" xml:space="preserve">
+    <value>serverPortLabel</value>
+  </data>
+  <data name="&gt;&gt;serverPortLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;serverPortLabel.Parent" xml:space="preserve">
+    <value>serverPortFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;serverPortLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;serverPortSubLabel.Name" xml:space="preserve">
+    <value>serverPortSubLabel</value>
+  </data>
+  <data name="&gt;&gt;serverPortSubLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;serverPortSubLabel.Parent" xml:space="preserve">
+    <value>serverPortFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;serverPortSubLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="serverPortFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="serverPortFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 5</value>
+  </data>
+  <data name="serverPortFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="serverPortFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 34</value>
+  </data>
+  <data name="serverPortFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;serverPortFlowLayoutPanel.Name" xml:space="preserve">
+    <value>serverPortFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;serverPortFlowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;serverPortFlowLayoutPanel.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;serverPortFlowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="maxPlayerFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="maxPlayerFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;maxPlayerLabel.Name" xml:space="preserve">
+    <value>maxPlayerLabel</value>
+  </data>
+  <data name="&gt;&gt;maxPlayerLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maxPlayerLabel.Parent" xml:space="preserve">
+    <value>maxPlayerFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;maxPlayerLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maxPlayerSubLabel.Name" xml:space="preserve">
+    <value>maxPlayerSubLabel</value>
+  </data>
+  <data name="&gt;&gt;maxPlayerSubLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maxPlayerSubLabel.Parent" xml:space="preserve">
+    <value>maxPlayerFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;maxPlayerSubLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="maxPlayerFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="maxPlayerFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 50</value>
+  </data>
+  <data name="maxPlayerFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="maxPlayerFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 34</value>
+  </data>
+  <data name="maxPlayerFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;maxPlayerFlowLayoutPanel.Name" xml:space="preserve">
+    <value>maxPlayerFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;maxPlayerFlowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maxPlayerFlowLayoutPanel.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;maxPlayerFlowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="spawnProtectionFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="spawnProtectionFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;spawnProtectionLabel.Name" xml:space="preserve">
+    <value>spawnProtectionLabel</value>
+  </data>
+  <data name="&gt;&gt;spawnProtectionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;spawnProtectionLabel.Parent" xml:space="preserve">
+    <value>spawnProtectionFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;spawnProtectionLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;spawnProtectionSubLabel.Name" xml:space="preserve">
+    <value>spawnProtectionSubLabel</value>
+  </data>
+  <data name="&gt;&gt;spawnProtectionSubLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;spawnProtectionSubLabel.Parent" xml:space="preserve">
+    <value>spawnProtectionFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;spawnProtectionSubLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="spawnProtectionFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="spawnProtectionFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 95</value>
+  </data>
+  <data name="spawnProtectionFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="spawnProtectionFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 34</value>
+  </data>
+  <data name="spawnProtectionFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;spawnProtectionFlowLayoutPanel.Name" xml:space="preserve">
+    <value>spawnProtectionFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;spawnProtectionFlowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;spawnProtectionFlowLayoutPanel.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;spawnProtectionFlowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="viewDistanceFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="viewDistanceFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;viewDistanceLabel.Name" xml:space="preserve">
+    <value>viewDistanceLabel</value>
+  </data>
+  <data name="&gt;&gt;viewDistanceLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;viewDistanceLabel.Parent" xml:space="preserve">
+    <value>viewDistanceFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;viewDistanceLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;viewDistanceSubLabel.Name" xml:space="preserve">
+    <value>viewDistanceSubLabel</value>
+  </data>
+  <data name="&gt;&gt;viewDistanceSubLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;viewDistanceSubLabel.Parent" xml:space="preserve">
+    <value>viewDistanceFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;viewDistanceSubLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="viewDistanceFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="viewDistanceFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 140</value>
+  </data>
+  <data name="viewDistanceFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="viewDistanceFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 34</value>
+  </data>
+  <data name="viewDistanceFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;viewDistanceFlowLayoutPanel.Name" xml:space="preserve">
+    <value>viewDistanceFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;viewDistanceFlowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;viewDistanceFlowLayoutPanel.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;viewDistanceFlowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="pvpFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="pvpFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;pvpLabel.Name" xml:space="preserve">
+    <value>pvpLabel</value>
+  </data>
+  <data name="&gt;&gt;pvpLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pvpLabel.Parent" xml:space="preserve">
+    <value>pvpFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;pvpLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pvpSubLabel.Name" xml:space="preserve">
+    <value>pvpSubLabel</value>
+  </data>
+  <data name="&gt;&gt;pvpSubLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pvpSubLabel.Parent" xml:space="preserve">
+    <value>pvpFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;pvpSubLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pvpFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="pvpFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 185</value>
+  </data>
+  <data name="pvpFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="pvpFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 34</value>
+  </data>
+  <data name="pvpFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pvpFlowLayoutPanel.Name" xml:space="preserve">
+    <value>pvpFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;pvpFlowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pvpFlowLayoutPanel.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;pvpFlowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="gamemodeFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="gamemodeFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gamemodeLabel.Name" xml:space="preserve">
+    <value>gamemodeLabel</value>
+  </data>
+  <data name="&gt;&gt;gamemodeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gamemodeLabel.Parent" xml:space="preserve">
+    <value>gamemodeFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;gamemodeLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gamemodeSubLabel.Name" xml:space="preserve">
+    <value>gamemodeSubLabel</value>
+  </data>
+  <data name="&gt;&gt;gamemodeSubLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gamemodeSubLabel.Parent" xml:space="preserve">
+    <value>gamemodeFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;gamemodeSubLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gamemodeFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="gamemodeFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 230</value>
+  </data>
+  <data name="gamemodeFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="gamemodeFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 34</value>
+  </data>
+  <data name="gamemodeFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;gamemodeFlowLayoutPanel.Name" xml:space="preserve">
+    <value>gamemodeFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;gamemodeFlowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gamemodeFlowLayoutPanel.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;gamemodeFlowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="difficultyFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="difficultyFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;difficultyLabel.Name" xml:space="preserve">
+    <value>difficultyLabel</value>
+  </data>
+  <data name="&gt;&gt;difficultyLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;difficultyLabel.Parent" xml:space="preserve">
+    <value>difficultyFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;difficultyLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;difficultySubLabel.Name" xml:space="preserve">
+    <value>difficultySubLabel</value>
+  </data>
+  <data name="&gt;&gt;difficultySubLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;difficultySubLabel.Parent" xml:space="preserve">
+    <value>difficultyFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;difficultySubLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="difficultyFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="difficultyFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 275</value>
+  </data>
+  <data name="difficultyFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="difficultyFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 34</value>
+  </data>
+  <data name="difficultyFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;difficultyFlowLayoutPanel.Name" xml:space="preserve">
+    <value>difficultyFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;difficultyFlowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;difficultyFlowLayoutPanel.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;difficultyFlowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="enableCommandBlockFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="enableCommandBlockFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;enableCommandBlockLabel.Name" xml:space="preserve">
+    <value>enableCommandBlockLabel</value>
+  </data>
+  <data name="&gt;&gt;enableCommandBlockLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;enableCommandBlockLabel.Parent" xml:space="preserve">
+    <value>enableCommandBlockFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;enableCommandBlockLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;enableCommandBlockSubLabel.Name" xml:space="preserve">
+    <value>enableCommandBlockSubLabel</value>
+  </data>
+  <data name="&gt;&gt;enableCommandBlockSubLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;enableCommandBlockSubLabel.Parent" xml:space="preserve">
+    <value>enableCommandBlockFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;enableCommandBlockSubLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="enableCommandBlockFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="enableCommandBlockFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 320</value>
+  </data>
+  <data name="enableCommandBlockFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="enableCommandBlockFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 34</value>
+  </data>
+  <data name="enableCommandBlockFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;enableCommandBlockFlowLayoutPanel.Name" xml:space="preserve">
+    <value>enableCommandBlockFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;enableCommandBlockFlowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;enableCommandBlockFlowLayoutPanel.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;enableCommandBlockFlowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="onlineModeFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="onlineModeFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;onlineModeLabel.Name" xml:space="preserve">
+    <value>onlineModeLabel</value>
+  </data>
+  <data name="&gt;&gt;onlineModeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;onlineModeLabel.Parent" xml:space="preserve">
+    <value>onlineModeFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;onlineModeLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;onlineModeSubLabel.Name" xml:space="preserve">
+    <value>onlineModeSubLabel</value>
+  </data>
+  <data name="&gt;&gt;onlineModeSubLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;onlineModeSubLabel.Parent" xml:space="preserve">
+    <value>onlineModeFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;onlineModeSubLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="onlineModeFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="onlineModeFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 365</value>
+  </data>
+  <data name="onlineModeFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="onlineModeFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 34</value>
+  </data>
+  <data name="onlineModeFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;onlineModeFlowLayoutPanel.Name" xml:space="preserve">
+    <value>onlineModeFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;onlineModeFlowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;onlineModeFlowLayoutPanel.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;onlineModeFlowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="motdFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="motdFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;motdLabel.Name" xml:space="preserve">
+    <value>motdLabel</value>
+  </data>
+  <data name="&gt;&gt;motdLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;motdLabel.Parent" xml:space="preserve">
+    <value>motdFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;motdLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;motdSubLabel.Name" xml:space="preserve">
+    <value>motdSubLabel</value>
+  </data>
+  <data name="&gt;&gt;motdSubLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;motdSubLabel.Parent" xml:space="preserve">
+    <value>motdFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;motdSubLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="motdFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="motdFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 410</value>
+  </data>
+  <data name="motdFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="motdFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 34</value>
+  </data>
+  <data name="motdFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;motdFlowLayoutPanel.Name" xml:space="preserve">
+    <value>motdFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;motdFlowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;motdFlowLayoutPanel.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;motdFlowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="resetAdvancedOptionsButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="resetAdvancedOptionsButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="resetAdvancedOptionsButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 459</value>
+  </data>
+  <data name="resetAdvancedOptionsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 35</value>
+  </data>
+  <data name="resetAdvancedOptionsButton.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="resetAdvancedOptionsButton.Text" xml:space="preserve">
+    <value>重置選項</value>
+  </data>
+  <data name="&gt;&gt;resetAdvancedOptionsButton.Name" xml:space="preserve">
+    <value>resetAdvancedOptionsButton</value>
+  </data>
+  <data name="&gt;&gt;resetAdvancedOptionsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;resetAdvancedOptionsButton.Parent" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;resetAdvancedOptionsButton.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="advancedOptionsTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 7</value>
+  </data>
+  <data name="advancedOptionsTableLayoutPanel.RowCount" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="advancedOptionsTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>435, 504</value>
+  </data>
+  <data name="advancedOptionsTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;advancedOptionsTableLayoutPanel.Name" xml:space="preserve">
+    <value>advancedOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;advancedOptionsTableLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;advancedOptionsTableLayoutPanel.Parent" xml:space="preserve">
+    <value>advancedOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;advancedOptionsTableLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="advancedOptionsTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="motdTextBox" Row="9" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="onlineModeComboBox" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="enableCommandBlockComboBox" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="difficultyComboBox" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="gamemodeComboBox" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pvpComboBox" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="viewDistanceTextBox" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="spawnProtectionTextBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="maxPlayerTextBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="serverPortTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="serverPortFlowLayoutPanel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="maxPlayerFlowLayoutPanel" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="spawnProtectionFlowLayoutPanel" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="viewDistanceFlowLayoutPanel" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pvpFlowLayoutPanel" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="gamemodeFlowLayoutPanel" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="difficultyFlowLayoutPanel" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="enableCommandBlockFlowLayoutPanel" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="onlineModeFlowLayoutPanel" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="motdFlowLayoutPanel" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="resetAdvancedOptionsButton" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,40,Percent,60" /&gt;&lt;Rows Styles="Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.909909" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="advancedOptionsTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="advancedOptionsTabPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="advancedOptionsTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="advancedOptionsTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 518</value>
+  </data>
+  <data name="advancedOptionsTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="advancedOptionsTabPage.Text" xml:space="preserve">
+    <value>進階選項</value>
+  </data>
+  <data name="&gt;&gt;advancedOptionsTabPage.Name" xml:space="preserve">
+    <value>advancedOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;advancedOptionsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;advancedOptionsTabPage.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;advancedOptionsTabPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;informationTableLayoutPanel.Name" xml:space="preserve">
+    <value>informationTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;informationTableLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;informationTableLayoutPanel.Parent" xml:space="preserve">
+    <value>informationTabPage</value>
+  </data>
+  <data name="&gt;&gt;informationTableLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="informationTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="emailTextBox" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="programNameLabel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="versionLabel" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="copyrightLabel" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="emailLabel" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tutorialLabel" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="websiteLabel" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tutorialTextBox" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="websiteTextBox" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="checkNewButton" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="copyrightTextBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="versionTextBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="programNameTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,80" /&gt;&lt;Rows Styles="Percent,9.009008,Percent,9.009008,Percent,9.009008,Percent,9.009008,Percent,9.009008,Percent,9.009008,Percent,9.009008,Percent,9.009008,Percent,9.009008,Percent,9.009008,Percent,9.90991" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="informationTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="informationTabPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="informationTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="informationTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 518</value>
+  </data>
+  <data name="informationTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="informationTabPage.Text" xml:space="preserve">
+    <value>關於與說明</value>
+  </data>
+  <data name="&gt;&gt;informationTabPage.Name" xml:space="preserve">
+    <value>informationTabPage</value>
+  </data>
+  <data name="&gt;&gt;informationTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;informationTabPage.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;informationTabPage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabControl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 9.75pt</value>
+  </data>
+  <data name="tabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="tabControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>458, 548</value>
+  </data>
+  <data name="tabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Name" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="basicOptionsTableLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="basicOptionsTableLayoutPanel.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;installPathButton.Name" xml:space="preserve">
+    <value>installPathButton</value>
+  </data>
+  <data name="&gt;&gt;installPathButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;installPathButton.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;installPathButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;forgeVersionButton.Name" xml:space="preserve">
+    <value>forgeVersionButton</value>
+  </data>
+  <data name="&gt;&gt;forgeVersionButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;forgeVersionButton.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;forgeVersionButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;gameVersionLabel.Name" xml:space="preserve">
+    <value>gameVersionLabel</value>
+  </data>
+  <data name="&gt;&gt;gameVersionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gameVersionLabel.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;gameVersionLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;modVersionLabel.Name" xml:space="preserve">
+    <value>modVersionLabel</value>
+  </data>
+  <data name="&gt;&gt;modVersionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;modVersionLabel.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;modVersionLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;installPathLabel.Name" xml:space="preserve">
+    <value>installPathLabel</value>
+  </data>
+  <data name="&gt;&gt;installPathLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;installPathLabel.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;installPathLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;guiLabel.Name" xml:space="preserve">
+    <value>guiLabel</value>
+  </data>
+  <data name="&gt;&gt;guiLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;guiLabel.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;guiLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;ramSettingLabel.Name" xml:space="preserve">
+    <value>ramSettingLabel</value>
+  </data>
+  <data name="&gt;&gt;ramSettingLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ramSettingLabel.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;ramSettingLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;maxRamLabel.Name" xml:space="preserve">
+    <value>maxRamLabel</value>
+  </data>
+  <data name="&gt;&gt;maxRamLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maxRamLabel.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;maxRamLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;minRamLabel.Name" xml:space="preserve">
+    <value>minRamLabel</value>
+  </data>
+  <data name="&gt;&gt;minRamLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;minRamLabel.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;minRamLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;eulaLinkLabel.Name" xml:space="preserve">
+    <value>eulaLinkLabel</value>
+  </data>
+  <data name="&gt;&gt;eulaLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eulaLinkLabel.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;eulaLinkLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;gameVersionTextBox.Name" xml:space="preserve">
+    <value>gameVersionTextBox</value>
+  </data>
+  <data name="&gt;&gt;gameVersionTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gameVersionTextBox.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;gameVersionTextBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;guiCheckBox.Name" xml:space="preserve">
+    <value>guiCheckBox</value>
+  </data>
+  <data name="&gt;&gt;guiCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;guiCheckBox.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;guiCheckBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;eulaCheckBox.Name" xml:space="preserve">
+    <value>eulaCheckBox</value>
+  </data>
+  <data name="&gt;&gt;eulaCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eulaCheckBox.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;eulaCheckBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;ramSettingCheckBox.Name" xml:space="preserve">
+    <value>ramSettingCheckBox</value>
+  </data>
+  <data name="&gt;&gt;ramSettingCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ramSettingCheckBox.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;ramSettingCheckBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;maxRamTrackBar.Name" xml:space="preserve">
+    <value>maxRamTrackBar</value>
+  </data>
+  <data name="&gt;&gt;maxRamTrackBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maxRamTrackBar.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;maxRamTrackBar.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;minRamTrackBar.Name" xml:space="preserve">
+    <value>minRamTrackBar</value>
+  </data>
+  <data name="&gt;&gt;minRamTrackBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;minRamTrackBar.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;minRamTrackBar.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;gameVersionButton.Name" xml:space="preserve">
+    <value>gameVersionButton</value>
+  </data>
+  <data name="&gt;&gt;gameVersionButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gameVersionButton.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;gameVersionButton.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;maxRamTextBox.Name" xml:space="preserve">
+    <value>maxRamTextBox</value>
+  </data>
+  <data name="&gt;&gt;maxRamTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maxRamTextBox.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;maxRamTextBox.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;minRamTextBox.Name" xml:space="preserve">
+    <value>minRamTextBox</value>
+  </data>
+  <data name="&gt;&gt;minRamTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;minRamTextBox.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;minRamTextBox.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;installButton.Name" xml:space="preserve">
+    <value>installButton</value>
+  </data>
+  <data name="&gt;&gt;installButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;installButton.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;installButton.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;resetBasicOptionsButton.Name" xml:space="preserve">
+    <value>resetBasicOptionsButton</value>
+  </data>
+  <data name="&gt;&gt;resetBasicOptionsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;resetBasicOptionsButton.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;resetBasicOptionsButton.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;modVersionTableLayoutPanel.Name" xml:space="preserve">
+    <value>modVersionTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;modVersionTableLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;modVersionTableLayoutPanel.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;modVersionTableLayoutPanel.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="modVersionTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="forgeVersionTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="modVersionComboBox" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,40,Percent,60" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;installPathTextBox.Name" xml:space="preserve">
+    <value>installPathTextBox</value>
+  </data>
+  <data name="&gt;&gt;installPathTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;installPathTextBox.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;installPathTextBox.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="basicOptionsTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 7</value>
+  </data>
+  <data name="basicOptionsTableLayoutPanel.RowCount" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="basicOptionsTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>435, 504</value>
+  </data>
+  <data name="basicOptionsTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;basicOptionsTableLayoutPanel.Name" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;basicOptionsTableLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;basicOptionsTableLayoutPanel.Parent" xml:space="preserve">
+    <value>basicOptionsTabPage</value>
+  </data>
+  <data name="&gt;&gt;basicOptionsTableLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="basicOptionsTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="installPathButton" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="forgeVersionButton" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="gameVersionLabel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="modVersionLabel" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="installPathLabel" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="guiLabel" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ramSettingLabel" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="maxRamLabel" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="minRamLabel" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="eulaLinkLabel" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="gameVersionTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="guiCheckBox" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="eulaCheckBox" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ramSettingCheckBox" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="maxRamTrackBar" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="minRamTrackBar" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="gameVersionButton" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="maxRamTextBox" Row="7" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="minRamTextBox" Row="8" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="installButton" Row="10" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="resetBasicOptionsButton" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="modVersionTableLayoutPanel" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="installPathTextBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,55,Percent,20" /&gt;&lt;Rows Styles="Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.909909" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="installPathButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
@@ -870,204 +2238,6 @@
   <data name="modVersionTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="forgeVersionTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="modVersionComboBox" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,40,Percent,60" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="installPathTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="installPathTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 100</value>
-  </data>
-  <data name="installPathTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 25</value>
-  </data>
-  <data name="installPathTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;installPathTextBox.Name" xml:space="preserve">
-    <value>installPathTextBox</value>
-  </data>
-  <data name="&gt;&gt;installPathTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;installPathTextBox.Parent" xml:space="preserve">
-    <value>basicOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;installPathTextBox.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="basicOptionsTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 7</value>
-  </data>
-  <data name="basicOptionsTableLayoutPanel.RowCount" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="basicOptionsTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>435, 504</value>
-  </data>
-  <data name="basicOptionsTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;basicOptionsTableLayoutPanel.Name" xml:space="preserve">
-    <value>basicOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;basicOptionsTableLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;basicOptionsTableLayoutPanel.Parent" xml:space="preserve">
-    <value>basicOptionsTabPage</value>
-  </data>
-  <data name="&gt;&gt;basicOptionsTableLayoutPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="basicOptionsTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="installPathButton" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="forgeVersionButton" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="gameVersionLabel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="modVersionLabel" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="installPathLabel" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="guiLabel" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ramSettingLabel" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="maxRamLabel" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="minRamLabel" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="eulaLinkLabel" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="gameVersionTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="guiCheckBox" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="eulaCheckBox" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ramSettingCheckBox" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="maxRamTrackBar" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="minRamTrackBar" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="gameVersionButton" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="maxRamTextBox" Row="7" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="minRamTextBox" Row="8" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="installButton" Row="10" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="resetBasicOptionsButton" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="modVersionTableLayoutPanel" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="installPathTextBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,55,Percent,20" /&gt;&lt;Rows Styles="Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.909909" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="basicOptionsTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 26</value>
-  </data>
-  <data name="basicOptionsTabPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="basicOptionsTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="basicOptionsTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>450, 518</value>
-  </data>
-  <data name="basicOptionsTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="basicOptionsTabPage.Text" xml:space="preserve">
-    <value>基本設定</value>
-  </data>
-  <data name="&gt;&gt;basicOptionsTabPage.Name" xml:space="preserve">
-    <value>basicOptionsTabPage</value>
-  </data>
-  <data name="&gt;&gt;basicOptionsTabPage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;basicOptionsTabPage.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;basicOptionsTabPage.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;advancedOptionsTableLayoutPanel.Name" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;advancedOptionsTableLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;advancedOptionsTableLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTabPage</value>
-  </data>
-  <data name="&gt;&gt;advancedOptionsTableLayoutPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="advancedOptionsTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="motdTextBox" Row="9" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="onlineModeComboBox" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="enableCommandBlockComboBox" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="difficultyComboBox" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="gamemodeComboBox" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pvpComboBox" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="viewDistanceTextBox" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="spawnProtectionTextBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="maxPlayerTextBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="serverPortTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="serverPortFlowLayoutPanel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="maxPlayerFlowLayoutPanel" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="spawnProtectionFlowLayoutPanel" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="viewDistanceFlowLayoutPanel" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pvpFlowLayoutPanel" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="gamemodeFlowLayoutPanel" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="difficultyFlowLayoutPanel" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="enableCommandBlockFlowLayoutPanel" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="onlineModeFlowLayoutPanel" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="motdFlowLayoutPanel" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="resetAdvancedOptionsButton" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,40,Percent,60" /&gt;&lt;Rows Styles="Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.909909" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="advancedOptionsTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 26</value>
-  </data>
-  <data name="advancedOptionsTabPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="advancedOptionsTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="advancedOptionsTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>450, 518</value>
-  </data>
-  <data name="advancedOptionsTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="advancedOptionsTabPage.Text" xml:space="preserve">
-    <value>進階選項</value>
-  </data>
-  <data name="&gt;&gt;advancedOptionsTabPage.Name" xml:space="preserve">
-    <value>advancedOptionsTabPage</value>
-  </data>
-  <data name="&gt;&gt;advancedOptionsTabPage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;advancedOptionsTabPage.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;advancedOptionsTabPage.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;informationTableLayoutPanel.Name" xml:space="preserve">
-    <value>informationTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;informationTableLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;informationTableLayoutPanel.Parent" xml:space="preserve">
-    <value>informationTabPage</value>
-  </data>
-  <data name="&gt;&gt;informationTableLayoutPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="informationTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="emailTextBox" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="programNameLabel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="versionLabel" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="copyrightLabel" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="emailLabel" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tutorialLabel" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="websiteLabel" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tutorialTextBox" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="websiteTextBox" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="checkNewButton" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="copyrightTextBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="versionTextBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="programNameTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,80" /&gt;&lt;Rows Styles="Percent,9.009008,Percent,9.009008,Percent,9.009008,Percent,9.009008,Percent,9.009008,Percent,9.009008,Percent,9.009008,Percent,9.009008,Percent,9.009008,Percent,9.009008,Percent,9.90991" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="informationTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 26</value>
-  </data>
-  <data name="informationTabPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="informationTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="informationTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>450, 518</value>
-  </data>
-  <data name="informationTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="informationTabPage.Text" xml:space="preserve">
-    <value>關於與說明</value>
-  </data>
-  <data name="&gt;&gt;informationTabPage.Name" xml:space="preserve">
-    <value>informationTabPage</value>
-  </data>
-  <data name="&gt;&gt;informationTabPage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;informationTabPage.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;informationTabPage.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tabControl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 9.75pt</value>
-  </data>
-  <data name="tabControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 13</value>
-  </data>
-  <data name="tabControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>458, 548</value>
-  </data>
-  <data name="tabControl.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tabControl.Name" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tabControl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="forgeVersionTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
   </data>
@@ -1105,7 +2275,7 @@
     <value>Fabric</value>
   </data>
   <data name="modVersionComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 12</value>
+    <value>3, 10</value>
   </data>
   <data name="modVersionComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 25</value>
@@ -1125,629 +2295,29 @@
   <data name="&gt;&gt;modVersionComboBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="advancedOptionsTableLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="installPathTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
   </data>
-  <data name="advancedOptionsTableLayoutPanel.ColumnCount" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="installPathTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 100</value>
   </data>
-  <data name="&gt;&gt;motdTextBox.Name" xml:space="preserve">
-    <value>motdTextBox</value>
+  <data name="installPathTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 25</value>
   </data>
-  <data name="&gt;&gt;motdTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;motdTextBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;motdTextBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;onlineModeComboBox.Name" xml:space="preserve">
-    <value>onlineModeComboBox</value>
-  </data>
-  <data name="&gt;&gt;onlineModeComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;onlineModeComboBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;onlineModeComboBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockComboBox.Name" xml:space="preserve">
-    <value>enableCommandBlockComboBox</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockComboBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockComboBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;difficultyComboBox.Name" xml:space="preserve">
-    <value>difficultyComboBox</value>
-  </data>
-  <data name="&gt;&gt;difficultyComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;difficultyComboBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;difficultyComboBox.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;gamemodeComboBox.Name" xml:space="preserve">
-    <value>gamemodeComboBox</value>
-  </data>
-  <data name="&gt;&gt;gamemodeComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gamemodeComboBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;gamemodeComboBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;pvpComboBox.Name" xml:space="preserve">
-    <value>pvpComboBox</value>
-  </data>
-  <data name="&gt;&gt;pvpComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pvpComboBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;pvpComboBox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceTextBox.Name" xml:space="preserve">
-    <value>viewDistanceTextBox</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceTextBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceTextBox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionTextBox.Name" xml:space="preserve">
-    <value>spawnProtectionTextBox</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionTextBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionTextBox.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerTextBox.Name" xml:space="preserve">
-    <value>maxPlayerTextBox</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerTextBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerTextBox.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;serverPortTextBox.Name" xml:space="preserve">
-    <value>serverPortTextBox</value>
-  </data>
-  <data name="&gt;&gt;serverPortTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;serverPortTextBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;serverPortTextBox.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;serverPortFlowLayoutPanel.Name" xml:space="preserve">
-    <value>serverPortFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;serverPortFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;serverPortFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;serverPortFlowLayoutPanel.ZOrder" xml:space="preserve">
+  <data name="installPathTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;maxPlayerFlowLayoutPanel.Name" xml:space="preserve">
-    <value>maxPlayerFlowLayoutPanel</value>
+  <data name="&gt;&gt;installPathTextBox.Name" xml:space="preserve">
+    <value>installPathTextBox</value>
   </data>
-  <data name="&gt;&gt;maxPlayerFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionFlowLayoutPanel.Name" xml:space="preserve">
-    <value>spawnProtectionFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceFlowLayoutPanel.Name" xml:space="preserve">
-    <value>viewDistanceFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;pvpFlowLayoutPanel.Name" xml:space="preserve">
-    <value>pvpFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;pvpFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pvpFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;pvpFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;gamemodeFlowLayoutPanel.Name" xml:space="preserve">
-    <value>gamemodeFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;gamemodeFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gamemodeFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;gamemodeFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;difficultyFlowLayoutPanel.Name" xml:space="preserve">
-    <value>difficultyFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;difficultyFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;difficultyFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;difficultyFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockFlowLayoutPanel.Name" xml:space="preserve">
-    <value>enableCommandBlockFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;onlineModeFlowLayoutPanel.Name" xml:space="preserve">
-    <value>onlineModeFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;onlineModeFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;onlineModeFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;onlineModeFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;motdFlowLayoutPanel.Name" xml:space="preserve">
-    <value>motdFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;motdFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;motdFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;motdFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;resetAdvancedOptionsButton.Name" xml:space="preserve">
-    <value>resetAdvancedOptionsButton</value>
-  </data>
-  <data name="&gt;&gt;resetAdvancedOptionsButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;resetAdvancedOptionsButton.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;resetAdvancedOptionsButton.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="advancedOptionsTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 7</value>
-  </data>
-  <data name="advancedOptionsTableLayoutPanel.RowCount" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="advancedOptionsTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>435, 504</value>
-  </data>
-  <data name="advancedOptionsTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;advancedOptionsTableLayoutPanel.Name" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;advancedOptionsTableLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;advancedOptionsTableLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTabPage</value>
-  </data>
-  <data name="&gt;&gt;advancedOptionsTableLayoutPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="advancedOptionsTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="motdTextBox" Row="9" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="onlineModeComboBox" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="enableCommandBlockComboBox" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="difficultyComboBox" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="gamemodeComboBox" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pvpComboBox" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="viewDistanceTextBox" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="spawnProtectionTextBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="maxPlayerTextBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="serverPortTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="serverPortFlowLayoutPanel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="maxPlayerFlowLayoutPanel" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="spawnProtectionFlowLayoutPanel" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="viewDistanceFlowLayoutPanel" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pvpFlowLayoutPanel" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="gamemodeFlowLayoutPanel" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="difficultyFlowLayoutPanel" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="enableCommandBlockFlowLayoutPanel" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="onlineModeFlowLayoutPanel" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="motdFlowLayoutPanel" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="resetAdvancedOptionsButton" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,40,Percent,60" /&gt;&lt;Rows Styles="Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.909909" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="motdTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="motdTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 415</value>
-  </data>
-  <data name="motdTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 25</value>
-  </data>
-  <data name="motdTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;motdTextBox.Name" xml:space="preserve">
-    <value>motdTextBox</value>
-  </data>
-  <data name="&gt;&gt;motdTextBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;installPathTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;motdTextBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;motdTextBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="onlineModeComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="onlineModeComboBox.Items" xml:space="preserve">
-    <value>false</value>
-  </data>
-  <data name="onlineModeComboBox.Items1" xml:space="preserve">
-    <value>true</value>
-  </data>
-  <data name="onlineModeComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 370</value>
-  </data>
-  <data name="onlineModeComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 25</value>
-  </data>
-  <data name="onlineModeComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;onlineModeComboBox.Name" xml:space="preserve">
-    <value>onlineModeComboBox</value>
-  </data>
-  <data name="&gt;&gt;onlineModeComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;onlineModeComboBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;onlineModeComboBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="enableCommandBlockComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="enableCommandBlockComboBox.Items" xml:space="preserve">
-    <value>false</value>
-  </data>
-  <data name="enableCommandBlockComboBox.Items1" xml:space="preserve">
-    <value>true</value>
-  </data>
-  <data name="enableCommandBlockComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 325</value>
-  </data>
-  <data name="enableCommandBlockComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 25</value>
-  </data>
-  <data name="enableCommandBlockComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockComboBox.Name" xml:space="preserve">
-    <value>enableCommandBlockComboBox</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockComboBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockComboBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="difficultyComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="difficultyComboBox.Items" xml:space="preserve">
-    <value>peaceful</value>
-  </data>
-  <data name="difficultyComboBox.Items1" xml:space="preserve">
-    <value>easy</value>
-  </data>
-  <data name="difficultyComboBox.Items2" xml:space="preserve">
-    <value>normal</value>
-  </data>
-  <data name="difficultyComboBox.Items3" xml:space="preserve">
-    <value>hard</value>
-  </data>
-  <data name="difficultyComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 280</value>
-  </data>
-  <data name="difficultyComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 25</value>
-  </data>
-  <data name="difficultyComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;difficultyComboBox.Name" xml:space="preserve">
-    <value>difficultyComboBox</value>
-  </data>
-  <data name="&gt;&gt;difficultyComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;difficultyComboBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;difficultyComboBox.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="gamemodeComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="gamemodeComboBox.Items" xml:space="preserve">
-    <value>survival</value>
-  </data>
-  <data name="gamemodeComboBox.Items1" xml:space="preserve">
-    <value>creative</value>
-  </data>
-  <data name="gamemodeComboBox.Items2" xml:space="preserve">
-    <value>adventure</value>
-  </data>
-  <data name="gamemodeComboBox.Items3" xml:space="preserve">
-    <value>spectator</value>
-  </data>
-  <data name="gamemodeComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 235</value>
-  </data>
-  <data name="gamemodeComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 25</value>
-  </data>
-  <data name="gamemodeComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;gamemodeComboBox.Name" xml:space="preserve">
-    <value>gamemodeComboBox</value>
-  </data>
-  <data name="&gt;&gt;gamemodeComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gamemodeComboBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;gamemodeComboBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="pvpComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="pvpComboBox.Items" xml:space="preserve">
-    <value>false</value>
-  </data>
-  <data name="pvpComboBox.Items1" xml:space="preserve">
-    <value>true</value>
-  </data>
-  <data name="pvpComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 190</value>
-  </data>
-  <data name="pvpComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 25</value>
-  </data>
-  <data name="pvpComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;pvpComboBox.Name" xml:space="preserve">
-    <value>pvpComboBox</value>
-  </data>
-  <data name="&gt;&gt;pvpComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pvpComboBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;pvpComboBox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="viewDistanceTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="viewDistanceTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 145</value>
-  </data>
-  <data name="viewDistanceTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 25</value>
-  </data>
-  <data name="viewDistanceTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceTextBox.Name" xml:space="preserve">
-    <value>viewDistanceTextBox</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceTextBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceTextBox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="spawnProtectionTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="spawnProtectionTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 100</value>
-  </data>
-  <data name="spawnProtectionTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 25</value>
-  </data>
-  <data name="spawnProtectionTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionTextBox.Name" xml:space="preserve">
-    <value>spawnProtectionTextBox</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionTextBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionTextBox.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="maxPlayerTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="maxPlayerTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 55</value>
-  </data>
-  <data name="maxPlayerTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 25</value>
-  </data>
-  <data name="maxPlayerTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerTextBox.Name" xml:space="preserve">
-    <value>maxPlayerTextBox</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerTextBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerTextBox.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="serverPortTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="serverPortTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 10</value>
-  </data>
-  <data name="serverPortTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 25</value>
-  </data>
-  <data name="serverPortTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;serverPortTextBox.Name" xml:space="preserve">
-    <value>serverPortTextBox</value>
-  </data>
-  <data name="&gt;&gt;serverPortTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;serverPortTextBox.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;serverPortTextBox.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="serverPortFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="serverPortFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;serverPortLabel.Name" xml:space="preserve">
-    <value>serverPortLabel</value>
-  </data>
-  <data name="&gt;&gt;serverPortLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;serverPortLabel.Parent" xml:space="preserve">
-    <value>serverPortFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;serverPortLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;serverPortSubLabel.Name" xml:space="preserve">
-    <value>serverPortSubLabel</value>
-  </data>
-  <data name="&gt;&gt;serverPortSubLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;serverPortSubLabel.Parent" xml:space="preserve">
-    <value>serverPortFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;serverPortSubLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="serverPortFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>TopDown</value>
-  </data>
-  <data name="serverPortFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 5</value>
-  </data>
-  <data name="serverPortFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="serverPortFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 34</value>
-  </data>
-  <data name="serverPortFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;serverPortFlowLayoutPanel.Name" xml:space="preserve">
-    <value>serverPortFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;serverPortFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;serverPortFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;serverPortFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;installPathTextBox.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;installPathTextBox.ZOrder" xml:space="preserve">
+    <value>22</value>
   </data>
   <data name="serverPortLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -1808,63 +2378,6 @@
   </data>
   <data name="&gt;&gt;serverPortSubLabel.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="maxPlayerFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="maxPlayerFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerLabel.Name" xml:space="preserve">
-    <value>maxPlayerLabel</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerLabel.Parent" xml:space="preserve">
-    <value>maxPlayerFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerSubLabel.Name" xml:space="preserve">
-    <value>maxPlayerSubLabel</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerSubLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerSubLabel.Parent" xml:space="preserve">
-    <value>maxPlayerFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerSubLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="maxPlayerFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>TopDown</value>
-  </data>
-  <data name="maxPlayerFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 50</value>
-  </data>
-  <data name="maxPlayerFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="maxPlayerFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 34</value>
-  </data>
-  <data name="maxPlayerFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerFlowLayoutPanel.Name" xml:space="preserve">
-    <value>maxPlayerFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;maxPlayerFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>11</value>
   </data>
   <data name="maxPlayerLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -1932,63 +2445,6 @@
   <data name="&gt;&gt;maxPlayerSubLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="spawnProtectionFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="spawnProtectionFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionLabel.Name" xml:space="preserve">
-    <value>spawnProtectionLabel</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionLabel.Parent" xml:space="preserve">
-    <value>spawnProtectionFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionSubLabel.Name" xml:space="preserve">
-    <value>spawnProtectionSubLabel</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionSubLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionSubLabel.Parent" xml:space="preserve">
-    <value>spawnProtectionFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionSubLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="spawnProtectionFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>TopDown</value>
-  </data>
-  <data name="spawnProtectionFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 95</value>
-  </data>
-  <data name="spawnProtectionFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="spawnProtectionFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 34</value>
-  </data>
-  <data name="spawnProtectionFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionFlowLayoutPanel.Name" xml:space="preserve">
-    <value>spawnProtectionFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;spawnProtectionFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
   <data name="spawnProtectionLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
@@ -2054,63 +2510,6 @@
   </data>
   <data name="&gt;&gt;spawnProtectionSubLabel.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="viewDistanceFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="viewDistanceFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceLabel.Name" xml:space="preserve">
-    <value>viewDistanceLabel</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceLabel.Parent" xml:space="preserve">
-    <value>viewDistanceFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceSubLabel.Name" xml:space="preserve">
-    <value>viewDistanceSubLabel</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceSubLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceSubLabel.Parent" xml:space="preserve">
-    <value>viewDistanceFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceSubLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="viewDistanceFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>TopDown</value>
-  </data>
-  <data name="viewDistanceFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 140</value>
-  </data>
-  <data name="viewDistanceFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="viewDistanceFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 34</value>
-  </data>
-  <data name="viewDistanceFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceFlowLayoutPanel.Name" xml:space="preserve">
-    <value>viewDistanceFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;viewDistanceFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>13</value>
   </data>
   <data name="viewDistanceLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -2178,63 +2577,6 @@
   <data name="&gt;&gt;viewDistanceSubLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="pvpFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="pvpFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;pvpLabel.Name" xml:space="preserve">
-    <value>pvpLabel</value>
-  </data>
-  <data name="&gt;&gt;pvpLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pvpLabel.Parent" xml:space="preserve">
-    <value>pvpFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;pvpLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pvpSubLabel.Name" xml:space="preserve">
-    <value>pvpSubLabel</value>
-  </data>
-  <data name="&gt;&gt;pvpSubLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pvpSubLabel.Parent" xml:space="preserve">
-    <value>pvpFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;pvpSubLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pvpFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>TopDown</value>
-  </data>
-  <data name="pvpFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 185</value>
-  </data>
-  <data name="pvpFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="pvpFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 34</value>
-  </data>
-  <data name="pvpFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pvpFlowLayoutPanel.Name" xml:space="preserve">
-    <value>pvpFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;pvpFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pvpFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;pvpFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
   <data name="pvpLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
@@ -2300,63 +2642,6 @@
   </data>
   <data name="&gt;&gt;pvpSubLabel.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="gamemodeFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="gamemodeFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;gamemodeLabel.Name" xml:space="preserve">
-    <value>gamemodeLabel</value>
-  </data>
-  <data name="&gt;&gt;gamemodeLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gamemodeLabel.Parent" xml:space="preserve">
-    <value>gamemodeFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;gamemodeLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gamemodeSubLabel.Name" xml:space="preserve">
-    <value>gamemodeSubLabel</value>
-  </data>
-  <data name="&gt;&gt;gamemodeSubLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gamemodeSubLabel.Parent" xml:space="preserve">
-    <value>gamemodeFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;gamemodeSubLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="gamemodeFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>TopDown</value>
-  </data>
-  <data name="gamemodeFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 230</value>
-  </data>
-  <data name="gamemodeFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="gamemodeFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 34</value>
-  </data>
-  <data name="gamemodeFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;gamemodeFlowLayoutPanel.Name" xml:space="preserve">
-    <value>gamemodeFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;gamemodeFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gamemodeFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;gamemodeFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>15</value>
   </data>
   <data name="gamemodeLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -2424,63 +2709,6 @@
   <data name="&gt;&gt;gamemodeSubLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="difficultyFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="difficultyFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;difficultyLabel.Name" xml:space="preserve">
-    <value>difficultyLabel</value>
-  </data>
-  <data name="&gt;&gt;difficultyLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;difficultyLabel.Parent" xml:space="preserve">
-    <value>difficultyFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;difficultyLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;difficultySubLabel.Name" xml:space="preserve">
-    <value>difficultySubLabel</value>
-  </data>
-  <data name="&gt;&gt;difficultySubLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;difficultySubLabel.Parent" xml:space="preserve">
-    <value>difficultyFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;difficultySubLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="difficultyFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>TopDown</value>
-  </data>
-  <data name="difficultyFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 275</value>
-  </data>
-  <data name="difficultyFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="difficultyFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 34</value>
-  </data>
-  <data name="difficultyFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;difficultyFlowLayoutPanel.Name" xml:space="preserve">
-    <value>difficultyFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;difficultyFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;difficultyFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;difficultyFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
   <data name="difficultyLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
@@ -2546,63 +2774,6 @@
   </data>
   <data name="&gt;&gt;difficultySubLabel.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="enableCommandBlockFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="enableCommandBlockFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockLabel.Name" xml:space="preserve">
-    <value>enableCommandBlockLabel</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockLabel.Parent" xml:space="preserve">
-    <value>enableCommandBlockFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockSubLabel.Name" xml:space="preserve">
-    <value>enableCommandBlockSubLabel</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockSubLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockSubLabel.Parent" xml:space="preserve">
-    <value>enableCommandBlockFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockSubLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="enableCommandBlockFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>TopDown</value>
-  </data>
-  <data name="enableCommandBlockFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 320</value>
-  </data>
-  <data name="enableCommandBlockFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="enableCommandBlockFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 34</value>
-  </data>
-  <data name="enableCommandBlockFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockFlowLayoutPanel.Name" xml:space="preserve">
-    <value>enableCommandBlockFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;enableCommandBlockFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>17</value>
   </data>
   <data name="enableCommandBlockLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -2670,63 +2841,6 @@
   <data name="&gt;&gt;enableCommandBlockSubLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="onlineModeFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="onlineModeFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;onlineModeLabel.Name" xml:space="preserve">
-    <value>onlineModeLabel</value>
-  </data>
-  <data name="&gt;&gt;onlineModeLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;onlineModeLabel.Parent" xml:space="preserve">
-    <value>onlineModeFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;onlineModeLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;onlineModeSubLabel.Name" xml:space="preserve">
-    <value>onlineModeSubLabel</value>
-  </data>
-  <data name="&gt;&gt;onlineModeSubLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;onlineModeSubLabel.Parent" xml:space="preserve">
-    <value>onlineModeFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;onlineModeSubLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="onlineModeFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>TopDown</value>
-  </data>
-  <data name="onlineModeFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 365</value>
-  </data>
-  <data name="onlineModeFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="onlineModeFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 34</value>
-  </data>
-  <data name="onlineModeFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;onlineModeFlowLayoutPanel.Name" xml:space="preserve">
-    <value>onlineModeFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;onlineModeFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;onlineModeFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;onlineModeFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
   <data name="onlineModeLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
@@ -2793,63 +2907,6 @@
   <data name="&gt;&gt;onlineModeSubLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="motdFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="motdFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;motdLabel.Name" xml:space="preserve">
-    <value>motdLabel</value>
-  </data>
-  <data name="&gt;&gt;motdLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;motdLabel.Parent" xml:space="preserve">
-    <value>motdFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;motdLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;motdSubLabel.Name" xml:space="preserve">
-    <value>motdSubLabel</value>
-  </data>
-  <data name="&gt;&gt;motdSubLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;motdSubLabel.Parent" xml:space="preserve">
-    <value>motdFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;motdSubLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="motdFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>TopDown</value>
-  </data>
-  <data name="motdFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 410</value>
-  </data>
-  <data name="motdFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="motdFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 34</value>
-  </data>
-  <data name="motdFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;motdFlowLayoutPanel.Name" xml:space="preserve">
-    <value>motdFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;motdFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;motdFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;motdFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
   <data name="motdLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
@@ -2915,36 +2972,6 @@
   </data>
   <data name="&gt;&gt;motdSubLabel.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="resetAdvancedOptionsButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="resetAdvancedOptionsButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="resetAdvancedOptionsButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 459</value>
-  </data>
-  <data name="resetAdvancedOptionsButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 35</value>
-  </data>
-  <data name="resetAdvancedOptionsButton.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="resetAdvancedOptionsButton.Text" xml:space="preserve">
-    <value>重置選項</value>
-  </data>
-  <data name="&gt;&gt;resetAdvancedOptionsButton.Name" xml:space="preserve">
-    <value>resetAdvancedOptionsButton</value>
-  </data>
-  <data name="&gt;&gt;resetAdvancedOptionsButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;resetAdvancedOptionsButton.Parent" xml:space="preserve">
-    <value>advancedOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;resetAdvancedOptionsButton.ZOrder" xml:space="preserve">
-    <value>20</value>
   </data>
   <data name="informationTableLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>

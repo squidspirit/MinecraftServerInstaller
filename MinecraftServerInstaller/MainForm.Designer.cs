@@ -421,6 +421,7 @@ namespace MinecraftServerInstaller
             // 
             resources.ApplyResources(this.motdTextBox, "motdTextBox");
             this.motdTextBox.Name = "motdTextBox";
+            this.motdTextBox.TextChanged += new System.EventHandler(this.motdTextBox_TextChanged);
             // 
             // onlineModeComboBox
             // 
@@ -431,6 +432,7 @@ namespace MinecraftServerInstaller
             resources.GetString("onlineModeComboBox.Items"),
             resources.GetString("onlineModeComboBox.Items1")});
             this.onlineModeComboBox.Name = "onlineModeComboBox";
+            this.onlineModeComboBox.SelectedIndexChanged += new System.EventHandler(this.onlineModeComboBox_SelectedIndexChanged);
             // 
             // enableCommandBlockComboBox
             // 
@@ -441,6 +443,7 @@ namespace MinecraftServerInstaller
             resources.GetString("enableCommandBlockComboBox.Items"),
             resources.GetString("enableCommandBlockComboBox.Items1")});
             this.enableCommandBlockComboBox.Name = "enableCommandBlockComboBox";
+            this.enableCommandBlockComboBox.SelectedIndexChanged += new System.EventHandler(this.enableCommandBlockComboBox_SelectedIndexChanged);
             // 
             // difficultyComboBox
             // 
@@ -453,6 +456,7 @@ namespace MinecraftServerInstaller
             resources.GetString("difficultyComboBox.Items2"),
             resources.GetString("difficultyComboBox.Items3")});
             this.difficultyComboBox.Name = "difficultyComboBox";
+            this.difficultyComboBox.SelectedIndexChanged += new System.EventHandler(this.difficultyComboBox_SelectedIndexChanged);
             // 
             // gamemodeComboBox
             // 
@@ -465,6 +469,7 @@ namespace MinecraftServerInstaller
             resources.GetString("gamemodeComboBox.Items2"),
             resources.GetString("gamemodeComboBox.Items3")});
             this.gamemodeComboBox.Name = "gamemodeComboBox";
+            this.gamemodeComboBox.SelectedIndexChanged += new System.EventHandler(this.gamemodeComboBox_SelectedIndexChanged);
             // 
             // pvpComboBox
             // 
@@ -475,6 +480,7 @@ namespace MinecraftServerInstaller
             resources.GetString("pvpComboBox.Items"),
             resources.GetString("pvpComboBox.Items1")});
             this.pvpComboBox.Name = "pvpComboBox";
+            this.pvpComboBox.SelectedIndexChanged += new System.EventHandler(this.pvpComboBox_SelectedIndexChanged);
             // 
             // viewDistanceTextBox
             // 

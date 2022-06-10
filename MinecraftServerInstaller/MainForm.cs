@@ -16,26 +16,21 @@ namespace MinecraftServerInstaller {
 
         private int maxRamValue;
         private int minRamValue;
-        private string serverPortValue;
-        private string maxPlayerValue;
-        private string spawnProtectionValue;
-        private string viewDistanceValue;
         private bool serverPortTextBoxLock = false;
         private bool maxPlayerTextBoxLock = false;
         private bool spawnProtectionTextBoxLock = false;
         private bool viewDistanceTextBoxLock = false;
         private Dictionary<string, string> versionsDictionary =
             new Dictionary<string, string>();
-        
-
+        private ServerProperties ServerProperties = new ServerProperties();
 
         public MainForm() {
 
             Directory.CreateDirectory(Program.Path.APPDATA);
 
             InitializeComponent();
-            resetBasicOptions();
-            resetAdvancedOptions();
+            ResetBasicOptions();
+            ResetAdvancedOptions();
 
             programNameTextBox.Text = Program.Information.NAME;
             versionTextBox.Text = Program.Information.VERSION;
@@ -57,15 +52,16 @@ namespace MinecraftServerInstaller {
 
             bool enableFlag = true;
 
-            if (gameVersionTextBox.Text == null || gameVersionTextBox.Text.Length == 0)
+            if (string.IsNullOrEmpty(gameVersionTextBox.Text))
                 enableFlag = false;
-            else if (modVersionComboBox.SelectedIndex > 0)
-                if (forgeVersionTextBox.Text == null || gameVersionTextBox.Text.Length == 0)
+            else if (modVersionComboBox.SelectedIndex > 0) {
+                if (string.IsNullOrEmpty(forgeVersionTextBox.Text))
                     enableFlag = false;
-                else if (installPathTextBox.Text == null || installPathTextBox.Text.Length == 0)
-                    enableFlag = false;
-                else if (!eulaCheckBox.Checked)
-                    enableFlag = false;
+            }
+            else if (string.IsNullOrEmpty(installPathTextBox.Text))
+                enableFlag = false;
+            else if (!eulaCheckBox.Checked)
+                enableFlag = false;
 
             installButton.Enabled = enableFlag;
         }
@@ -80,8 +76,8 @@ namespace MinecraftServerInstaller {
         //
         private void gameVersionButton_Click(object sender, EventArgs e) {
 
-            statusProgressBar.Value = 0;
             tabControl.Enabled = false;
+            statusProgressBar.Value = 0;
             using (WebClient client = new WebClient()) {
                 client.DownloadProgressChanged +=
                     new DownloadProgressChangedEventHandler(webClient_DownloadProgressChanged);
@@ -136,7 +132,7 @@ namespace MinecraftServerInstaller {
         //
         private void modVersionComboBox_SelectedIndexChanged(object sender, EventArgs e) {
 
-            forgeVersionTextBox.Clear();
+            forgeVersionTextBox.Text = null;
             if (modVersionComboBox.SelectedIndex == 1) {
                 forgeVersionTextBox.Enabled = true;
                 forgeVersionButton.Enabled = true;
@@ -152,8 +148,8 @@ namespace MinecraftServerInstaller {
         //
         private void forgeVersionButton_Click(object sender, EventArgs e) {
 
-            statusProgressBar.Value = 0;
             tabControl.Enabled = false;
+            statusProgressBar.Value = 0;
             using (WebClient client = new WebClient()) {
                 client.DownloadProgressChanged +=
                     new DownloadProgressChangedEventHandler(webClient_DownloadProgressChanged);
@@ -177,7 +173,40 @@ namespace MinecraftServerInstaller {
             }
 
             versionsDictionary.Clear();
-            checkInstallable();
+            using (StreamReader reader = new StreamReader(Program.Path.FORGE_VERSION)) {
+                while (true) {
+                    string line = reader.ReadLine();
+                    if (line == null) break;
+                    string[] lineSplited = line.Split(' ');
+                    if (lineSplited[0] == gameVersionTextBox.Text) {
+                        versionsDictionary.Add(lineSplited[1],
+                            Program.Url.forgeVersionToUrl(lineSplited[2]));
+                    }
+                }
+            }
+            if (versionsDictionary.Count == 0) {
+                MessageBox.Show(
+                    Program.DialogContent.FORGE_VERSION_INFO,
+                    Program.DialogTitle.INFO,
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+                tabControl.Enabled = true;
+            }
+            else {
+                VersionSelectForm versionSelect = new VersionSelectForm(
+                    Program.DialogContent.FORGE_VERSION_DESCRIPT,
+                    versionsDictionary.Keys.ToArray<string>(),
+                    forgeVersionTextBox.Text
+                );
+                versionSelect.Disposed += new EventHandler((_sender, _e) => {
+                    if (versionSelect.Result != null && versionSelect.Result.Length > 0)
+                        forgeVersionTextBox.Text = versionSelect.Result;
+                    tabControl.Enabled = true;
+                    checkInstallable();
+                });
+                versionSelect.Show();
+            }
         }
         //
         // 安裝路徑瀏覽
@@ -380,7 +409,7 @@ namespace MinecraftServerInstaller {
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
-                serverPortTextBox.Text = serverPortValue;
+                serverPortTextBox.Text = ServerProperties.ServerPort.Value;
             }
             else {
                 if (serverPortTextBox.Text != "25565")
@@ -390,7 +419,7 @@ namespace MinecraftServerInstaller {
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Warning
                     );
-                serverPortValue = serverPortTextBox.Text;
+                ServerProperties.ServerPort.Value = serverPortTextBox.Text;
             }
             serverPortTextBoxLock = false;
         }
@@ -427,9 +456,9 @@ namespace MinecraftServerInstaller {
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
-                maxPlayerTextBox.Text = maxPlayerValue;
+                maxPlayerTextBox.Text = ServerProperties.MaxPlayer.Value;
             }
-            else maxPlayerValue = maxPlayerTextBox.Text;
+            else ServerProperties.MaxPlayer.Value = maxPlayerTextBox.Text;
             maxPlayerTextBoxLock = false;
         }
 
@@ -465,9 +494,9 @@ namespace MinecraftServerInstaller {
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
-                spawnProtectionTextBox.Text = spawnProtectionValue;
+                spawnProtectionTextBox.Text = ServerProperties.SpawnProtection.Value;
             }
-            else spawnProtectionValue = spawnProtectionTextBox.Text;
+            else ServerProperties.SpawnProtection.Value = spawnProtectionTextBox.Text;
         }
 
         private void spawnProtectionTextBox_LostFocus(object sender, EventArgs e) {
@@ -502,9 +531,9 @@ namespace MinecraftServerInstaller {
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
-                viewDistanceTextBox.Text = viewDistanceValue;
+                viewDistanceTextBox.Text = ServerProperties.ViewDistance.Value;
             }
-            else viewDistanceValue = viewDistanceTextBox.Text;
+            else ServerProperties.ViewDistance.Value = viewDistanceTextBox.Text;
             viewDistanceTextBoxLock = false;
         }
 
@@ -519,13 +548,55 @@ namespace MinecraftServerInstaller {
                 viewDistanceTextBoxUpdate();
         }
         //
+        // PVP 選單更改
+        //
+        private void pvpComboBox_SelectedIndexChanged(object sender, EventArgs e) {
+
+            ServerProperties.PVP.Value = pvpComboBox.Text;
+        }
+        //
+        // 遊戲模式選單更改
+        //
+        private void gamemodeComboBox_SelectedIndexChanged(object sender, EventArgs e) {
+
+            ServerProperties.Gamemode.Value = gamemodeComboBox.SelectedIndex.ToString();
+        }
+        //
+        // 遊戲難度選單更改
+        //
+        private void difficultyComboBox_SelectedIndexChanged(object sender, EventArgs e) {
+
+            ServerProperties.Difficulty.Value = difficultyComboBox.SelectedIndex.ToString();
+        }
+        //
+        // 指令方塊選單更改
+        //
+        private void enableCommandBlockComboBox_SelectedIndexChanged(object sender, EventArgs e) {
+
+            ServerProperties.EnableCommandBlock.Value = enableCommandBlockComboBox.Text;
+        }
+        //
+        // 正版驗證選單更改
+        //
+        private void onlineModeComboBox_SelectedIndexChanged(object sender, EventArgs e) {
+
+            ServerProperties.OnlineMode.Value = onlineModeComboBox.Text;
+        }
+        //
+        // 說明文字
+        //
+        private void motdTextBox_TextChanged(object sender, EventArgs e) {
+
+            ServerProperties.Motd.Value = motdTextBox.Text;
+        }
+        //
         // 重置基本設定
         //
-        private void resetBasicOptions() {
+        private void ResetBasicOptions() {
 
-            gameVersionTextBox.Clear();
-            forgeVersionTextBox.Clear();
-            installPathTextBox.Clear();
+            gameVersionTextBox.Text = null;
+            forgeVersionTextBox.Text = null;
+            installPathTextBox.Text = null;
             guiCheckBox.Checked = false;
             eulaCheckBox.Checked = false;
             ramSettingCheckBox.Checked = false;
@@ -550,41 +621,56 @@ namespace MinecraftServerInstaller {
 
         private void resetBasicOptionsButton_Click(object sender, EventArgs e) {
 
-            resetBasicOptions();
+            ResetBasicOptions();
         }
         //
         // 重置進階選項
         //
-        private void resetAdvancedOptions() {
+        private void ResetAdvancedOptions() {
 
-            serverPortTextBox.Text = "25565";
-            maxPlayerTextBox.Text = "20";
-            spawnProtectionTextBox.Text = "16";
-            viewDistanceTextBox.Text = "10";
-            pvpComboBox.SelectedIndex = 1; // true
-            gamemodeComboBox.SelectedIndex = 0; // survival
-            difficultyComboBox.SelectedIndex = 1; // easy
-            enableCommandBlockComboBox.SelectedIndex = 0; // false
-            onlineModeComboBox.SelectedIndex = 1; // true
-            motdTextBox.Text = "A Minecraft Server";
+            ServerProperties.ResetValues();
 
-            serverPortValue = serverPortTextBox.Text;
-            maxPlayerValue = maxPlayerTextBox.Text;
-            spawnProtectionValue = spawnProtectionTextBox.Text;
-            viewDistanceValue = viewDistanceTextBox.Text;
+            serverPortTextBox.Text = ServerProperties.ServerPort.Value;
+            maxPlayerTextBox.Text = ServerProperties.MaxPlayer.Value;
+            spawnProtectionTextBox.Text = ServerProperties.SpawnProtection.Value;
+            viewDistanceTextBox.Text = ServerProperties.ViewDistance.Value;
+            pvpComboBox.SelectedIndex = Convert.ToBoolean(ServerProperties.PVP.Value) ? 1 : 0;
+            gamemodeComboBox.SelectedIndex = Convert.ToInt32(ServerProperties.Gamemode.Value);
+            difficultyComboBox.SelectedIndex = Convert.ToInt32(ServerProperties.Difficulty.Value);
+            enableCommandBlockComboBox.SelectedIndex = Convert.ToBoolean(ServerProperties.EnableCommandBlock.Value) ? 1 : 0;
+            onlineModeComboBox.SelectedIndex = Convert.ToBoolean(ServerProperties.OnlineMode.Value) ? 1 : 0;
+            motdTextBox.Text = ServerProperties.Motd.Value;
         }
 
         private void resetAdvancedOptionsButton_Click(object sender, EventArgs e) {
 
-            resetAdvancedOptions();
+            ResetAdvancedOptions();
         }
-
+        //
+        // 檢查更新
+        //
         private void checkNewButton_Click(object sender, EventArgs e) {
 
         }
-
+        //
+        // 開始安裝
+        //
         private void installButton_Click(object sender, EventArgs e) {
 
+            ServerProperties.CreateFile(installPathTextBox.Text);
+
+            switch (modVersionComboBox.SelectedIndex) {
+                case 0: // Vanilla
+                    Console.WriteLine(versionsDictionary[gameVersionTextBox.Text]);
+                    break;
+                case 1: // Forge
+                    Console.WriteLine(versionsDictionary[forgeVersionTextBox.Text]);
+                    break;
+                case 2: // Fabric
+
+                    break;
+                default: break;
+            }
         }
     }
 }

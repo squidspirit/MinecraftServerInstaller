@@ -96,6 +96,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ServerProperties.cs" />
+    <Compile Include="InstallFabric.cs" />
+    <Compile Include="InstallVanilla.cs" />
+    <Compile Include="InstalllForge.cs" />
     <Compile Include="VersionSelectForm.cs">
       <SubType>Form</SubType>
     </Compile>

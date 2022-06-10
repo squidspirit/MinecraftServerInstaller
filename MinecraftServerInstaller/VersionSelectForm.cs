@@ -19,14 +19,14 @@ namespace MinecraftServerInstaller {
             descriptionLabel.Text = description;
             versionsComboBox.Items.AddRange(versions);
             versionsComboBox.MaxDropDownItems = 8;
-            if (selected == null || selected.Length == 0)
+            if (string.IsNullOrEmpty(selected))
                 versionsComboBox.SelectedIndex = 0;
             else versionsComboBox.SelectedItem = selected;
         }
 
         private void okButton_Click(object sender, EventArgs e) {
 
-            result = (string)versionsComboBox.SelectedItem;
+            result = versionsComboBox.Text;
             this.Dispose();
         }
 

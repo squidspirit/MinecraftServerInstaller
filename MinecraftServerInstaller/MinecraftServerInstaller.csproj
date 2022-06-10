@@ -59,7 +59,7 @@
     <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>MinecraftServerInstaller.Program</StartupObject>
+    <StartupObject>MinecraftServerInstaller.Programs.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
@@ -96,10 +96,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Programs\ServerProperties.cs" />
-    <Compile Include="Programs\InstallFabric.cs" />
-    <Compile Include="Programs\InstallVanilla.cs" />
-    <Compile Include="Programs\InstalllForge.cs" />
+    <Compile Include="Events\InstallCompleteEventArgs.cs" />
+    <Compile Include="Events\InstallCompleteEventHandler.cs" />
+    <Compile Include="Events\InstallProgressChangedEventArgs.cs" />
+    <Compile Include="Events\InstallProgressChangedEventHandler.cs" />
+    <Compile Include="Programs\Files\Eula.cs" />
+    <Compile Include="Programs\Files\ServerProperties.cs" />
+    <Compile Include="Programs\Installers\InstallFabric.cs" />
+    <Compile Include="Programs\Installers\InstallVanilla.cs" />
+    <Compile Include="Programs\Installers\InstallVanilla.Dispose.cs">
+      <DependentUpon>InstallVanilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Installers\InstalllForge.cs" />
     <Compile Include="Forms\VersionSelectForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +121,7 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Programs\Program.cs" />
+    <Compile Include="Programs\Files\StartServerBat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\VersionSelectForm.resx">
       <DependentUpon>VersionSelectForm.cs</DependentUpon>

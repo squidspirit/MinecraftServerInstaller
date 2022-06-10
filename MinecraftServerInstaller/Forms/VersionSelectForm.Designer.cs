@@ -1,5 +1,5 @@
 ﻿
-namespace MinecraftServerInstaller {
+namespace MinecraftServerInstaller.Forms {
     partial class VersionSelectForm {
         /// <summary>
         /// Required designer variable.
@@ -59,7 +59,7 @@ namespace MinecraftServerInstaller {
             this.okButton.TabIndex = 1;
             this.okButton.Text = "確定";
             this.okButton.UseVisualStyleBackColor = true;
-            this.okButton.Click += new System.EventHandler(this.okButton_Click);
+            this.okButton.Click += new System.EventHandler(this.OkButton_Click);
             // 
             // cancelButton
             // 
@@ -72,7 +72,7 @@ namespace MinecraftServerInstaller {
             this.cancelButton.TabIndex = 2;
             this.cancelButton.Text = "取消";
             this.cancelButton.UseVisualStyleBackColor = true;
-            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            this.cancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // descriptionLabel
             // 

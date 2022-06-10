@@ -11,26 +11,28 @@ using System.Windows.Forms;
 using System.IO;
 using System.Net;
 
-namespace MinecraftServerInstaller {
+using MinecraftServerInstaller.Programs;
+using MinecraftServerInstaller.Programs.Files;
+using MinecraftServerInstaller.Programs.Installers;
+using MinecraftServerInstaller.Events;
+
+namespace MinecraftServerInstaller.Forms {
     public partial class MainForm : Form {
 
-        private int maxRamValue;
-        private int minRamValue;
         private bool serverPortTextBoxLock = false;
         private bool maxPlayerTextBoxLock = false;
         private bool spawnProtectionTextBoxLock = false;
         private bool viewDistanceTextBoxLock = false;
-        private Dictionary<string, string> versionsDictionary =
+        readonly private Dictionary<string, string> versionsDictionary =
             new Dictionary<string, string>();
-        private ServerProperties ServerProperties = new ServerProperties();
 
         public MainForm() {
 
             Directory.CreateDirectory(Program.Path.APPDATA);
 
             InitializeComponent();
-            ResetBasicOptions();
-            ResetAdvancedOptions();
+            ResetBasicOptions(toConfirm : false);
+            ResetAdvancedOptions(toConfirm : false);
 
             programNameTextBox.Text = Program.Information.NAME;
             versionTextBox.Text = Program.Information.VERSION;
@@ -43,12 +45,12 @@ namespace MinecraftServerInstaller {
         //
         // 功能函數
         //
-        private bool valueInTrackBar(int value, TrackBar trackBar) {
+        private bool IsValueInTrackBar(int value, TrackBar trackBar) {
 
             return (value >= trackBar.Minimum && value <= trackBar.Maximum);
         }
 
-        private void checkInstallable() {
+        private void CheckInstallable() {
 
             bool enableFlag = true;
 
@@ -68,26 +70,30 @@ namespace MinecraftServerInstaller {
         //
         // 進度條更新
         //
-        private void webClient_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e) {
+        private void WebClient_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e) {
+            
+            statusProgressBar.Value = e.ProgressPercentage;
+        }
+
+        private void Install_InstallProgressChanged(object serder, InstallProgressChangedEventArgs e) {
+
             statusProgressBar.Value = e.ProgressPercentage;
         }
         //
         // 遊戲版本選擇
         //
-        private void gameVersionButton_Click(object sender, EventArgs e) {
+        private void GameVersionButton_Click(object sender, EventArgs e) {
 
             tabControl.Enabled = false;
             statusProgressBar.Value = 0;
             using (WebClient client = new WebClient()) {
-                client.DownloadProgressChanged +=
-                    new DownloadProgressChangedEventHandler(webClient_DownloadProgressChanged);
-                client.DownloadFileCompleted +=
-                    new AsyncCompletedEventHandler(gameVersion_DownloadFileCompleted);
+                client.DownloadProgressChanged += WebClient_DownloadProgressChanged;
+                client.DownloadFileCompleted += GameVersion_DownloadFileCompleted;
                 client.DownloadFileAsync(new Uri(Program.Url.GAME_VERSION), Program.Path.GAME_VERSION);
             }
         }
 
-        private void gameVersion_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e) {
+        private void GameVersion_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e) {
 
             if (e.Error != null) {
                 MessageBox.Show(
@@ -123,14 +129,14 @@ namespace MinecraftServerInstaller {
                     modVersionComboBox.Enabled = true;
                 }
                 tabControl.Enabled = true;
-                checkInstallable();
+                CheckInstallable();
             });
             versionSelect.Show();
         }
         //
         // 模組種類更換
         //
-        private void modVersionComboBox_SelectedIndexChanged(object sender, EventArgs e) {
+        private void ModVersionComboBox_SelectedIndexChanged(object sender, EventArgs e) {
 
             forgeVersionTextBox.Text = null;
             if (modVersionComboBox.SelectedIndex == 1) {
@@ -141,25 +147,23 @@ namespace MinecraftServerInstaller {
                 forgeVersionTextBox.Enabled = false;
                 forgeVersionButton.Enabled = false;
             }
-            checkInstallable();
+            CheckInstallable();
         }
         //
         // 模組版本選擇
         //
-        private void forgeVersionButton_Click(object sender, EventArgs e) {
+        private void ForgeVersionButton_Click(object sender, EventArgs e) {
 
             tabControl.Enabled = false;
             statusProgressBar.Value = 0;
             using (WebClient client = new WebClient()) {
-                client.DownloadProgressChanged +=
-                    new DownloadProgressChangedEventHandler(webClient_DownloadProgressChanged);
-                client.DownloadFileCompleted +=
-                    new AsyncCompletedEventHandler(forgeVersion_DownloadFileCompleted);
+                client.DownloadProgressChanged += WebClient_DownloadProgressChanged;
+                client.DownloadFileCompleted += ForgeVersion_DownloadFileCompleted;
                 client.DownloadFileAsync(new Uri(Program.Url.FORGE_VERSION), Program.Path.FORGE_VERSION);
             }
         }
 
-        private void forgeVersion_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e) {
+        private void ForgeVersion_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e) {
 
             if (e.Error != null) {
                 MessageBox.Show(
@@ -180,7 +184,7 @@ namespace MinecraftServerInstaller {
                     string[] lineSplited = line.Split(' ');
                     if (lineSplited[0] == gameVersionTextBox.Text) {
                         versionsDictionary.Add(lineSplited[1],
-                            Program.Url.forgeVersionToUrl(lineSplited[2]));
+                            Program.Url.ForgeVersionToUrl(lineSplited[2]));
                     }
                 }
             }
@@ -203,7 +207,7 @@ namespace MinecraftServerInstaller {
                     if (versionSelect.Result != null && versionSelect.Result.Length > 0)
                         forgeVersionTextBox.Text = versionSelect.Result;
                     tabControl.Enabled = true;
-                    checkInstallable();
+                    CheckInstallable();
                 });
                 versionSelect.Show();
             }
@@ -211,41 +215,52 @@ namespace MinecraftServerInstaller {
         //
         // 安裝路徑瀏覽
         //
-        private void installPathButton_Click(object sender, EventArgs e) {
+        private void InstallPathButton_Click(object sender, EventArgs e) {
 
-            FolderBrowserDialog folderBrowser = new FolderBrowserDialog();
-            folderBrowser.Description = Program.DialogContent.INSTALL_PATH_DESCRIPT;
-            folderBrowser.SelectedPath = installPathTextBox.Text;
+            FolderBrowserDialog folderBrowser = new FolderBrowserDialog {
+                Description = Program.DialogContent.INSTALL_PATH_DESCRIPT,
+                SelectedPath = installPathTextBox.Text
+            };
+
             while (folderBrowser.ShowDialog() == DialogResult.OK) {
-                if (MessageBox.Show(
-                    Program.DialogContent.INSTALL_PATH_WARNING,
-                    Program.DialogTitle.WARNING,
-                    MessageBoxButtons.OKCancel,
-                    MessageBoxIcon.Warning) == DialogResult.OK) {
+                bool isSelected = false;
+                if (Directory.EnumerateFileSystemEntries(folderBrowser.SelectedPath).Any()) {
+                    if (MessageBox.Show(
+                        Program.DialogContent.INSTALL_PATH_WARNING,
+                        Program.DialogTitle.WARNING,
+                        MessageBoxButtons.OKCancel,
+                        MessageBoxIcon.Warning) == DialogResult.OK) {
+
+                        isSelected = true;
+                    }
+                }
+                else isSelected = true;
+
+                if (isSelected) {
                     installPathTextBox.Text = folderBrowser.SelectedPath;
                     break;
                 }
             }
-            checkInstallable();
+            CheckInstallable();
         }
         //
         // EULA 連結點擊
         //
-        private void eulaLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
+        private void EulaLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
 
             System.Diagnostics.Process.Start(Program.Url.EULA);
         }
         //
         // EULA 勾選框
         //
-        private void eulaCheckBox_CheckedChanged(object sender, EventArgs e) {
+        private void EulaCheckBox_CheckedChanged(object sender, EventArgs e) {
 
-            checkInstallable();
+            CheckInstallable();
         }
         //
         // 更改記憶體勾選框
         //
-        private void ramSettingCheckBox_CheckedChanged(object sender, EventArgs e) {
+        private void RamSettingCheckBox_CheckedChanged(object sender, EventArgs e) {
 
             if (ramSettingCheckBox.Checked == true) {
                 MessageBox.Show(
@@ -265,132 +280,132 @@ namespace MinecraftServerInstaller {
         //
         // 最大記憶體數值條滑動
         //
-        private void maxRamTrackBar_Scroll(object sender, EventArgs e) {
+        private void MaxRamTrackBar_Scroll(object sender, EventArgs e) {
 
             maxRamTextBox.Text = maxRamTrackBar.Value.ToString();
         }
 
-        private void maxRamTrackBarUpdate() {
+        private void MaxRamTrackBarUpdate() {
 
             int newValue = maxRamTrackBar.Value;
-            if (newValue < minRamValue) {
-                maxRamTextBox.Text = minRamValue.ToString();
-                maxRamTrackBar.Value = minRamValue;
-                maxRamValue = minRamValue;
+            if (newValue < StartServerBat.MaxRam) {
+                maxRamTextBox.Text = StartServerBat.MinRam.ToString();
+                maxRamTrackBar.Value = StartServerBat.MinRam;
+                StartServerBat.MaxRam = StartServerBat.MinRam;
             }
             else {
                 maxRamTextBox.Text = newValue.ToString();
-                maxRamValue = newValue;
+                StartServerBat.MaxRam = newValue;
             }
         }
 
-        private void maxRamTrackBar_MouseUp(object sender, MouseEventArgs e) {
+        private void MaxRamTrackBar_MouseUp(object sender, MouseEventArgs e) {
 
-            maxRamTrackBarUpdate();
+            MaxRamTrackBarUpdate();
         }
 
-        private void maxRamTrackBar_KeyUp(object sender, KeyEventArgs e) {
+        private void MaxRamTrackBar_KeyUp(object sender, KeyEventArgs e) {
 
-            maxRamTrackBarUpdate();
+            MaxRamTrackBarUpdate();
         }
         //
         // 最小記憶體數值條滑動
         //
-        private void minRamTrackBar_Scroll(object sender, EventArgs e) {
+        private void MinRamTrackBar_Scroll(object sender, EventArgs e) {
 
             minRamTextBox.Text = minRamTrackBar.Value.ToString();
         }
 
-        private void minRamTrackBarUpdate() {
+        private void MinRamTrackBarUpdate() {
 
             int newValue = minRamTrackBar.Value;
-            if (newValue > maxRamValue) {
-                minRamTextBox.Text = maxRamValue.ToString();
-                minRamTrackBar.Value = maxRamValue;
-                minRamValue = maxRamValue;
+            if (newValue > StartServerBat.MaxRam) {
+                minRamTextBox.Text = StartServerBat.MaxRam.ToString();
+                minRamTrackBar.Value = StartServerBat.MaxRam;
+                StartServerBat.MinRam = StartServerBat.MaxRam;
             }
             else {
                 minRamTextBox.Text = newValue.ToString();
-                minRamValue = newValue;
+                StartServerBat.MinRam = newValue;
             }
         }
 
-        private void minRamTrackBar_MouseUp(object sender, MouseEventArgs e) {
+        private void MinRamTrackBar_MouseUp(object sender, MouseEventArgs e) {
 
-            minRamTrackBarUpdate();
+            MinRamTrackBarUpdate();
         }
 
-        private void minRamTrackBar_KeyUp(object sender, KeyEventArgs e) {
+        private void MinRamTrackBar_KeyUp(object sender, KeyEventArgs e) {
 
-            minRamTrackBarUpdate();
+            MinRamTrackBarUpdate();
         }
         //
         // 最大記憶體文字框輸入
         //
-        public void maxRamTextBoxUpdate() {
+        public void MaxRamTextBoxUpdate() {
 
             int newValue;
             try {
                 newValue = Convert.ToInt32(maxRamTextBox.Text);
             } catch (Exception) {
-                maxRamTextBox.Text = maxRamValue.ToString();
+                maxRamTextBox.Text = StartServerBat.MaxRam.ToString();
                 return;
             }
 
-            if (newValue < minRamValue && valueInTrackBar(newValue, maxRamTrackBar))
-                maxRamTextBox.Text = maxRamValue.ToString();
+            if (newValue < StartServerBat.MinRam && IsValueInTrackBar(newValue, maxRamTrackBar))
+                maxRamTextBox.Text = StartServerBat.MaxRam.ToString();
             else {
                 maxRamTrackBar.Value = newValue;
-                maxRamValue = newValue;
+                StartServerBat.MaxRam = newValue;
             }
         }
 
-        private void maxRamTextBox_LostFocus(object sender, EventArgs e) {
+        private void MaxRamTextBox_LostFocus(object sender, EventArgs e) {
 
-            maxRamTextBoxUpdate();
+            MaxRamTextBoxUpdate();
         }
 
-        private void maxRamTextBox_KeyPress(object sender, KeyPressEventArgs e) {
+        private void MaxRamTextBox_KeyPress(object sender, KeyPressEventArgs e) {
 
             if (e.KeyChar == (char)Keys.Enter)
-                maxRamTextBoxUpdate();
+                MaxRamTextBoxUpdate();
         }
         //
         // 最小記憶體文字框輸入
         //
-        private void minRamTextBoxUpdate() {
+        private void MinRamTextBoxUpdate() {
 
             int newValue;
             try {
                 newValue = Convert.ToInt32(minRamTextBox.Text);
             }
             catch (Exception) {
-                minRamTextBox.Text = minRamValue.ToString();
+                minRamTextBox.Text = StartServerBat.MinRam.ToString();
                 return;
             }
 
-            if (newValue > maxRamValue && valueInTrackBar(newValue, minRamTrackBar))
-                minRamTextBox.Text = minRamValue.ToString();
+            if (newValue > StartServerBat.MaxRam && IsValueInTrackBar(newValue, minRamTrackBar))
+                minRamTextBox.Text = StartServerBat.MinRam.ToString();
             else {
                 minRamTrackBar.Value = newValue;
-                minRamValue = newValue;
+                StartServerBat.MinRam = newValue;
             }
         }
 
-        private void minRamTextBox_LostFocus(object sender, EventArgs e) {
+        private void MinRamTextBox_LostFocus(object sender, EventArgs e) {
 
-            minRamTextBoxUpdate();
+            MinRamTextBoxUpdate();
         }
 
-        private void minRamTextBox_KeyPress(object sender, KeyPressEventArgs e) {
+        private void MinRamTextBox_KeyPress(object sender, KeyPressEventArgs e) {
 
             if (e.KeyChar == (char)Keys.Enter)
-                minRamTextBoxUpdate();
+                MinRamTextBoxUpdate();
         }
         //
         // 伺服器連接埠文字框輸入
         //
-        private void serverPortTextBoxUpdate() {
+        private void ServerPortTextBoxUpdate() {
 
             if (serverPortTextBoxLock) return;
             serverPortTextBoxLock = true;
@@ -409,7 +424,7 @@ namespace MinecraftServerInstaller {
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
-                serverPortTextBox.Text = ServerProperties.ServerPort.Value;
+                serverPortTextBox.Text = ServerProperties.ServerPort;
             }
             else {
                 if (serverPortTextBox.Text != "25565")
@@ -419,25 +434,25 @@ namespace MinecraftServerInstaller {
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Warning
                     );
-                ServerProperties.ServerPort.Value = serverPortTextBox.Text;
+                ServerProperties.ServerPort = serverPortTextBox.Text;
             }
             serverPortTextBoxLock = false;
         }
 
-        private void serverPortTextBox_LostFocus(object sender, EventArgs e) {
+        private void ServerPortTextBox_LostFocus(object sender, EventArgs e) {
 
-            serverPortTextBoxUpdate();
+            ServerPortTextBoxUpdate();
         }
 
-        private void serverPortTextBox_KeyPress(object sender, KeyPressEventArgs e) {
+        private void ServerPortTextBox_KeyPress(object sender, KeyPressEventArgs e) {
 
             if (e.KeyChar == (char)Keys.Enter)
-                serverPortTextBoxUpdate();
+                ServerPortTextBoxUpdate();
         }
         //
         // 玩家數上限文字框輸入
         //
-        private void maxPlayerTextBoxUpdate() {
+        private void MaxPlayerTextBoxUpdate() {
 
             if (maxPlayerTextBoxLock) return;
             maxPlayerTextBoxLock = true;
@@ -456,26 +471,26 @@ namespace MinecraftServerInstaller {
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
-                maxPlayerTextBox.Text = ServerProperties.MaxPlayer.Value;
+                maxPlayerTextBox.Text = ServerProperties.MaxPlayer;
             }
-            else ServerProperties.MaxPlayer.Value = maxPlayerTextBox.Text;
+            else ServerProperties.MaxPlayer = maxPlayerTextBox.Text;
             maxPlayerTextBoxLock = false;
         }
 
-        private void maxPlayerTextBox_LostFocus(object sender, EventArgs e) {
+        private void MaxPlayerTextBox_LostFocus(object sender, EventArgs e) {
 
-            maxPlayerTextBoxUpdate();
+            MaxPlayerTextBoxUpdate();
         }
 
-        private void maxPlayerTextBox_KeyPress(object sender, KeyPressEventArgs e) {
+        private void MaxPlayerTextBox_KeyPress(object sender, KeyPressEventArgs e) {
 
             if (e.KeyChar == (char)Keys.Enter)
-                maxPlayerTextBoxUpdate();
+                MaxPlayerTextBoxUpdate();
         }
         //
         // 重生點保護文字框輸入
         //
-        private void spawnProtectionTextBoxUpdate() {
+        private void SpawnProtectionTextBoxUpdate() {
 
             if (spawnProtectionTextBoxLock) return;
             spawnProtectionTextBoxLock = true;
@@ -494,25 +509,25 @@ namespace MinecraftServerInstaller {
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
-                spawnProtectionTextBox.Text = ServerProperties.SpawnProtection.Value;
+                spawnProtectionTextBox.Text = ServerProperties.SpawnProtection;
             }
-            else ServerProperties.SpawnProtection.Value = spawnProtectionTextBox.Text;
+            else ServerProperties.SpawnProtection = spawnProtectionTextBox.Text;
         }
 
-        private void spawnProtectionTextBox_LostFocus(object sender, EventArgs e) {
+        private void SpawnProtectionTextBox_LostFocus(object sender, EventArgs e) {
 
-            spawnProtectionTextBoxUpdate();
+            SpawnProtectionTextBoxUpdate();
         }
 
-        private void spawnProtectionTextBox_KeyPress(object sender, KeyPressEventArgs e) {
+        private void SpawnProtectionTextBox_KeyPress(object sender, KeyPressEventArgs e) {
 
             if (e.KeyChar == (char)Keys.Enter)
-                spawnProtectionTextBoxUpdate();
+                SpawnProtectionTextBoxUpdate();
         }
         //
         // 最大視野距離文字框輸入
         //
-        private void viewDistanceTextBoxUpdate() {
+        private void ViewDistanceTextBoxUpdate() {
 
             if (viewDistanceTextBoxLock) return;
             viewDistanceTextBoxLock = true;
@@ -531,68 +546,84 @@ namespace MinecraftServerInstaller {
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
-                viewDistanceTextBox.Text = ServerProperties.ViewDistance.Value;
+                viewDistanceTextBox.Text = ServerProperties.ViewDistance;
             }
-            else ServerProperties.ViewDistance.Value = viewDistanceTextBox.Text;
+            else ServerProperties.ViewDistance = viewDistanceTextBox.Text;
             viewDistanceTextBoxLock = false;
         }
 
-        private void viewDistanceTextBox_LostFocus(object sender, EventArgs e) {
+        private void ViewDistanceTextBox_LostFocus(object sender, EventArgs e) {
 
-            viewDistanceTextBoxUpdate();
+            ViewDistanceTextBoxUpdate();
         }
 
-        private void viewDistanceTextBox_KeyPress(object sender, KeyPressEventArgs e) {
+        private void ViewDistanceTextBox_KeyPress(object sender, KeyPressEventArgs e) {
 
             if (e.KeyChar == (char)Keys.Enter)
-                viewDistanceTextBoxUpdate();
+                ViewDistanceTextBoxUpdate();
         }
         //
         // PVP 選單更改
         //
-        private void pvpComboBox_SelectedIndexChanged(object sender, EventArgs e) {
+        private void PVPComboBox_SelectedIndexChanged(object sender, EventArgs e) {
 
-            ServerProperties.PVP.Value = pvpComboBox.Text;
+            ServerProperties.PVP = pvpComboBox.Text;
         }
         //
         // 遊戲模式選單更改
         //
-        private void gamemodeComboBox_SelectedIndexChanged(object sender, EventArgs e) {
+        private void GamemodeComboBox_SelectedIndexChanged(object sender, EventArgs e) {
 
-            ServerProperties.Gamemode.Value = gamemodeComboBox.SelectedIndex.ToString();
+            ServerProperties.Gamemode = gamemodeComboBox.SelectedIndex.ToString();
         }
         //
         // 遊戲難度選單更改
         //
-        private void difficultyComboBox_SelectedIndexChanged(object sender, EventArgs e) {
+        private void DifficultyComboBox_SelectedIndexChanged(object sender, EventArgs e) {
 
-            ServerProperties.Difficulty.Value = difficultyComboBox.SelectedIndex.ToString();
+            ServerProperties.Difficulty = difficultyComboBox.SelectedIndex.ToString();
         }
         //
         // 指令方塊選單更改
         //
-        private void enableCommandBlockComboBox_SelectedIndexChanged(object sender, EventArgs e) {
+        private void EnableCommandBlockComboBox_SelectedIndexChanged(object sender, EventArgs e) {
 
-            ServerProperties.EnableCommandBlock.Value = enableCommandBlockComboBox.Text;
+            ServerProperties.EnableCommandBlock = enableCommandBlockComboBox.Text;
         }
         //
         // 正版驗證選單更改
         //
-        private void onlineModeComboBox_SelectedIndexChanged(object sender, EventArgs e) {
+        private void OnlineModeComboBox_SelectedIndexChanged(object sender, EventArgs e) {
 
-            ServerProperties.OnlineMode.Value = onlineModeComboBox.Text;
+            ServerProperties.OnlineMode = onlineModeComboBox.Text;
         }
         //
         // 說明文字
         //
-        private void motdTextBox_TextChanged(object sender, EventArgs e) {
+        private void MotdTextBox_TextChanged(object sender, EventArgs e) {
 
-            ServerProperties.Motd.Value = motdTextBox.Text;
+            ServerProperties.Motd = motdTextBox.Text;
         }
         //
         // 重置基本設定
         //
         private void ResetBasicOptions() {
+
+            ResetBasicOptions(true);
+        }
+
+        private void ResetBasicOptions(bool toConfirm) {
+
+            if (toConfirm && MessageBox.Show(
+                Program.DialogContent.RESET_INFO,
+                Program.DialogTitle.INFO,
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question) == DialogResult.No) {
+
+                return;
+            }
+
+            StartServerBat.ResetSettings();
 
             gameVersionTextBox.Text = null;
             forgeVersionTextBox.Text = null;
@@ -601,12 +632,12 @@ namespace MinecraftServerInstaller {
             eulaCheckBox.Checked = false;
             ramSettingCheckBox.Checked = false;
             modVersionComboBox.SelectedIndex = 0;
-            maxRamTrackBar.Value = 2048;
-            minRamTrackBar.Value = 2048;
-            maxRamValue = maxRamTrackBar.Value;
-            minRamValue = minRamTrackBar.Value;
-            maxRamTextBox.Text = maxRamValue.ToString();
-            minRamTextBox.Text = minRamValue.ToString();
+            maxRamTrackBar.Value = StartServerBat.MaxRam;
+            minRamTrackBar.Value = StartServerBat.MinRam;
+            StartServerBat.MaxRam = maxRamTrackBar.Value;
+            StartServerBat.MinRam = minRamTrackBar.Value;
+            maxRamTextBox.Text = StartServerBat.MaxRam.ToString();
+            minRamTextBox.Text = StartServerBat.MinRam.ToString();
 
             modVersionComboBox.Enabled = false;
             forgeVersionTextBox.Enabled = false;
@@ -619,7 +650,7 @@ namespace MinecraftServerInstaller {
             installButton.Enabled = false;
         }
 
-        private void resetBasicOptionsButton_Click(object sender, EventArgs e) {
+        private void ResetBasicOptionsButton_Click(object sender, EventArgs e) {
 
             ResetBasicOptions();
         }
@@ -628,40 +659,63 @@ namespace MinecraftServerInstaller {
         //
         private void ResetAdvancedOptions() {
 
-            ServerProperties.ResetValues();
-
-            serverPortTextBox.Text = ServerProperties.ServerPort.Value;
-            maxPlayerTextBox.Text = ServerProperties.MaxPlayer.Value;
-            spawnProtectionTextBox.Text = ServerProperties.SpawnProtection.Value;
-            viewDistanceTextBox.Text = ServerProperties.ViewDistance.Value;
-            pvpComboBox.SelectedIndex = Convert.ToBoolean(ServerProperties.PVP.Value) ? 1 : 0;
-            gamemodeComboBox.SelectedIndex = Convert.ToInt32(ServerProperties.Gamemode.Value);
-            difficultyComboBox.SelectedIndex = Convert.ToInt32(ServerProperties.Difficulty.Value);
-            enableCommandBlockComboBox.SelectedIndex = Convert.ToBoolean(ServerProperties.EnableCommandBlock.Value) ? 1 : 0;
-            onlineModeComboBox.SelectedIndex = Convert.ToBoolean(ServerProperties.OnlineMode.Value) ? 1 : 0;
-            motdTextBox.Text = ServerProperties.Motd.Value;
+            ResetAdvancedOptions(true);
         }
 
-        private void resetAdvancedOptionsButton_Click(object sender, EventArgs e) {
+        private void ResetAdvancedOptions(bool toConfirm) {
+
+            if (toConfirm && MessageBox.Show(
+                Program.DialogContent.RESET_INFO,
+                Program.DialogTitle.INFO,
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question) == DialogResult.No) {
+
+                return;
+            }
+
+            ServerProperties.ResetProperties();
+
+            serverPortTextBox.Text = ServerProperties.ServerPort;
+            maxPlayerTextBox.Text = ServerProperties.MaxPlayer;
+            spawnProtectionTextBox.Text = ServerProperties.SpawnProtection;
+            viewDistanceTextBox.Text = ServerProperties.ViewDistance;
+            pvpComboBox.SelectedIndex = Convert.ToBoolean(ServerProperties.PVP) ? 1 : 0;
+            gamemodeComboBox.SelectedIndex = Convert.ToInt32(ServerProperties.Gamemode);
+            difficultyComboBox.SelectedIndex = Convert.ToInt32(ServerProperties.Difficulty);
+            enableCommandBlockComboBox.SelectedIndex = Convert.ToBoolean(ServerProperties.EnableCommandBlock) ? 1 : 0;
+            onlineModeComboBox.SelectedIndex = Convert.ToBoolean(ServerProperties.OnlineMode) ? 1 : 0;
+            motdTextBox.Text = ServerProperties.Motd;
+        }
+
+        private void ResetAdvancedOptionsButton_Click(object sender, EventArgs e) {
 
             ResetAdvancedOptions();
         }
         //
         // 檢查更新
         //
-        private void checkNewButton_Click(object sender, EventArgs e) {
+        private void CheckNewButton_Click(object sender, EventArgs e) {
 
         }
         //
         // 開始安裝
         //
-        private void installButton_Click(object sender, EventArgs e) {
+        private void InstallButton_Click(object sender, EventArgs e) {
 
+            tabControl.Enabled = false;
+            statusProgressBar.Value = 0;
             ServerProperties.CreateFile(installPathTextBox.Text);
+            StartServerBat.CreateFile(installPathTextBox.Text);
+            Eula.CreateFile(installPathTextBox.Text);
 
             switch (modVersionComboBox.SelectedIndex) {
                 case 0: // Vanilla
-                    Console.WriteLine(versionsDictionary[gameVersionTextBox.Text]);
+                    using (InstallVanilla install = new InstallVanilla(
+                        versionsDictionary[gameVersionTextBox.Text], installPathTextBox.Text)) {
+                        install.InstallComplete += Install_InstallComplete;
+                        install.InstallProgressChanged += Install_InstallProgressChanged;
+                        install.Install();
+                    }
                     break;
                 case 1: // Forge
                     Console.WriteLine(versionsDictionary[forgeVersionTextBox.Text]);
@@ -671,6 +725,22 @@ namespace MinecraftServerInstaller {
                     break;
                 default: break;
             }
+        }
+
+        private void Install_InstallComplete(object serder, InstallCompleteEventArgs e) {
+
+            if (e.Error != null) {
+                MessageBox.Show(
+                    Program.DialogContent.INTERNET_ERROR,
+                    Program.DialogTitle.ERROR,
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+                tabControl.Enabled = true;
+                return;
+            }
+
+            tabControl.Enabled = true;
         }
     }
 }

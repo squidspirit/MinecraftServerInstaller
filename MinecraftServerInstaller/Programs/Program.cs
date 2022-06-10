@@ -1,10 +1,11 @@
-﻿using System;
+﻿using MinecraftServerInstaller.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MinecraftServerInstaller {
+namespace MinecraftServerInstaller.Programs {
     static class Program {
         /// <summary>
         /// 應用程式的主要進入點。
@@ -38,7 +39,7 @@ namespace MinecraftServerInstaller {
             public static readonly string FABRIC_VERSION = "https://www.dropbox.com/s/p5le9abdiwx10wi/FabricInstallerVersion.txt?dl=1";
             public static readonly string EULA = "https://www.minecraft.net/en-us/eula";
 
-            public static string forgeVersionToUrl(string version) {
+            public static string ForgeVersionToUrl(string version) {
                 return String.Format("https://maven.minecraftforge.net/net/minecraftforge/forge/{0}/forge-{0}-installer.jar", version);
             }
         }
@@ -56,6 +57,7 @@ namespace MinecraftServerInstaller {
         }
 
         public static class DialogContent {
+            public static readonly string RESET_INFO = "確定要重置本頁面的所有選項嗎？";
             public static readonly string INTERNET_ERROR = "請檢常網路設備是否連接正常。";
             public static readonly string INSTALL_PATH_DESCRIPT = "請選擇安裝伺服器的資料夾，建議此資料夾為空。";
             public static readonly string INSTALL_PATH_WARNING = "您選擇的資料夾內已有其他檔案，確定要繼續嗎？";

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MinecraftServerInstaller {
+namespace MinecraftServerInstaller.Programs.Installers {
     class InstalllForge {
     }
 }

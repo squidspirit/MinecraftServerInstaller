@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MinecraftServerInstaller {
+namespace MinecraftServerInstaller.Forms {
     public partial class VersionSelectForm : Form {
 
         private string result = null;
@@ -24,13 +24,13 @@ namespace MinecraftServerInstaller {
             else versionsComboBox.SelectedItem = selected;
         }
 
-        private void okButton_Click(object sender, EventArgs e) {
+        private void OkButton_Click(object sender, EventArgs e) {
 
             result = versionsComboBox.Text;
             this.Dispose();
         }
 
-        private void cancelButton_Click(object sender, EventArgs e) {
+        private void CancelButton_Click(object sender, EventArgs e) {
 
             this.Dispose();
         }

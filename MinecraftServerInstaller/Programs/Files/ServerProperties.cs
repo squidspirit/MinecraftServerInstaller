@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MinecraftServerInstaller {
+namespace MinecraftServerInstaller.Programs.Files {
     class ServerProperties {
 
-        public class Property {
+        public struct Property {
 
             public Property(string key, string value) {
                 Key = key;
@@ -46,35 +46,35 @@ namespace MinecraftServerInstaller {
             onlineMode = new Property("online-mode", null);
             motd = new Property("motd", null);
 
-            ResetValues();
+            ResetProperties();
         }
 
-        public static Property ServerPort => serverPort;
-        public static Property MaxPlayer => maxPlayer;
-        public static Property SpawnProtection => spawnProtection;
-        public static Property ViewDistance => viewDistance;
-        public static Property PVP => pvp;
-        public static Property Gamemode => gamemode;
-        public static Property Difficulty => difficulty;
-        public static Property EnableCommandBlock => enableCommandBlock;
-        public static Property OnlineMode => onlineMode;
-        public static Property Motd => motd;
+        public static string ServerPort { get => serverPort.Value; set => serverPort.Value = value; }
+        public static string MaxPlayer { get => maxPlayer.Value; set => maxPlayer.Value = value; }
+        public static string SpawnProtection { get => spawnProtection.Value; set => spawnProtection.Value = value; }
+        public static string ViewDistance { get => viewDistance.Value; set => viewDistance.Value = value; }
+        public static string PVP { get => pvp.Value; set => pvp.Value = value; }
+        public static string Gamemode { get => gamemode.Value; set => gamemode.Value = value; }
+        public static string Difficulty { get => difficulty.Value; set => difficulty.Value = value; }
+        public static string EnableCommandBlock { get => enableCommandBlock.Value; set => enableCommandBlock.Value = value; }
+        public static string OnlineMode { get => onlineMode.Value; set => onlineMode.Value = value; }
+        public static string Motd { get => motd.Value; set => motd.Value = value; }
 
-        public void ResetValues() {
+        public static void ResetProperties() {
 
-            serverPort.Value = "25565";
-            maxPlayer.Value = "20";
-            spawnProtection.Value = "16";
-            viewDistance.Value = "10";
-            pvp.Value = "true";
-            gamemode.Value = "0";
-            difficulty.Value = "1";
-            enableCommandBlock.Value = "false";
-            onlineMode.Value = "true";
-            motd.Value = "A Minecraft Server";
+            ServerPort = "25565";
+            MaxPlayer = "20";
+            SpawnProtection = "16";
+            ViewDistance = "10";
+            PVP = "true";
+            Gamemode = "0";
+            Difficulty = "1";
+            EnableCommandBlock = "false";
+            OnlineMode = "true";
+            Motd = "A Minecraft Server";
         }
 
-        public void CreateFile(string path) {
+        public static void CreateFile(string path) {
 
             using (StreamWriter writer = new StreamWriter(path + "\\server.properties")) {
                 writer.WriteLine(serverPort.ToString());

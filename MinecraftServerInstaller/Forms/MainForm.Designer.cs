@@ -1,5 +1,5 @@
 ﻿
-namespace MinecraftServerInstaller
+namespace MinecraftServerInstaller.Forms
 {
     partial class MainForm
     {
@@ -211,14 +211,14 @@ namespace MinecraftServerInstaller
             resources.ApplyResources(this.installPathButton, "installPathButton");
             this.installPathButton.Name = "installPathButton";
             this.installPathButton.UseVisualStyleBackColor = true;
-            this.installPathButton.Click += new System.EventHandler(this.installPathButton_Click);
+            this.installPathButton.Click += new System.EventHandler(this.InstallPathButton_Click);
             // 
             // forgeVersionButton
             // 
             resources.ApplyResources(this.forgeVersionButton, "forgeVersionButton");
             this.forgeVersionButton.Name = "forgeVersionButton";
             this.forgeVersionButton.UseVisualStyleBackColor = true;
-            this.forgeVersionButton.Click += new System.EventHandler(this.forgeVersionButton_Click);
+            this.forgeVersionButton.Click += new System.EventHandler(this.ForgeVersionButton_Click);
             // 
             // gameVersionLabel
             // 
@@ -260,7 +260,7 @@ namespace MinecraftServerInstaller
             resources.ApplyResources(this.eulaLinkLabel, "eulaLinkLabel");
             this.eulaLinkLabel.Name = "eulaLinkLabel";
             this.eulaLinkLabel.TabStop = true;
-            this.eulaLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.eulaLinkLabel_LinkClicked);
+            this.eulaLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.EulaLinkLabel_LinkClicked);
             // 
             // gameVersionTextBox
             // 
@@ -279,14 +279,14 @@ namespace MinecraftServerInstaller
             resources.ApplyResources(this.eulaCheckBox, "eulaCheckBox");
             this.eulaCheckBox.Name = "eulaCheckBox";
             this.eulaCheckBox.UseVisualStyleBackColor = true;
-            this.eulaCheckBox.CheckedChanged += new System.EventHandler(this.eulaCheckBox_CheckedChanged);
+            this.eulaCheckBox.CheckedChanged += new System.EventHandler(this.EulaCheckBox_CheckedChanged);
             // 
             // ramSettingCheckBox
             // 
             resources.ApplyResources(this.ramSettingCheckBox, "ramSettingCheckBox");
             this.ramSettingCheckBox.Name = "ramSettingCheckBox";
             this.ramSettingCheckBox.UseVisualStyleBackColor = true;
-            this.ramSettingCheckBox.CheckedChanged += new System.EventHandler(this.ramSettingCheckBox_CheckedChanged);
+            this.ramSettingCheckBox.CheckedChanged += new System.EventHandler(this.RamSettingCheckBox_CheckedChanged);
             // 
             // maxRamTrackBar
             // 
@@ -299,9 +299,9 @@ namespace MinecraftServerInstaller
             this.maxRamTrackBar.TickFrequency = 512;
             this.maxRamTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
             this.maxRamTrackBar.Value = 2048;
-            this.maxRamTrackBar.Scroll += new System.EventHandler(this.maxRamTrackBar_Scroll);
-            this.maxRamTrackBar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.maxRamTrackBar_KeyUp);
-            this.maxRamTrackBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.maxRamTrackBar_MouseUp);
+            this.maxRamTrackBar.Scroll += new System.EventHandler(this.MaxRamTrackBar_Scroll);
+            this.maxRamTrackBar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.MaxRamTrackBar_KeyUp);
+            this.maxRamTrackBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MaxRamTrackBar_MouseUp);
             // 
             // minRamTrackBar
             // 
@@ -314,44 +314,44 @@ namespace MinecraftServerInstaller
             this.minRamTrackBar.TickFrequency = 512;
             this.minRamTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
             this.minRamTrackBar.Value = 2048;
-            this.minRamTrackBar.Scroll += new System.EventHandler(this.minRamTrackBar_Scroll);
-            this.minRamTrackBar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.minRamTrackBar_KeyUp);
-            this.minRamTrackBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.minRamTrackBar_MouseUp);
+            this.minRamTrackBar.Scroll += new System.EventHandler(this.MinRamTrackBar_Scroll);
+            this.minRamTrackBar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.MinRamTrackBar_KeyUp);
+            this.minRamTrackBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MinRamTrackBar_MouseUp);
             // 
             // gameVersionButton
             // 
             resources.ApplyResources(this.gameVersionButton, "gameVersionButton");
             this.gameVersionButton.Name = "gameVersionButton";
             this.gameVersionButton.UseVisualStyleBackColor = true;
-            this.gameVersionButton.Click += new System.EventHandler(this.gameVersionButton_Click);
+            this.gameVersionButton.Click += new System.EventHandler(this.GameVersionButton_Click);
             // 
             // maxRamTextBox
             // 
             resources.ApplyResources(this.maxRamTextBox, "maxRamTextBox");
             this.maxRamTextBox.Name = "maxRamTextBox";
-            this.maxRamTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maxRamTextBox_KeyPress);
-            this.maxRamTextBox.LostFocus += new System.EventHandler(this.maxRamTextBox_LostFocus);
+            this.maxRamTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MaxRamTextBox_KeyPress);
+            this.maxRamTextBox.LostFocus += new System.EventHandler(this.MaxRamTextBox_LostFocus);
             // 
             // minRamTextBox
             // 
             resources.ApplyResources(this.minRamTextBox, "minRamTextBox");
             this.minRamTextBox.Name = "minRamTextBox";
-            this.minRamTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.minRamTextBox_KeyPress);
-            this.minRamTextBox.LostFocus += new System.EventHandler(this.minRamTextBox_LostFocus);
+            this.minRamTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MinRamTextBox_KeyPress);
+            this.minRamTextBox.LostFocus += new System.EventHandler(this.MinRamTextBox_LostFocus);
             // 
             // installButton
             // 
             resources.ApplyResources(this.installButton, "installButton");
             this.installButton.Name = "installButton";
             this.installButton.UseVisualStyleBackColor = true;
-            this.installButton.Click += new System.EventHandler(this.installButton_Click);
+            this.installButton.Click += new System.EventHandler(this.InstallButton_Click);
             // 
             // resetBasicOptionsButton
             // 
             resources.ApplyResources(this.resetBasicOptionsButton, "resetBasicOptionsButton");
             this.resetBasicOptionsButton.Name = "resetBasicOptionsButton";
             this.resetBasicOptionsButton.UseVisualStyleBackColor = true;
-            this.resetBasicOptionsButton.Click += new System.EventHandler(this.resetBasicOptionsButton_Click);
+            this.resetBasicOptionsButton.Click += new System.EventHandler(this.ResetBasicOptionsButton_Click);
             // 
             // modVersionTableLayoutPanel
             // 
@@ -376,7 +376,7 @@ namespace MinecraftServerInstaller
             resources.GetString("modVersionComboBox.Items1"),
             resources.GetString("modVersionComboBox.Items2")});
             this.modVersionComboBox.Name = "modVersionComboBox";
-            this.modVersionComboBox.SelectedIndexChanged += new System.EventHandler(this.modVersionComboBox_SelectedIndexChanged);
+            this.modVersionComboBox.SelectedIndexChanged += new System.EventHandler(this.ModVersionComboBox_SelectedIndexChanged);
             // 
             // installPathTextBox
             // 
@@ -421,7 +421,7 @@ namespace MinecraftServerInstaller
             // 
             resources.ApplyResources(this.motdTextBox, "motdTextBox");
             this.motdTextBox.Name = "motdTextBox";
-            this.motdTextBox.TextChanged += new System.EventHandler(this.motdTextBox_TextChanged);
+            this.motdTextBox.TextChanged += new System.EventHandler(this.MotdTextBox_TextChanged);
             // 
             // onlineModeComboBox
             // 
@@ -432,7 +432,7 @@ namespace MinecraftServerInstaller
             resources.GetString("onlineModeComboBox.Items"),
             resources.GetString("onlineModeComboBox.Items1")});
             this.onlineModeComboBox.Name = "onlineModeComboBox";
-            this.onlineModeComboBox.SelectedIndexChanged += new System.EventHandler(this.onlineModeComboBox_SelectedIndexChanged);
+            this.onlineModeComboBox.SelectedIndexChanged += new System.EventHandler(this.OnlineModeComboBox_SelectedIndexChanged);
             // 
             // enableCommandBlockComboBox
             // 
@@ -443,7 +443,7 @@ namespace MinecraftServerInstaller
             resources.GetString("enableCommandBlockComboBox.Items"),
             resources.GetString("enableCommandBlockComboBox.Items1")});
             this.enableCommandBlockComboBox.Name = "enableCommandBlockComboBox";
-            this.enableCommandBlockComboBox.SelectedIndexChanged += new System.EventHandler(this.enableCommandBlockComboBox_SelectedIndexChanged);
+            this.enableCommandBlockComboBox.SelectedIndexChanged += new System.EventHandler(this.EnableCommandBlockComboBox_SelectedIndexChanged);
             // 
             // difficultyComboBox
             // 
@@ -456,7 +456,7 @@ namespace MinecraftServerInstaller
             resources.GetString("difficultyComboBox.Items2"),
             resources.GetString("difficultyComboBox.Items3")});
             this.difficultyComboBox.Name = "difficultyComboBox";
-            this.difficultyComboBox.SelectedIndexChanged += new System.EventHandler(this.difficultyComboBox_SelectedIndexChanged);
+            this.difficultyComboBox.SelectedIndexChanged += new System.EventHandler(this.DifficultyComboBox_SelectedIndexChanged);
             // 
             // gamemodeComboBox
             // 
@@ -469,7 +469,7 @@ namespace MinecraftServerInstaller
             resources.GetString("gamemodeComboBox.Items2"),
             resources.GetString("gamemodeComboBox.Items3")});
             this.gamemodeComboBox.Name = "gamemodeComboBox";
-            this.gamemodeComboBox.SelectedIndexChanged += new System.EventHandler(this.gamemodeComboBox_SelectedIndexChanged);
+            this.gamemodeComboBox.SelectedIndexChanged += new System.EventHandler(this.GamemodeComboBox_SelectedIndexChanged);
             // 
             // pvpComboBox
             // 
@@ -480,35 +480,35 @@ namespace MinecraftServerInstaller
             resources.GetString("pvpComboBox.Items"),
             resources.GetString("pvpComboBox.Items1")});
             this.pvpComboBox.Name = "pvpComboBox";
-            this.pvpComboBox.SelectedIndexChanged += new System.EventHandler(this.pvpComboBox_SelectedIndexChanged);
+            this.pvpComboBox.SelectedIndexChanged += new System.EventHandler(this.PVPComboBox_SelectedIndexChanged);
             // 
             // viewDistanceTextBox
             // 
             resources.ApplyResources(this.viewDistanceTextBox, "viewDistanceTextBox");
             this.viewDistanceTextBox.Name = "viewDistanceTextBox";
-            this.viewDistanceTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.viewDistanceTextBox_KeyPress);
-            this.viewDistanceTextBox.LostFocus += new System.EventHandler(this.viewDistanceTextBox_LostFocus);
+            this.viewDistanceTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ViewDistanceTextBox_KeyPress);
+            this.viewDistanceTextBox.LostFocus += new System.EventHandler(this.ViewDistanceTextBox_LostFocus);
             // 
             // spawnProtectionTextBox
             // 
             resources.ApplyResources(this.spawnProtectionTextBox, "spawnProtectionTextBox");
             this.spawnProtectionTextBox.Name = "spawnProtectionTextBox";
-            this.spawnProtectionTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.spawnProtectionTextBox_KeyPress);
-            this.spawnProtectionTextBox.LostFocus += new System.EventHandler(this.spawnProtectionTextBox_LostFocus);
+            this.spawnProtectionTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SpawnProtectionTextBox_KeyPress);
+            this.spawnProtectionTextBox.LostFocus += new System.EventHandler(this.SpawnProtectionTextBox_LostFocus);
             // 
             // maxPlayerTextBox
             // 
             resources.ApplyResources(this.maxPlayerTextBox, "maxPlayerTextBox");
             this.maxPlayerTextBox.Name = "maxPlayerTextBox";
-            this.maxPlayerTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maxPlayerTextBox_KeyPress);
-            this.maxPlayerTextBox.LostFocus += new System.EventHandler(this.maxPlayerTextBox_LostFocus);
+            this.maxPlayerTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MaxPlayerTextBox_KeyPress);
+            this.maxPlayerTextBox.LostFocus += new System.EventHandler(this.MaxPlayerTextBox_LostFocus);
             // 
             // serverPortTextBox
             // 
             resources.ApplyResources(this.serverPortTextBox, "serverPortTextBox");
             this.serverPortTextBox.Name = "serverPortTextBox";
-            this.serverPortTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.serverPortTextBox_KeyPress);
-            this.serverPortTextBox.LostFocus += new System.EventHandler(this.serverPortTextBox_LostFocus);
+            this.serverPortTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ServerPortTextBox_KeyPress);
+            this.serverPortTextBox.LostFocus += new System.EventHandler(this.ServerPortTextBox_LostFocus);
             // 
             // serverPortFlowLayoutPanel
             // 
@@ -685,7 +685,7 @@ namespace MinecraftServerInstaller
             resources.ApplyResources(this.resetAdvancedOptionsButton, "resetAdvancedOptionsButton");
             this.resetAdvancedOptionsButton.Name = "resetAdvancedOptionsButton";
             this.resetAdvancedOptionsButton.UseVisualStyleBackColor = true;
-            this.resetAdvancedOptionsButton.Click += new System.EventHandler(this.resetAdvancedOptionsButton_Click);
+            this.resetAdvancedOptionsButton.Click += new System.EventHandler(this.ResetAdvancedOptionsButton_Click);
             // 
             // informationTabPage
             // 
@@ -765,7 +765,7 @@ namespace MinecraftServerInstaller
             resources.ApplyResources(this.checkNewButton, "checkNewButton");
             this.checkNewButton.Name = "checkNewButton";
             this.checkNewButton.UseVisualStyleBackColor = true;
-            this.checkNewButton.Click += new System.EventHandler(this.checkNewButton_Click);
+            this.checkNewButton.Click += new System.EventHandler(this.CheckNewButton_Click);
             // 
             // copyrightTextBox
             // 

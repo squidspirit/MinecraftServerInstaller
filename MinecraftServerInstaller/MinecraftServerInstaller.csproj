@@ -96,28 +96,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ServerProperties.cs" />
-    <Compile Include="InstallFabric.cs" />
-    <Compile Include="InstallVanilla.cs" />
-    <Compile Include="InstalllForge.cs" />
-    <Compile Include="VersionSelectForm.cs">
+    <Compile Include="Programs\ServerProperties.cs" />
+    <Compile Include="Programs\InstallFabric.cs" />
+    <Compile Include="Programs\InstallVanilla.cs" />
+    <Compile Include="Programs\InstalllForge.cs" />
+    <Compile Include="Forms\VersionSelectForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VersionSelectForm.Designer.cs">
+    <Compile Include="Forms\VersionSelectForm.Designer.cs">
       <DependentUpon>VersionSelectForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Programs\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="VersionSelectForm.resx">
+    <EmbeddedResource Include="Forms\VersionSelectForm.resx">
       <DependentUpon>VersionSelectForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -129,7 +129,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="MinecraftServerInstaller_TemporaryKey.pfx" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

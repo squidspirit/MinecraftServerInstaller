@@ -256,13 +256,13 @@
     <value>3, 14</value>
   </data>
   <data name="gameVersionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 17</value>
+    <value>69, 17</value>
   </data>
   <data name="gameVersionLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="gameVersionLabel.Text" xml:space="preserve">
-    <value>遊戲版本</value>
+    <value>遊戲版本 *</value>
   </data>
   <data name="&gt;&gt;gameVersionLabel.Name" xml:space="preserve">
     <value>gameVersionLabel</value>
@@ -289,13 +289,13 @@
     <value>3, 59</value>
   </data>
   <data name="modVersionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 17</value>
+    <value>69, 17</value>
   </data>
   <data name="modVersionLabel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="modVersionLabel.Text" xml:space="preserve">
-    <value>模組版本</value>
+    <value>模組版本 *</value>
   </data>
   <data name="&gt;&gt;modVersionLabel.Name" xml:space="preserve">
     <value>modVersionLabel</value>
@@ -322,13 +322,13 @@
     <value>3, 104</value>
   </data>
   <data name="installPathLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 17</value>
+    <value>69, 17</value>
   </data>
   <data name="installPathLabel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="installPathLabel.Text" xml:space="preserve">
-    <value>安裝位置</value>
+    <value>安裝位置 *</value>
   </data>
   <data name="&gt;&gt;installPathLabel.Name" xml:space="preserve">
     <value>installPathLabel</value>
@@ -341,168 +341,6 @@
   </data>
   <data name="&gt;&gt;installPathLabel.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="guiLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="guiLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="guiLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="guiLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 149</value>
-  </data>
-  <data name="guiLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 17</value>
-  </data>
-  <data name="guiLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="guiLabel.Text" xml:space="preserve">
-    <value>GUI 介面</value>
-  </data>
-  <data name="&gt;&gt;guiLabel.Name" xml:space="preserve">
-    <value>guiLabel</value>
-  </data>
-  <data name="&gt;&gt;guiLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;guiLabel.Parent" xml:space="preserve">
-    <value>basicOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;guiLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="ramSettingLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="ramSettingLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ramSettingLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ramSettingLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 284</value>
-  </data>
-  <data name="ramSettingLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 17</value>
-  </data>
-  <data name="ramSettingLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="ramSettingLabel.Text" xml:space="preserve">
-    <value>記憶體選項</value>
-  </data>
-  <data name="&gt;&gt;ramSettingLabel.Name" xml:space="preserve">
-    <value>ramSettingLabel</value>
-  </data>
-  <data name="&gt;&gt;ramSettingLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ramSettingLabel.Parent" xml:space="preserve">
-    <value>basicOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;ramSettingLabel.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="maxRamLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="maxRamLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="maxRamLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="maxRamLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 329</value>
-  </data>
-  <data name="maxRamLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 17</value>
-  </data>
-  <data name="maxRamLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="maxRamLabel.Text" xml:space="preserve">
-    <value>最大記憶體</value>
-  </data>
-  <data name="&gt;&gt;maxRamLabel.Name" xml:space="preserve">
-    <value>maxRamLabel</value>
-  </data>
-  <data name="&gt;&gt;maxRamLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maxRamLabel.Parent" xml:space="preserve">
-    <value>basicOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;maxRamLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="minRamLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="minRamLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="minRamLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="minRamLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 374</value>
-  </data>
-  <data name="minRamLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 17</value>
-  </data>
-  <data name="minRamLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="minRamLabel.Text" xml:space="preserve">
-    <value>最小記憶體</value>
-  </data>
-  <data name="&gt;&gt;minRamLabel.Name" xml:space="preserve">
-    <value>minRamLabel</value>
-  </data>
-  <data name="&gt;&gt;minRamLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;minRamLabel.Parent" xml:space="preserve">
-    <value>basicOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;minRamLabel.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="eulaLinkLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="eulaLinkLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="eulaLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 194</value>
-  </data>
-  <data name="eulaLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 17</value>
-  </data>
-  <data name="eulaLinkLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="eulaLinkLabel.Text" xml:space="preserve">
-    <value>EULA</value>
-  </data>
-  <data name="&gt;&gt;eulaLinkLabel.Name" xml:space="preserve">
-    <value>eulaLinkLabel</value>
-  </data>
-  <data name="&gt;&gt;eulaLinkLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;eulaLinkLabel.Parent" xml:space="preserve">
-    <value>basicOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;eulaLinkLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
   </data>
   <data name="gameVersionTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
@@ -526,154 +364,7 @@
     <value>basicOptionsTableLayoutPanel</value>
   </data>
   <data name="&gt;&gt;gameVersionTextBox.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="guiCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="guiCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="guiCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="guiCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 147</value>
-  </data>
-  <data name="guiCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 21</value>
-  </data>
-  <data name="guiCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="guiCheckBox.Text" xml:space="preserve">
-    <value>啟用伺服器 GUI 介面</value>
-  </data>
-  <data name="&gt;&gt;guiCheckBox.Name" xml:space="preserve">
-    <value>guiCheckBox</value>
-  </data>
-  <data name="&gt;&gt;guiCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;guiCheckBox.Parent" xml:space="preserve">
-    <value>basicOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;guiCheckBox.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="eulaCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="eulaCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="eulaCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 192</value>
-  </data>
-  <data name="eulaCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 21</value>
-  </data>
-  <data name="eulaCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="eulaCheckBox.Text" xml:space="preserve">
-    <value>我同意 EULA 條款</value>
-  </data>
-  <data name="&gt;&gt;eulaCheckBox.Name" xml:space="preserve">
-    <value>eulaCheckBox</value>
-  </data>
-  <data name="&gt;&gt;eulaCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;eulaCheckBox.Parent" xml:space="preserve">
-    <value>basicOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;eulaCheckBox.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="ramSettingCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="ramSettingCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ramSettingCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ramSettingCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 282</value>
-  </data>
-  <data name="ramSettingCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 21</value>
-  </data>
-  <data name="ramSettingCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="ramSettingCheckBox.Text" xml:space="preserve">
-    <value>更改伺服器記憶體限制</value>
-  </data>
-  <data name="&gt;&gt;ramSettingCheckBox.Name" xml:space="preserve">
-    <value>ramSettingCheckBox</value>
-  </data>
-  <data name="&gt;&gt;ramSettingCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ramSettingCheckBox.Parent" xml:space="preserve">
-    <value>basicOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;ramSettingCheckBox.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="maxRamTrackBar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="maxRamTrackBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 318</value>
-  </data>
-  <data name="maxRamTrackBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 39</value>
-  </data>
-  <data name="maxRamTrackBar.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;maxRamTrackBar.Name" xml:space="preserve">
-    <value>maxRamTrackBar</value>
-  </data>
-  <data name="&gt;&gt;maxRamTrackBar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maxRamTrackBar.Parent" xml:space="preserve">
-    <value>basicOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;maxRamTrackBar.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="minRamTrackBar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="minRamTrackBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="minRamTrackBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 363</value>
-  </data>
-  <data name="minRamTrackBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 39</value>
-  </data>
-  <data name="minRamTrackBar.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;minRamTrackBar.Name" xml:space="preserve">
-    <value>minRamTrackBar</value>
-  </data>
-  <data name="&gt;&gt;minRamTrackBar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;minRamTrackBar.Parent" xml:space="preserve">
-    <value>basicOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;minRamTrackBar.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>5</value>
   </data>
   <data name="gameVersionButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
@@ -700,55 +391,7 @@
     <value>basicOptionsTableLayoutPanel</value>
   </data>
   <data name="&gt;&gt;gameVersionButton.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="maxRamTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="maxRamTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 325</value>
-  </data>
-  <data name="maxRamTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 25</value>
-  </data>
-  <data name="maxRamTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;maxRamTextBox.Name" xml:space="preserve">
-    <value>maxRamTextBox</value>
-  </data>
-  <data name="&gt;&gt;maxRamTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maxRamTextBox.Parent" xml:space="preserve">
-    <value>basicOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;maxRamTextBox.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="minRamTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="minRamTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 370</value>
-  </data>
-  <data name="minRamTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 25</value>
-  </data>
-  <data name="minRamTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;minRamTextBox.Name" xml:space="preserve">
-    <value>minRamTextBox</value>
-  </data>
-  <data name="&gt;&gt;minRamTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;minRamTextBox.Parent" xml:space="preserve">
-    <value>basicOptionsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;minRamTextBox.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>6</value>
   </data>
   <data name="installButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
@@ -778,7 +421,7 @@
     <value>basicOptionsTableLayoutPanel</value>
   </data>
   <data name="&gt;&gt;installButton.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>7</value>
   </data>
   <data name="resetBasicOptionsButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
@@ -808,7 +451,7 @@
     <value>basicOptionsTableLayoutPanel</value>
   </data>
   <data name="&gt;&gt;resetBasicOptionsButton.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>8</value>
   </data>
   <data name="modVersionTableLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -898,7 +541,7 @@
     <value>basicOptionsTableLayoutPanel</value>
   </data>
   <data name="&gt;&gt;modVersionTableLayoutPanel.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>9</value>
   </data>
   <data name="modVersionTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="forgeVersionTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="modVersionComboBox" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,40,Percent,60" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -925,7 +568,466 @@
     <value>basicOptionsTableLayoutPanel</value>
   </data>
   <data name="&gt;&gt;installPathTextBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="minRamLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="minRamLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="minRamLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="minRamLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 419</value>
+  </data>
+  <data name="minRamLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 17</value>
+  </data>
+  <data name="minRamLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="minRamLabel.Text" xml:space="preserve">
+    <value>最小記憶體</value>
+  </data>
+  <data name="&gt;&gt;minRamLabel.Name" xml:space="preserve">
+    <value>minRamLabel</value>
+  </data>
+  <data name="&gt;&gt;minRamLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;minRamLabel.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;minRamLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="minRamTrackBar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="minRamTrackBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="minRamTrackBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 408</value>
+  </data>
+  <data name="minRamTrackBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 39</value>
+  </data>
+  <data name="minRamTrackBar.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;minRamTrackBar.Name" xml:space="preserve">
+    <value>minRamTrackBar</value>
+  </data>
+  <data name="&gt;&gt;minRamTrackBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;minRamTrackBar.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;minRamTrackBar.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="minRamTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="minRamTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 415</value>
+  </data>
+  <data name="minRamTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 25</value>
+  </data>
+  <data name="minRamTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;minRamTextBox.Name" xml:space="preserve">
+    <value>minRamTextBox</value>
+  </data>
+  <data name="&gt;&gt;minRamTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;minRamTextBox.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;minRamTextBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="maxRamTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="maxRamTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 370</value>
+  </data>
+  <data name="maxRamTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 25</value>
+  </data>
+  <data name="maxRamTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
+  </data>
+  <data name="&gt;&gt;maxRamTextBox.Name" xml:space="preserve">
+    <value>maxRamTextBox</value>
+  </data>
+  <data name="&gt;&gt;maxRamTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maxRamTextBox.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;maxRamTextBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="maxRamTrackBar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="maxRamTrackBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 363</value>
+  </data>
+  <data name="maxRamTrackBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 39</value>
+  </data>
+  <data name="maxRamTrackBar.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;maxRamTrackBar.Name" xml:space="preserve">
+    <value>maxRamTrackBar</value>
+  </data>
+  <data name="&gt;&gt;maxRamTrackBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maxRamTrackBar.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;maxRamTrackBar.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="maxRamLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="maxRamLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="maxRamLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="maxRamLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 374</value>
+  </data>
+  <data name="maxRamLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 17</value>
+  </data>
+  <data name="maxRamLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="maxRamLabel.Text" xml:space="preserve">
+    <value>最大記憶體</value>
+  </data>
+  <data name="&gt;&gt;maxRamLabel.Name" xml:space="preserve">
+    <value>maxRamLabel</value>
+  </data>
+  <data name="&gt;&gt;maxRamLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maxRamLabel.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;maxRamLabel.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ramSettingLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="ramSettingLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ramSettingLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ramSettingLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 329</value>
+  </data>
+  <data name="ramSettingLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 17</value>
+  </data>
+  <data name="ramSettingLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ramSettingLabel.Text" xml:space="preserve">
+    <value>記憶體選項</value>
+  </data>
+  <data name="&gt;&gt;ramSettingLabel.Name" xml:space="preserve">
+    <value>ramSettingLabel</value>
+  </data>
+  <data name="&gt;&gt;ramSettingLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ramSettingLabel.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;ramSettingLabel.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ramSettingCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="ramSettingCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ramSettingCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ramSettingCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 327</value>
+  </data>
+  <data name="ramSettingCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 21</value>
+  </data>
+  <data name="ramSettingCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="ramSettingCheckBox.Text" xml:space="preserve">
+    <value>更改伺服器記憶體限制</value>
+  </data>
+  <data name="&gt;&gt;ramSettingCheckBox.Name" xml:space="preserve">
+    <value>ramSettingCheckBox</value>
+  </data>
+  <data name="&gt;&gt;ramSettingCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ramSettingCheckBox.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;ramSettingCheckBox.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="eulaLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="eulaLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="eulaLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="eulaLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 149</value>
+  </data>
+  <data name="eulaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 17</value>
+  </data>
+  <data name="eulaLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="eulaLabel.Text" xml:space="preserve">
+    <value>EULA 條款 *</value>
+  </data>
+  <data name="&gt;&gt;eulaLabel.Name" xml:space="preserve">
+    <value>eulaLabel</value>
+  </data>
+  <data name="&gt;&gt;eulaLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eulaLabel.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;eulaLabel.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="eulaCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="eulaCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="eulaCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 147</value>
+  </data>
+  <data name="eulaCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 21</value>
+  </data>
+  <data name="eulaCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="eulaCheckBox.Text" xml:space="preserve">
+    <value>我同意 EULA 條款</value>
+  </data>
+  <data name="&gt;&gt;eulaCheckBox.Name" xml:space="preserve">
+    <value>eulaCheckBox</value>
+  </data>
+  <data name="&gt;&gt;eulaCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eulaCheckBox.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;eulaCheckBox.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="eulaLinkLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="eulaLinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="eulaLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 149</value>
+  </data>
+  <data name="eulaLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 17</value>
+  </data>
+  <data name="eulaLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="eulaLinkLabel.Text" xml:space="preserve">
+    <value>查看 EULA</value>
+  </data>
+  <data name="eulaLinkLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;eulaLinkLabel.Name" xml:space="preserve">
+    <value>eulaLinkLabel</value>
+  </data>
+  <data name="&gt;&gt;eulaLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eulaLinkLabel.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;eulaLinkLabel.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="javaInstallLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="javaInstallLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="javaInstallLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="javaInstallLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 239</value>
+  </data>
+  <data name="javaInstallLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 17</value>
+  </data>
+  <data name="javaInstallLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="javaInstallLabel.Text" xml:space="preserve">
+    <value>Java 程式</value>
+  </data>
+  <data name="&gt;&gt;javaInstallLabel.Name" xml:space="preserve">
+    <value>javaInstallLabel</value>
+  </data>
+  <data name="&gt;&gt;javaInstallLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;javaInstallLabel.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;javaInstallLabel.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="javaInstallCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="javaInstallCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="javaInstallCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="javaInstallCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 237</value>
+  </data>
+  <data name="javaInstallCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 21</value>
+  </data>
+  <data name="javaInstallCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="javaInstallCheckBox.Text" xml:space="preserve">
+    <value>自動安裝下載所需的 Java 程式</value>
+  </data>
+  <data name="&gt;&gt;javaInstallCheckBox.Name" xml:space="preserve">
+    <value>javaInstallCheckBox</value>
+  </data>
+  <data name="&gt;&gt;javaInstallCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;javaInstallCheckBox.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;javaInstallCheckBox.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="guiLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="guiLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="guiLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="guiLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 194</value>
+  </data>
+  <data name="guiLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 17</value>
+  </data>
+  <data name="guiLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="guiLabel.Text" xml:space="preserve">
+    <value>GUI 介面</value>
+  </data>
+  <data name="&gt;&gt;guiLabel.Name" xml:space="preserve">
+    <value>guiLabel</value>
+  </data>
+  <data name="&gt;&gt;guiLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;guiLabel.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;guiLabel.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="guiCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="guiCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="guiCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="guiCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 192</value>
+  </data>
+  <data name="guiCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 21</value>
+  </data>
+  <data name="guiCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="guiCheckBox.Text" xml:space="preserve">
+    <value>啟用伺服器 GUI 介面</value>
+  </data>
+  <data name="&gt;&gt;guiCheckBox.Name" xml:space="preserve">
+    <value>guiCheckBox</value>
+  </data>
+  <data name="&gt;&gt;guiCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;guiCheckBox.Parent" xml:space="preserve">
+    <value>basicOptionsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;guiCheckBox.ZOrder" xml:space="preserve">
+    <value>25</value>
   </data>
   <data name="basicOptionsTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 7</value>
@@ -952,7 +1054,7 @@
     <value>0</value>
   </data>
   <data name="basicOptionsTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="installPathButton" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="forgeVersionButton" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="gameVersionLabel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="modVersionLabel" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="installPathLabel" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="guiLabel" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ramSettingLabel" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="maxRamLabel" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="minRamLabel" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="eulaLinkLabel" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="gameVersionTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="guiCheckBox" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="eulaCheckBox" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ramSettingCheckBox" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="maxRamTrackBar" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="minRamTrackBar" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="gameVersionButton" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="maxRamTextBox" Row="7" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="minRamTextBox" Row="8" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="installButton" Row="10" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="resetBasicOptionsButton" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="modVersionTableLayoutPanel" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="installPathTextBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,55,Percent,20" /&gt;&lt;Rows Styles="Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.909909" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="installPathButton" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="forgeVersionButton" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="gameVersionLabel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="modVersionLabel" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="installPathLabel" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="gameVersionTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="gameVersionButton" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="installButton" Row="10" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="resetBasicOptionsButton" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="modVersionTableLayoutPanel" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="installPathTextBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="minRamLabel" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="minRamTrackBar" Row="9" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="minRamTextBox" Row="9" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="maxRamTextBox" Row="8" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="maxRamTrackBar" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="maxRamLabel" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ramSettingLabel" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ramSettingCheckBox" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="eulaLabel" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="eulaCheckBox" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="eulaLinkLabel" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="javaInstallLabel" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="javaInstallCheckBox" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="guiLabel" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="guiCheckBox" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,55,Percent,20" /&gt;&lt;Rows Styles="Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.009007,Percent,9.909909" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="basicOptionsTabPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 26</value>

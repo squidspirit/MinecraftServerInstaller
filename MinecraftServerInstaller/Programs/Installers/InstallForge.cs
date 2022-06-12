@@ -4,15 +4,14 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 using MinecraftServerInstaller.Events;
 
 
 namespace MinecraftServerInstaller.Programs.Installers {
-    partial class InstallVanilla : IInstaller {
+    partial class InstallForge : IInstaller {
 
-        public InstallVanilla(string url, string path) {
+        public InstallForge(string url, string path) {
 
             Url = url;
             Path = path;
@@ -21,13 +20,12 @@ namespace MinecraftServerInstaller.Programs.Installers {
         public string Url { get; set; }
         public string Path { get; set; }
 
-
         public void Install() {
 
             using (WebClient client = new WebClient()) {
-                client.DownloadProgressChanged += Client_DownloadProgressChanged; ;
+                client.DownloadProgressChanged += Client_DownloadProgressChanged;
                 client.DownloadFileCompleted += Client_DownloadFileCompleted;
-                client.DownloadFileAsync(new Uri(Url), Path + "\\server.jar");
+                client.DownloadFileAsync(new Uri(Url), Path + "\\forge-installer.jar");
             }
         }
 
@@ -38,10 +36,8 @@ namespace MinecraftServerInstaller.Programs.Installers {
 
         private void Client_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e) {
 
-            InstallProgressChanged?.Invoke(this, new InstallProgressChangedEventArgs(e.ProgressPercentage));
+            InstallProgressChanged?.Invoke(this, new InstallProgressChangedEventArgs((int)(e.ProgressPercentage * 0.8)));
         }
-
-
 
         public event InstallProgressChangedEventHandler InstallProgressChanged;
         public event InstallCompleteEventHandler InstallComplete;

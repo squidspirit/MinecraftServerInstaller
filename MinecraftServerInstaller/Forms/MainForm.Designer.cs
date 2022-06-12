@@ -39,26 +39,29 @@ namespace MinecraftServerInstaller.Forms
             this.gameVersionLabel = new System.Windows.Forms.Label();
             this.modVersionLabel = new System.Windows.Forms.Label();
             this.installPathLabel = new System.Windows.Forms.Label();
-            this.guiLabel = new System.Windows.Forms.Label();
-            this.ramSettingLabel = new System.Windows.Forms.Label();
-            this.maxRamLabel = new System.Windows.Forms.Label();
-            this.minRamLabel = new System.Windows.Forms.Label();
-            this.eulaLinkLabel = new System.Windows.Forms.LinkLabel();
             this.gameVersionTextBox = new System.Windows.Forms.TextBox();
-            this.guiCheckBox = new System.Windows.Forms.CheckBox();
-            this.eulaCheckBox = new System.Windows.Forms.CheckBox();
-            this.ramSettingCheckBox = new System.Windows.Forms.CheckBox();
-            this.maxRamTrackBar = new System.Windows.Forms.TrackBar();
-            this.minRamTrackBar = new System.Windows.Forms.TrackBar();
             this.gameVersionButton = new System.Windows.Forms.Button();
-            this.maxRamTextBox = new System.Windows.Forms.TextBox();
-            this.minRamTextBox = new System.Windows.Forms.TextBox();
             this.installButton = new System.Windows.Forms.Button();
             this.resetBasicOptionsButton = new System.Windows.Forms.Button();
             this.modVersionTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.forgeVersionTextBox = new System.Windows.Forms.TextBox();
             this.modVersionComboBox = new System.Windows.Forms.ComboBox();
             this.installPathTextBox = new System.Windows.Forms.TextBox();
+            this.minRamLabel = new System.Windows.Forms.Label();
+            this.minRamTrackBar = new System.Windows.Forms.TrackBar();
+            this.minRamTextBox = new System.Windows.Forms.TextBox();
+            this.maxRamTextBox = new System.Windows.Forms.TextBox();
+            this.maxRamTrackBar = new System.Windows.Forms.TrackBar();
+            this.maxRamLabel = new System.Windows.Forms.Label();
+            this.ramSettingLabel = new System.Windows.Forms.Label();
+            this.ramSettingCheckBox = new System.Windows.Forms.CheckBox();
+            this.eulaLabel = new System.Windows.Forms.Label();
+            this.eulaCheckBox = new System.Windows.Forms.CheckBox();
+            this.eulaLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.javaInstallLabel = new System.Windows.Forms.Label();
+            this.javaInstallCheckBox = new System.Windows.Forms.CheckBox();
+            this.guiLabel = new System.Windows.Forms.Label();
+            this.guiCheckBox = new System.Windows.Forms.CheckBox();
             this.advancedOptionsTabPage = new System.Windows.Forms.TabPage();
             this.advancedOptionsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.motdTextBox = new System.Windows.Forms.TextBox();
@@ -121,9 +124,9 @@ namespace MinecraftServerInstaller.Forms
             this.tabControl.SuspendLayout();
             this.basicOptionsTabPage.SuspendLayout();
             this.basicOptionsTableLayoutPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.maxRamTrackBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minRamTrackBar)).BeginInit();
             this.modVersionTableLayoutPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.minRamTrackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxRamTrackBar)).BeginInit();
             this.advancedOptionsTabPage.SuspendLayout();
             this.advancedOptionsTableLayoutPanel.SuspendLayout();
             this.serverPortFlowLayoutPanel.SuspendLayout();
@@ -186,24 +189,27 @@ namespace MinecraftServerInstaller.Forms
             this.basicOptionsTableLayoutPanel.Controls.Add(this.gameVersionLabel, 0, 0);
             this.basicOptionsTableLayoutPanel.Controls.Add(this.modVersionLabel, 0, 1);
             this.basicOptionsTableLayoutPanel.Controls.Add(this.installPathLabel, 0, 2);
-            this.basicOptionsTableLayoutPanel.Controls.Add(this.guiLabel, 0, 3);
-            this.basicOptionsTableLayoutPanel.Controls.Add(this.ramSettingLabel, 0, 6);
-            this.basicOptionsTableLayoutPanel.Controls.Add(this.maxRamLabel, 0, 7);
-            this.basicOptionsTableLayoutPanel.Controls.Add(this.minRamLabel, 0, 8);
-            this.basicOptionsTableLayoutPanel.Controls.Add(this.eulaLinkLabel, 0, 4);
             this.basicOptionsTableLayoutPanel.Controls.Add(this.gameVersionTextBox, 1, 0);
-            this.basicOptionsTableLayoutPanel.Controls.Add(this.guiCheckBox, 1, 3);
-            this.basicOptionsTableLayoutPanel.Controls.Add(this.eulaCheckBox, 1, 4);
-            this.basicOptionsTableLayoutPanel.Controls.Add(this.ramSettingCheckBox, 1, 6);
-            this.basicOptionsTableLayoutPanel.Controls.Add(this.maxRamTrackBar, 1, 7);
-            this.basicOptionsTableLayoutPanel.Controls.Add(this.minRamTrackBar, 1, 8);
             this.basicOptionsTableLayoutPanel.Controls.Add(this.gameVersionButton, 2, 0);
-            this.basicOptionsTableLayoutPanel.Controls.Add(this.maxRamTextBox, 2, 7);
-            this.basicOptionsTableLayoutPanel.Controls.Add(this.minRamTextBox, 2, 8);
             this.basicOptionsTableLayoutPanel.Controls.Add(this.installButton, 2, 10);
             this.basicOptionsTableLayoutPanel.Controls.Add(this.resetBasicOptionsButton, 1, 10);
             this.basicOptionsTableLayoutPanel.Controls.Add(this.modVersionTableLayoutPanel, 1, 1);
             this.basicOptionsTableLayoutPanel.Controls.Add(this.installPathTextBox, 1, 2);
+            this.basicOptionsTableLayoutPanel.Controls.Add(this.minRamLabel, 0, 9);
+            this.basicOptionsTableLayoutPanel.Controls.Add(this.minRamTrackBar, 1, 9);
+            this.basicOptionsTableLayoutPanel.Controls.Add(this.minRamTextBox, 2, 9);
+            this.basicOptionsTableLayoutPanel.Controls.Add(this.maxRamTextBox, 2, 8);
+            this.basicOptionsTableLayoutPanel.Controls.Add(this.maxRamTrackBar, 1, 8);
+            this.basicOptionsTableLayoutPanel.Controls.Add(this.maxRamLabel, 0, 8);
+            this.basicOptionsTableLayoutPanel.Controls.Add(this.ramSettingLabel, 0, 7);
+            this.basicOptionsTableLayoutPanel.Controls.Add(this.ramSettingCheckBox, 1, 7);
+            this.basicOptionsTableLayoutPanel.Controls.Add(this.eulaLabel, 0, 3);
+            this.basicOptionsTableLayoutPanel.Controls.Add(this.eulaCheckBox, 1, 3);
+            this.basicOptionsTableLayoutPanel.Controls.Add(this.eulaLinkLabel, 2, 3);
+            this.basicOptionsTableLayoutPanel.Controls.Add(this.javaInstallLabel, 0, 5);
+            this.basicOptionsTableLayoutPanel.Controls.Add(this.javaInstallCheckBox, 1, 5);
+            this.basicOptionsTableLayoutPanel.Controls.Add(this.guiLabel, 0, 4);
+            this.basicOptionsTableLayoutPanel.Controls.Add(this.guiCheckBox, 1, 4);
             this.basicOptionsTableLayoutPanel.Name = "basicOptionsTableLayoutPanel";
             // 
             // installPathButton
@@ -235,88 +241,11 @@ namespace MinecraftServerInstaller.Forms
             resources.ApplyResources(this.installPathLabel, "installPathLabel");
             this.installPathLabel.Name = "installPathLabel";
             // 
-            // guiLabel
-            // 
-            resources.ApplyResources(this.guiLabel, "guiLabel");
-            this.guiLabel.Name = "guiLabel";
-            // 
-            // ramSettingLabel
-            // 
-            resources.ApplyResources(this.ramSettingLabel, "ramSettingLabel");
-            this.ramSettingLabel.Name = "ramSettingLabel";
-            // 
-            // maxRamLabel
-            // 
-            resources.ApplyResources(this.maxRamLabel, "maxRamLabel");
-            this.maxRamLabel.Name = "maxRamLabel";
-            // 
-            // minRamLabel
-            // 
-            resources.ApplyResources(this.minRamLabel, "minRamLabel");
-            this.minRamLabel.Name = "minRamLabel";
-            // 
-            // eulaLinkLabel
-            // 
-            resources.ApplyResources(this.eulaLinkLabel, "eulaLinkLabel");
-            this.eulaLinkLabel.Name = "eulaLinkLabel";
-            this.eulaLinkLabel.TabStop = true;
-            this.eulaLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.EulaLinkLabel_LinkClicked);
-            // 
             // gameVersionTextBox
             // 
             resources.ApplyResources(this.gameVersionTextBox, "gameVersionTextBox");
             this.gameVersionTextBox.Name = "gameVersionTextBox";
             this.gameVersionTextBox.ReadOnly = true;
-            // 
-            // guiCheckBox
-            // 
-            resources.ApplyResources(this.guiCheckBox, "guiCheckBox");
-            this.guiCheckBox.Name = "guiCheckBox";
-            this.guiCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // eulaCheckBox
-            // 
-            resources.ApplyResources(this.eulaCheckBox, "eulaCheckBox");
-            this.eulaCheckBox.Name = "eulaCheckBox";
-            this.eulaCheckBox.UseVisualStyleBackColor = true;
-            this.eulaCheckBox.CheckedChanged += new System.EventHandler(this.EulaCheckBox_CheckedChanged);
-            // 
-            // ramSettingCheckBox
-            // 
-            resources.ApplyResources(this.ramSettingCheckBox, "ramSettingCheckBox");
-            this.ramSettingCheckBox.Name = "ramSettingCheckBox";
-            this.ramSettingCheckBox.UseVisualStyleBackColor = true;
-            this.ramSettingCheckBox.CheckedChanged += new System.EventHandler(this.RamSettingCheckBox_CheckedChanged);
-            // 
-            // maxRamTrackBar
-            // 
-            resources.ApplyResources(this.maxRamTrackBar, "maxRamTrackBar");
-            this.maxRamTrackBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.maxRamTrackBar.LargeChange = 1;
-            this.maxRamTrackBar.Maximum = 10240;
-            this.maxRamTrackBar.Minimum = 512;
-            this.maxRamTrackBar.Name = "maxRamTrackBar";
-            this.maxRamTrackBar.TickFrequency = 512;
-            this.maxRamTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.maxRamTrackBar.Value = 2048;
-            this.maxRamTrackBar.Scroll += new System.EventHandler(this.MaxRamTrackBar_Scroll);
-            this.maxRamTrackBar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.MaxRamTrackBar_KeyUp);
-            this.maxRamTrackBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MaxRamTrackBar_MouseUp);
-            // 
-            // minRamTrackBar
-            // 
-            resources.ApplyResources(this.minRamTrackBar, "minRamTrackBar");
-            this.minRamTrackBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.minRamTrackBar.LargeChange = 1;
-            this.minRamTrackBar.Maximum = 10240;
-            this.minRamTrackBar.Minimum = 512;
-            this.minRamTrackBar.Name = "minRamTrackBar";
-            this.minRamTrackBar.TickFrequency = 512;
-            this.minRamTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.minRamTrackBar.Value = 2048;
-            this.minRamTrackBar.Scroll += new System.EventHandler(this.MinRamTrackBar_Scroll);
-            this.minRamTrackBar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.MinRamTrackBar_KeyUp);
-            this.minRamTrackBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MinRamTrackBar_MouseUp);
             // 
             // gameVersionButton
             // 
@@ -324,20 +253,6 @@ namespace MinecraftServerInstaller.Forms
             this.gameVersionButton.Name = "gameVersionButton";
             this.gameVersionButton.UseVisualStyleBackColor = true;
             this.gameVersionButton.Click += new System.EventHandler(this.GameVersionButton_Click);
-            // 
-            // maxRamTextBox
-            // 
-            resources.ApplyResources(this.maxRamTextBox, "maxRamTextBox");
-            this.maxRamTextBox.Name = "maxRamTextBox";
-            this.maxRamTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MaxRamTextBox_KeyPress);
-            this.maxRamTextBox.LostFocus += new System.EventHandler(this.MaxRamTextBox_LostFocus);
-            // 
-            // minRamTextBox
-            // 
-            resources.ApplyResources(this.minRamTextBox, "minRamTextBox");
-            this.minRamTextBox.Name = "minRamTextBox";
-            this.minRamTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MinRamTextBox_KeyPress);
-            this.minRamTextBox.LostFocus += new System.EventHandler(this.MinRamTextBox_LostFocus);
             // 
             // installButton
             // 
@@ -383,6 +298,114 @@ namespace MinecraftServerInstaller.Forms
             resources.ApplyResources(this.installPathTextBox, "installPathTextBox");
             this.installPathTextBox.Name = "installPathTextBox";
             this.installPathTextBox.ReadOnly = true;
+            // 
+            // minRamLabel
+            // 
+            resources.ApplyResources(this.minRamLabel, "minRamLabel");
+            this.minRamLabel.Name = "minRamLabel";
+            // 
+            // minRamTrackBar
+            // 
+            resources.ApplyResources(this.minRamTrackBar, "minRamTrackBar");
+            this.minRamTrackBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.minRamTrackBar.LargeChange = 1;
+            this.minRamTrackBar.Maximum = 10240;
+            this.minRamTrackBar.Minimum = 512;
+            this.minRamTrackBar.Name = "minRamTrackBar";
+            this.minRamTrackBar.TickFrequency = 512;
+            this.minRamTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.minRamTrackBar.Value = 2048;
+            this.minRamTrackBar.Scroll += new System.EventHandler(this.MinRamTrackBar_Scroll);
+            this.minRamTrackBar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.MinRamTrackBar_KeyUp);
+            this.minRamTrackBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MinRamTrackBar_MouseUp);
+            // 
+            // minRamTextBox
+            // 
+            resources.ApplyResources(this.minRamTextBox, "minRamTextBox");
+            this.minRamTextBox.Name = "minRamTextBox";
+            this.minRamTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MinRamTextBox_KeyPress);
+            this.minRamTextBox.LostFocus += new System.EventHandler(this.MinRamTextBox_LostFocus);
+            // 
+            // maxRamTextBox
+            // 
+            resources.ApplyResources(this.maxRamTextBox, "maxRamTextBox");
+            this.maxRamTextBox.Name = "maxRamTextBox";
+            this.maxRamTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MaxRamTextBox_KeyPress);
+            this.maxRamTextBox.LostFocus += new System.EventHandler(this.MaxRamTextBox_LostFocus);
+            // 
+            // maxRamTrackBar
+            // 
+            resources.ApplyResources(this.maxRamTrackBar, "maxRamTrackBar");
+            this.maxRamTrackBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.maxRamTrackBar.LargeChange = 1;
+            this.maxRamTrackBar.Maximum = 10240;
+            this.maxRamTrackBar.Minimum = 512;
+            this.maxRamTrackBar.Name = "maxRamTrackBar";
+            this.maxRamTrackBar.TickFrequency = 512;
+            this.maxRamTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.maxRamTrackBar.Value = 2048;
+            this.maxRamTrackBar.Scroll += new System.EventHandler(this.MaxRamTrackBar_Scroll);
+            this.maxRamTrackBar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.MaxRamTrackBar_KeyUp);
+            this.maxRamTrackBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MaxRamTrackBar_MouseUp);
+            // 
+            // maxRamLabel
+            // 
+            resources.ApplyResources(this.maxRamLabel, "maxRamLabel");
+            this.maxRamLabel.Name = "maxRamLabel";
+            // 
+            // ramSettingLabel
+            // 
+            resources.ApplyResources(this.ramSettingLabel, "ramSettingLabel");
+            this.ramSettingLabel.Name = "ramSettingLabel";
+            // 
+            // ramSettingCheckBox
+            // 
+            resources.ApplyResources(this.ramSettingCheckBox, "ramSettingCheckBox");
+            this.ramSettingCheckBox.Name = "ramSettingCheckBox";
+            this.ramSettingCheckBox.UseVisualStyleBackColor = true;
+            this.ramSettingCheckBox.CheckedChanged += new System.EventHandler(this.RamSettingCheckBox_CheckedChanged);
+            // 
+            // eulaLabel
+            // 
+            resources.ApplyResources(this.eulaLabel, "eulaLabel");
+            this.eulaLabel.Name = "eulaLabel";
+            // 
+            // eulaCheckBox
+            // 
+            resources.ApplyResources(this.eulaCheckBox, "eulaCheckBox");
+            this.eulaCheckBox.Name = "eulaCheckBox";
+            this.eulaCheckBox.UseVisualStyleBackColor = true;
+            this.eulaCheckBox.CheckedChanged += new System.EventHandler(this.EulaCheckBox_CheckedChanged);
+            // 
+            // eulaLinkLabel
+            // 
+            resources.ApplyResources(this.eulaLinkLabel, "eulaLinkLabel");
+            this.eulaLinkLabel.Name = "eulaLinkLabel";
+            this.eulaLinkLabel.TabStop = true;
+            this.eulaLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.EulaLinkLabel_LinkClicked);
+            // 
+            // javaInstallLabel
+            // 
+            resources.ApplyResources(this.javaInstallLabel, "javaInstallLabel");
+            this.javaInstallLabel.Name = "javaInstallLabel";
+            // 
+            // javaInstallCheckBox
+            // 
+            resources.ApplyResources(this.javaInstallCheckBox, "javaInstallCheckBox");
+            this.javaInstallCheckBox.Name = "javaInstallCheckBox";
+            this.javaInstallCheckBox.UseVisualStyleBackColor = true;
+            this.javaInstallCheckBox.CheckedChanged += new System.EventHandler(this.JavaInstallCheckBox_CheckedChanged);
+            // 
+            // guiLabel
+            // 
+            resources.ApplyResources(this.guiLabel, "guiLabel");
+            this.guiLabel.Name = "guiLabel";
+            // 
+            // guiCheckBox
+            // 
+            resources.ApplyResources(this.guiCheckBox, "guiCheckBox");
+            this.guiCheckBox.Name = "guiCheckBox";
+            this.guiCheckBox.UseVisualStyleBackColor = true;
             // 
             // advancedOptionsTabPage
             // 
@@ -801,10 +824,10 @@ namespace MinecraftServerInstaller.Forms
             this.basicOptionsTabPage.ResumeLayout(false);
             this.basicOptionsTableLayoutPanel.ResumeLayout(false);
             this.basicOptionsTableLayoutPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.maxRamTrackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minRamTrackBar)).EndInit();
             this.modVersionTableLayoutPanel.ResumeLayout(false);
             this.modVersionTableLayoutPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.minRamTrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxRamTrackBar)).EndInit();
             this.advancedOptionsTabPage.ResumeLayout(false);
             this.advancedOptionsTableLayoutPanel.ResumeLayout(false);
             this.advancedOptionsTableLayoutPanel.PerformLayout();
@@ -926,6 +949,9 @@ namespace MinecraftServerInstaller.Forms
         private System.Windows.Forms.Button installPathButton;
         private System.Windows.Forms.Button forgeVersionButton;
         private System.Windows.Forms.Label modVersionLabel;
+        private System.Windows.Forms.Label javaInstallLabel;
+        private System.Windows.Forms.CheckBox javaInstallCheckBox;
+        private System.Windows.Forms.Label eulaLabel;
     }
 }
 

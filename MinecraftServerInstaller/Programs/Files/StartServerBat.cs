@@ -22,10 +22,11 @@ namespace MinecraftServerInstaller.Programs.Files {
             MinRam = 2048;
         }
 
-        public static void CreateFile(string path) {
+        public static void CreateFile(string path, bool nogui) {
 
             using (StreamWriter writer = new StreamWriter(path + "\\StartServer.bat")) {
-                writer.WriteLine($"java -Xmx{MaxRam}M -Xms{MinRam}M -jar server.jar");
+                writer.Write($"java -Xmx{MaxRam}M -Xms{MinRam}M -jar server.jar");
+                writer.WriteLine(nogui ? " nogui" : "");
             }
         }
     }

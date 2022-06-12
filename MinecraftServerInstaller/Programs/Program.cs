@@ -64,12 +64,14 @@ namespace MinecraftServerInstaller.Programs {
             public static readonly string GAME_VERSION_DESCRIPT = "請選擇主遊戲版本。";
             public static readonly string FORGE_VERSION_DESCRIPT = "請選擇 Forge 版本。";
             public static readonly string FORGE_VERSION_INFO = "找不到此版本的 Forge，請嘗試其他遊戲版本。";
+            public static readonly string JAVA_WARNING = "下載 Java 程式會需要額外約 100 MB 的空間，且僅支援 64 位元作業系統，若需頻繁建立伺服器，不建議啟用此選項。";
             public static readonly string RAM_WARNING = "更改伺服器記憶體限制可能會影響伺服器的穩定性，或甚至無法正常啟動，請小心調整。";
             public static readonly string SERVER_PORT_INFO = "請輸入 1025 ~ 65535 內的值。";
             public static readonly string SERVER_PORT_WARNING = "更改伺服器連接埠可能與其他應用程式產生衝突，造成無法連線或系統不穩定，請確認設置的連接埠是否為空連接埠，並為其設置防火牆通道允許通過。";
             public static readonly string MAX_PLAYER_INFO = "請輸入正整數。";
             public static readonly string SPAWN_PROTECTION_INFO = "請輸入正整數。";
             public static readonly string VIEW_DISTANCE_INFO = "請輸入正整數。";
+            public static readonly string INSTALL_SUCCESS = "安裝完成！請至安裝資料夾中以 StartServer 檔案啟動伺服器。";
         }
     }
 }

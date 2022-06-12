@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MinecraftServerInstaller.Programs.Installers {
-    partial class InstallVanilla : IDisposable {
+    partial class InstallFabric : IDisposable {
 
         private bool disposedValue;
 
@@ -22,7 +22,7 @@ namespace MinecraftServerInstaller.Programs.Installers {
         }
 
         // // TODO: 僅有當 'Dispose(bool disposing)' 具有會釋出非受控資源的程式碼時，才覆寫完成項
-        // ~InstallVanilla()
+        // ~InstallFabric()
         // {
         //     // 請勿變更此程式碼。請將清除程式碼放入 'Dispose(bool disposing)' 方法
         //     Dispose(disposing: false);

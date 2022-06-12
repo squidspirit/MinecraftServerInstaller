@@ -16,6 +16,7 @@ using MinecraftServerInstaller.Programs.Files;
 using MinecraftServerInstaller.Programs.Installers;
 using MinecraftServerInstaller.Events;
 
+
 namespace MinecraftServerInstaller.Forms {
     public partial class MainForm : Form {
 
@@ -242,6 +243,20 @@ namespace MinecraftServerInstaller.Forms {
                 }
             }
             CheckInstallable();
+        }
+        //
+        // Java 勾選框
+        //
+        private void JavaInstallCheckBox_CheckedChanged(object sender, EventArgs e) {
+            
+            if (javaInstallCheckBox.Checked == true) {
+                MessageBox.Show(
+                    Program.DialogContent.JAVA_WARNING,
+                    Program.DialogTitle.WARNING,
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+            }
         }
         //
         // EULA 連結點擊
@@ -705,26 +720,29 @@ namespace MinecraftServerInstaller.Forms {
             tabControl.Enabled = false;
             statusProgressBar.Value = 0;
             ServerProperties.CreateFile(installPathTextBox.Text);
-            StartServerBat.CreateFile(installPathTextBox.Text);
+            StartServerBat.CreateFile(installPathTextBox.Text, !guiCheckBox.Checked);
             Eula.CreateFile(installPathTextBox.Text);
 
+            IInstaller installer;
             switch (modVersionComboBox.SelectedIndex) {
                 case 0: // Vanilla
-                    using (InstallVanilla install = new InstallVanilla(
-                        versionsDictionary[gameVersionTextBox.Text], installPathTextBox.Text)) {
-                        install.InstallComplete += Install_InstallComplete;
-                        install.InstallProgressChanged += Install_InstallProgressChanged;
-                        install.Install();
-                    }
+                    installer = new InstallVanilla(
+                        versionsDictionary[gameVersionTextBox.Text], installPathTextBox.Text);
                     break;
                 case 1: // Forge
-                    Console.WriteLine(versionsDictionary[forgeVersionTextBox.Text]);
+                    installer = new InstallForge(
+                        versionsDictionary[gameVersionTextBox.Text], installPathTextBox.Text);
                     break;
                 case 2: // Fabric
-
+                    installer = new InstallFabric(
+                        versionsDictionary[gameVersionTextBox.Text], installPathTextBox.Text);
                     break;
-                default: break;
+                default: return;
             }
+            installer.InstallComplete += Install_InstallComplete;
+            installer.InstallProgressChanged += Install_InstallProgressChanged;
+            installer.Install();
+            installButton.Dispose();
         }
 
         private void Install_InstallComplete(object serder, InstallCompleteEventArgs e) {
@@ -740,6 +758,12 @@ namespace MinecraftServerInstaller.Forms {
                 return;
             }
 
+            MessageBox.Show(
+                Program.DialogContent.INSTALL_SUCCESS,
+                Program.DialogTitle.INFO,
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
             tabControl.Enabled = true;
         }
     }

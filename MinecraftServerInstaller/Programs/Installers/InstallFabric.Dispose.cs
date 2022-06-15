@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MinecraftServerInstaller.Programs.Installers {
-    partial class InstallFabric : IDisposable {
+    partial class InstallFabric {
 
         private bool disposedValue;
 

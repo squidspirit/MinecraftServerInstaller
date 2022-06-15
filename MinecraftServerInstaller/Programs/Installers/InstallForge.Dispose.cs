@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MinecraftServerInstaller.Programs.Installers {
-    partial class InstallForge : IDisposable {
+    partial class InstallForge {
 
         private bool disposedValue;
 

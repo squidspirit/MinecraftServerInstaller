@@ -53,7 +53,7 @@ namespace MinecraftServerInstaller.Programs.Files {
         public static string MaxPlayer { get => maxPlayer.Value; set => maxPlayer.Value = value; }
         public static string SpawnProtection { get => spawnProtection.Value; set => spawnProtection.Value = value; }
         public static string ViewDistance { get => viewDistance.Value; set => viewDistance.Value = value; }
-        public static string PVP { get => pvp.Value; set => pvp.Value = value; }
+        public static string Pvp { get => pvp.Value; set => pvp.Value = value; }
         public static string Gamemode { get => gamemode.Value; set => gamemode.Value = value; }
         public static string Difficulty { get => difficulty.Value; set => difficulty.Value = value; }
         public static string EnableCommandBlock { get => enableCommandBlock.Value; set => enableCommandBlock.Value = value; }
@@ -66,7 +66,7 @@ namespace MinecraftServerInstaller.Programs.Files {
             MaxPlayer = "20";
             SpawnProtection = "16";
             ViewDistance = "10";
-            PVP = "true";
+            Pvp = "true";
             Gamemode = "0";
             Difficulty = "1";
             EnableCommandBlock = "false";

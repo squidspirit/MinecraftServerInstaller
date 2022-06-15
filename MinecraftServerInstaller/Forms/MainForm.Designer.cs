@@ -406,6 +406,7 @@ namespace MinecraftServerInstaller.Forms
             resources.ApplyResources(this.guiCheckBox, "guiCheckBox");
             this.guiCheckBox.Name = "guiCheckBox";
             this.guiCheckBox.UseVisualStyleBackColor = true;
+            this.guiCheckBox.CheckedChanged += new System.EventHandler(this.GuiCheckBox_CheckedChanged);
             // 
             // advancedOptionsTabPage
             // 
@@ -503,7 +504,7 @@ namespace MinecraftServerInstaller.Forms
             resources.GetString("pvpComboBox.Items"),
             resources.GetString("pvpComboBox.Items1")});
             this.pvpComboBox.Name = "pvpComboBox";
-            this.pvpComboBox.SelectedIndexChanged += new System.EventHandler(this.PVPComboBox_SelectedIndexChanged);
+            this.pvpComboBox.SelectedIndexChanged += new System.EventHandler(this.PvpComboBox_SelectedIndexChanged);
             // 
             // viewDistanceTextBox
             // 

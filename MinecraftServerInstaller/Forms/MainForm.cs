@@ -24,7 +24,9 @@ namespace MinecraftServerInstaller.Forms {
         private bool maxPlayerTextBoxLock = false;
         private bool spawnProtectionTextBoxLock = false;
         private bool viewDistanceTextBoxLock = false;
-        readonly private Dictionary<string, string> versionsDictionary =
+        readonly private Dictionary<string, string> gameVersionsDictionary =
+            new Dictionary<string, string>();
+        readonly private Dictionary<string, string> forgeVersionsDictionary =
             new Dictionary<string, string>();
 
         public MainForm() {
@@ -57,13 +59,13 @@ namespace MinecraftServerInstaller.Forms {
 
             if (string.IsNullOrEmpty(gameVersionTextBox.Text))
                 enableFlag = false;
-            else if (modVersionComboBox.SelectedIndex > 0) {
+            if (modVersionComboBox.SelectedIndex > 0) {
                 if (string.IsNullOrEmpty(forgeVersionTextBox.Text))
                     enableFlag = false;
             }
-            else if (string.IsNullOrEmpty(installPathTextBox.Text))
+            if (string.IsNullOrEmpty(installPathTextBox.Text))
                 enableFlag = false;
-            else if (!eulaCheckBox.Checked)
+            if (!eulaCheckBox.Checked)
                 enableFlag = false;
 
             installButton.Enabled = enableFlag;
@@ -107,18 +109,18 @@ namespace MinecraftServerInstaller.Forms {
                 return;
             }
 
-            versionsDictionary.Clear();
+            gameVersionsDictionary.Clear();
             using (StreamReader reader = new StreamReader(Program.Path.GAME_VERSION)) {
                 while (true) {
                     string line = reader.ReadLine();
                     if (line == null) break;
                     string[] lineSplited = line.Split(' ');
-                    versionsDictionary.Add(lineSplited[0], lineSplited[1]);
+                    gameVersionsDictionary.Add(lineSplited[0], lineSplited[1]);
                 }
             }
             VersionSelectForm versionSelect = new VersionSelectForm(
                 Program.DialogContent.GAME_VERSION_DESCRIPT,
-                versionsDictionary.Keys.ToArray<string>(),
+                gameVersionsDictionary.Keys.ToArray<string>(),
                 gameVersionTextBox.Text
             );
             versionSelect.Disposed += new EventHandler((_sender, _e) => {
@@ -177,19 +179,19 @@ namespace MinecraftServerInstaller.Forms {
                 return;
             }
 
-            versionsDictionary.Clear();
+            forgeVersionsDictionary.Clear();
             using (StreamReader reader = new StreamReader(Program.Path.FORGE_VERSION)) {
                 while (true) {
                     string line = reader.ReadLine();
                     if (line == null) break;
                     string[] lineSplited = line.Split(' ');
                     if (lineSplited[0] == gameVersionTextBox.Text) {
-                        versionsDictionary.Add(lineSplited[1],
+                        forgeVersionsDictionary.Add(lineSplited[1],
                             Program.Url.ForgeVersionToUrl(lineSplited[2]));
                     }
                 }
             }
-            if (versionsDictionary.Count == 0) {
+            if (forgeVersionsDictionary.Count == 0) {
                 MessageBox.Show(
                     Program.DialogContent.FORGE_VERSION_INFO,
                     Program.DialogTitle.INFO,
@@ -201,7 +203,7 @@ namespace MinecraftServerInstaller.Forms {
             else {
                 VersionSelectForm versionSelect = new VersionSelectForm(
                     Program.DialogContent.FORGE_VERSION_DESCRIPT,
-                    versionsDictionary.Keys.ToArray<string>(),
+                    forgeVersionsDictionary.Keys.ToArray<string>(),
                     forgeVersionTextBox.Text
                 );
                 versionSelect.Disposed += new EventHandler((_sender, _e) => {
@@ -245,20 +247,6 @@ namespace MinecraftServerInstaller.Forms {
             CheckInstallable();
         }
         //
-        // Java 勾選框
-        //
-        private void JavaInstallCheckBox_CheckedChanged(object sender, EventArgs e) {
-            
-            if (javaInstallCheckBox.Checked == true) {
-                MessageBox.Show(
-                    Program.DialogContent.JAVA_WARNING,
-                    Program.DialogTitle.WARNING,
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning
-                );
-            }
-        }
-        //
         // EULA 連結點擊
         //
         private void EulaLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
@@ -271,6 +259,28 @@ namespace MinecraftServerInstaller.Forms {
         private void EulaCheckBox_CheckedChanged(object sender, EventArgs e) {
 
             CheckInstallable();
+        }
+        //
+        // GUI 勾選框
+        //
+        private void GuiCheckBox_CheckedChanged(object sender, EventArgs e) {
+
+            StartServerBat.IsNoGui = !guiCheckBox.Checked;
+        }
+        //
+        // Java 勾選框
+        //
+        private void JavaInstallCheckBox_CheckedChanged(object sender, EventArgs e) {
+            
+            if (javaInstallCheckBox.Checked == true) {
+                MessageBox.Show(
+                    Program.DialogContent.JAVA_WARNING,
+                    Program.DialogTitle.WARNING,
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+            }
+            StartServerBat.IsLocalJava = javaInstallCheckBox.Checked;
         }
         //
         // 更改記憶體勾選框
@@ -580,9 +590,9 @@ namespace MinecraftServerInstaller.Forms {
         //
         // PVP 選單更改
         //
-        private void PVPComboBox_SelectedIndexChanged(object sender, EventArgs e) {
+        private void PvpComboBox_SelectedIndexChanged(object sender, EventArgs e) {
 
-            ServerProperties.PVP = pvpComboBox.Text;
+            ServerProperties.Pvp = pvpComboBox.Text;
         }
         //
         // 遊戲模式選單更改
@@ -694,7 +704,7 @@ namespace MinecraftServerInstaller.Forms {
             maxPlayerTextBox.Text = ServerProperties.MaxPlayer;
             spawnProtectionTextBox.Text = ServerProperties.SpawnProtection;
             viewDistanceTextBox.Text = ServerProperties.ViewDistance;
-            pvpComboBox.SelectedIndex = Convert.ToBoolean(ServerProperties.PVP) ? 1 : 0;
+            pvpComboBox.SelectedIndex = Convert.ToBoolean(ServerProperties.Pvp) ? 1 : 0;
             gamemodeComboBox.SelectedIndex = Convert.ToInt32(ServerProperties.Gamemode);
             difficultyComboBox.SelectedIndex = Convert.ToInt32(ServerProperties.Difficulty);
             enableCommandBlockComboBox.SelectedIndex = Convert.ToBoolean(ServerProperties.EnableCommandBlock) ? 1 : 0;
@@ -719,30 +729,29 @@ namespace MinecraftServerInstaller.Forms {
 
             tabControl.Enabled = false;
             statusProgressBar.Value = 0;
-            ServerProperties.CreateFile(installPathTextBox.Text);
-            StartServerBat.CreateFile(installPathTextBox.Text, !guiCheckBox.Checked);
-            Eula.CreateFile(installPathTextBox.Text);
 
             IInstaller installer;
             switch (modVersionComboBox.SelectedIndex) {
                 case 0: // Vanilla
-                    installer = new InstallVanilla(
-                        versionsDictionary[gameVersionTextBox.Text], installPathTextBox.Text);
+                    installer = new InstallVanilla( // url, filename
+                        gameVersionsDictionary[gameVersionTextBox.Text], installPathTextBox.Text);
                     break;
                 case 1: // Forge
-                    installer = new InstallForge(
-                        versionsDictionary[gameVersionTextBox.Text], installPathTextBox.Text);
+                    installer = new InstallForge( // url, filename
+                        forgeVersionsDictionary[forgeVersionTextBox.Text], installPathTextBox.Text);
+                    StartServerBat.IsNewForge =
+                        Convert.ToInt32(gameVersionTextBox.Text.Split('.')[1]) >= 17;
                     break;
                 case 2: // Fabric
-                    installer = new InstallFabric(
-                        versionsDictionary[gameVersionTextBox.Text], installPathTextBox.Text);
+                    installer = new InstallFabric( // gameVersion, filename
+                        gameVersionTextBox.Text, installPathTextBox.Text);
                     break;
                 default: return;
             }
             installer.InstallComplete += Install_InstallComplete;
             installer.InstallProgressChanged += Install_InstallProgressChanged;
             installer.Install();
-            installButton.Dispose();
+            installer.Dispose();
         }
 
         private void Install_InstallComplete(object serder, InstallCompleteEventArgs e) {
@@ -758,6 +767,9 @@ namespace MinecraftServerInstaller.Forms {
                 return;
             }
 
+            ServerProperties.CreateFile(installPathTextBox.Text);
+            StartServerBat.CreateFile(installPathTextBox.Text);
+            Eula.CreateFile(installPathTextBox.Text);
             MessageBox.Show(
                 Program.DialogContent.INSTALL_SUCCESS,
                 Program.DialogTitle.INFO,

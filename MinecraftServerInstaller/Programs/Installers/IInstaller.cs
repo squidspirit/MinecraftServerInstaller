@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using MinecraftServerInstaller.Events;
 
 namespace MinecraftServerInstaller.Programs.Installers {
-    interface IInstaller {
+    interface IInstaller : IDisposable {
 
         void Install();
 

@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Net;
@@ -43,6 +38,11 @@ namespace MinecraftServerInstaller.Forms {
             emailTextBox.Text = Program.Information.EMAIL;
             tutorialTextBox.Text = Program.Information.TUTORIAL;
             websiteTextBox.Text = Program.Information.WEBSITE;
+
+            javaInstallCheckBox.Hide();
+            javaInstallLabel.Hide();
+
+            Programs.Update.CheckNew();
         }
 
         //
@@ -59,7 +59,7 @@ namespace MinecraftServerInstaller.Forms {
 
             if (string.IsNullOrEmpty(gameVersionTextBox.Text))
                 enableFlag = false;
-            if (modVersionComboBox.SelectedIndex > 0) {
+            if (modVersionComboBox.SelectedIndex == 1) {
                 if (string.IsNullOrEmpty(forgeVersionTextBox.Text))
                     enableFlag = false;
             }
@@ -150,6 +150,18 @@ namespace MinecraftServerInstaller.Forms {
                 forgeVersionTextBox.Enabled = false;
                 forgeVersionButton.Enabled = false;
             }
+
+            if (modVersionComboBox.SelectedIndex == 2 &&
+                Convert.ToInt32(gameVersionTextBox.Text.Split('.')[1]) < 14) {
+
+                MessageBox.Show(
+                    Program.DialogContent.FABRIC_VERSION_INFO,
+                    Program.DialogTitle.WARNING,
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+                modVersionComboBox.SelectedIndex = 0;
+            }
             CheckInstallable();
         }
         //
@@ -186,8 +198,10 @@ namespace MinecraftServerInstaller.Forms {
                     if (line == null) break;
                     string[] lineSplited = line.Split(' ');
                     if (lineSplited[0] == gameVersionTextBox.Text) {
-                        forgeVersionsDictionary.Add(lineSplited[1],
-                            Program.Url.ForgeVersionToUrl(lineSplited[2]));
+                        forgeVersionsDictionary.Add(
+                            lineSplited[1],
+                            Program.Url.ForgeVersionToUrl(lineSplited[2])
+                        );
                     }
                 }
             }
@@ -721,6 +735,7 @@ namespace MinecraftServerInstaller.Forms {
         //
         private void CheckNewButton_Click(object sender, EventArgs e) {
 
+            Programs.Update.CheckNew();
         }
         //
         // 開始安裝
@@ -734,17 +749,24 @@ namespace MinecraftServerInstaller.Forms {
             switch (modVersionComboBox.SelectedIndex) {
                 case 0: // Vanilla
                     installer = new InstallVanilla( // url, filename
-                        gameVersionsDictionary[gameVersionTextBox.Text], installPathTextBox.Text);
+                        gameVersionsDictionary[gameVersionTextBox.Text],
+                        installPathTextBox.Text
+                    );
                     break;
                 case 1: // Forge
                     installer = new InstallForge( // url, filename
-                        forgeVersionsDictionary[forgeVersionTextBox.Text], installPathTextBox.Text);
+                        forgeVersionsDictionary[forgeVersionTextBox.Text],
+                        installPathTextBox.Text
+                    );
                     StartServerBat.IsNewForge =
                         Convert.ToInt32(gameVersionTextBox.Text.Split('.')[1]) >= 17;
                     break;
                 case 2: // Fabric
                     installer = new InstallFabric( // gameVersion, filename
-                        gameVersionTextBox.Text, installPathTextBox.Text);
+                        gameVersionTextBox.Text,
+                        installPathTextBox.Text
+                    );
+                    StartServerBat.IsFabric = true;
                     break;
                 default: return;
             }

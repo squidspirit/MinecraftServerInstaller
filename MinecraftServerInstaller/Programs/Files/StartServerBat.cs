@@ -17,6 +17,7 @@ namespace MinecraftServerInstaller.Programs.Files {
         public static int MinRam { get; set; }
         public static bool IsNoGui { get; set; }
         public static bool IsNewForge { get; set; }
+        public static bool IsFabric { get; set; }
         public static bool IsLocalJava { get; set; }
 
 
@@ -26,6 +27,7 @@ namespace MinecraftServerInstaller.Programs.Files {
             MinRam = 2048;
             IsNoGui = true;
             IsNewForge = false;
+            IsFabric = false;
             IsLocalJava = false;
         }
 
@@ -42,6 +44,7 @@ namespace MinecraftServerInstaller.Programs.Files {
                     }
                     else throw new Exception($"{path}\\libraries not found.");
                 }
+                else if (IsFabric) writer.Write(" -jar fabric-server-launch.jar");
                 else writer.Write(" -jar server.jar");
                 writer.Write(IsNoGui ? " nogui" : "");
                 writer.WriteLine(IsNewForge ? " %*" : "");

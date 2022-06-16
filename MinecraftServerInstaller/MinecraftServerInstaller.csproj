@@ -135,6 +135,7 @@
     </Compile>
     <Compile Include="Programs\Program.cs" />
     <Compile Include="Programs\Files\StartServerBat.cs" />
+    <Compile Include="Programs\Update.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\CommandOutputForm.resx">
       <DependentUpon>CommandOutputForm.cs</DependentUpon>

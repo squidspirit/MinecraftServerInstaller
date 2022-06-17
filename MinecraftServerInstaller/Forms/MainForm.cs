@@ -39,9 +39,6 @@ namespace MinecraftServerInstaller.Forms {
             tutorialTextBox.Text = Program.Information.TUTORIAL;
             websiteTextBox.Text = Program.Information.WEBSITE;
 
-            javaInstallCheckBox.Hide();
-            javaInstallLabel.Hide();
-
             Programs.Update.CheckNew();
         }
 

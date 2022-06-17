@@ -13,6 +13,9 @@ using MinecraftServerInstaller.Forms;
 namespace MinecraftServerInstaller.Programs.Installers {
     partial class InstallFabric : IInstaller {
 
+        public event InstallProgressChangedEventHandler InstallProgressChanged;
+        public event InstallCompleteEventHandler InstallComplete;
+
         private readonly CommandOutputForm outputForm = new CommandOutputForm();
 
         public InstallFabric(string version, string path) {
@@ -81,8 +84,5 @@ namespace MinecraftServerInstaller.Programs.Installers {
                 process.WaitForExit();
             }
         }
-
-        public event InstallProgressChangedEventHandler InstallProgressChanged;
-        public event InstallCompleteEventHandler InstallComplete;
     }
 }

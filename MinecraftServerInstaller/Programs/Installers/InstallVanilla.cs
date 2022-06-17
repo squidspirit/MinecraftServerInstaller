@@ -12,6 +12,9 @@ using MinecraftServerInstaller.Events;
 namespace MinecraftServerInstaller.Programs.Installers {
     partial class InstallVanilla : IInstaller {
 
+        public event InstallProgressChangedEventHandler InstallProgressChanged;
+        public event InstallCompleteEventHandler InstallComplete;
+
         public InstallVanilla(string url, string path) {
 
             Url = url;
@@ -40,10 +43,5 @@ namespace MinecraftServerInstaller.Programs.Installers {
 
             InstallProgressChanged?.Invoke(this, new InstallProgressChangedEventArgs(e.ProgressPercentage));
         }
-
-
-
-        public event InstallProgressChangedEventHandler InstallProgressChanged;
-        public event InstallCompleteEventHandler InstallComplete;
     }
 }

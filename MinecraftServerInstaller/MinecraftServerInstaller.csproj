@@ -113,6 +113,10 @@
     <Compile Include="Programs\Installers\InstallFabric.Dispose.cs">
       <DependentUpon>InstallFabric.cs</DependentUpon>
     </Compile>
+    <Compile Include="Programs\Installers\InstallJava.cs" />
+    <Compile Include="Programs\Installers\InstallJava.Dispose.cs">
+      <DependentUpon>InstallJava.cs</DependentUpon>
+    </Compile>
     <Compile Include="Programs\Installers\InstallVanilla.cs" />
     <Compile Include="Programs\Installers\InstallVanilla.Dispose.cs">
       <DependentUpon>InstallVanilla.cs</DependentUpon>

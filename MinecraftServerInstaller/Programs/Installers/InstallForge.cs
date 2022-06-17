@@ -15,6 +15,9 @@ using MinecraftServerInstaller.Forms;
 namespace MinecraftServerInstaller.Programs.Installers {
     partial class InstallForge : IInstaller {
 
+        public event InstallProgressChangedEventHandler InstallProgressChanged;
+        public event InstallCompleteEventHandler InstallComplete;
+
         private readonly CommandOutputForm outputForm = new CommandOutputForm();
 
         public InstallForge(string url, string path) {
@@ -85,8 +88,5 @@ namespace MinecraftServerInstaller.Programs.Installers {
                 process.WaitForExit();
             }
         }
-
-        public event InstallProgressChangedEventHandler InstallProgressChanged;
-        public event InstallCompleteEventHandler InstallComplete;
     }
 }

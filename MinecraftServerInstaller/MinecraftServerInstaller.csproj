@@ -85,6 +85,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -109,14 +110,13 @@
     <Compile Include="Programs\Files\Eula.cs" />
     <Compile Include="Programs\Files\ServerProperties.cs" />
     <Compile Include="Programs\Installers\IInstaller.cs" />
+    <Compile Include="Programs\Installers\InstallController.cs" />
     <Compile Include="Programs\Installers\InstallFabric.cs" />
     <Compile Include="Programs\Installers\InstallFabric.Dispose.cs">
       <DependentUpon>InstallFabric.cs</DependentUpon>
     </Compile>
     <Compile Include="Programs\Installers\InstallJava.cs" />
-    <Compile Include="Programs\Installers\InstallJava.Dispose.cs">
-      <DependentUpon>InstallJava.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Programs\Installers\InstallJava.Dispose.cs" />
     <Compile Include="Programs\Installers\InstallVanilla.cs" />
     <Compile Include="Programs\Installers\InstallVanilla.Dispose.cs">
       <DependentUpon>InstallVanilla.cs</DependentUpon>
@@ -186,6 +186,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Crawlers\ForgeVersions.py" />
     <Content Include="Resources\icon.ico" />
     <Content Include="Resources\icon.png" />
   </ItemGroup>

@@ -71,12 +71,19 @@ namespace MinecraftServerInstaller.Forms {
         // 進度條更新
         //
         private void WebClient_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e) {
-            
+
             statusProgressBar.Value = e.ProgressPercentage;
         }
 
-        private void Install_InstallProgressChanged(object serder, InstallProgressChangedEventArgs e) {
+        private void Installer_InstallProgressChanged(object serder, InstallProgressChangedEventArgs e) {
 
+            if (e.ProgressPercentage == 99)
+                statusLabel.Text = Program.Status.PROCESSING;
+            statusProgressBar.Value = e.ProgressPercentage;
+        }
+
+        private void JavaInstaller_InstallProgressChanged(object serder, InstallProgressChangedEventArgs e) {
+         
             statusProgressBar.Value = e.ProgressPercentage;
         }
         //
@@ -84,6 +91,7 @@ namespace MinecraftServerInstaller.Forms {
         //
         private void GameVersionButton_Click(object sender, EventArgs e) {
 
+            statusLabel.Text = Program.Status.GETTING_LIST;
             tabControl.Enabled = false;
             statusProgressBar.Value = 0;
             using (WebClient client = new WebClient()) {
@@ -103,6 +111,7 @@ namespace MinecraftServerInstaller.Forms {
                     MessageBoxIcon.Error
                 );
                 tabControl.Enabled = true;
+                statusLabel.Text = Program.Status.ERROR;
                 return;
             }
 
@@ -129,6 +138,7 @@ namespace MinecraftServerInstaller.Forms {
                     modVersionComboBox.Enabled = true;
                 }
                 tabControl.Enabled = true;
+                statusLabel.Text = Program.Status.READY;
                 CheckInstallable();
             });
             versionSelect.Show();
@@ -166,6 +176,7 @@ namespace MinecraftServerInstaller.Forms {
         //
         private void ForgeVersionButton_Click(object sender, EventArgs e) {
 
+            statusLabel.Text = Program.Status.GETTING_LIST;
             tabControl.Enabled = false;
             statusProgressBar.Value = 0;
             using (WebClient client = new WebClient()) {
@@ -185,6 +196,7 @@ namespace MinecraftServerInstaller.Forms {
                     MessageBoxIcon.Error
                 );
                 tabControl.Enabled = true;
+                statusLabel.Text = Program.Status.ERROR;
                 return;
             }
 
@@ -209,6 +221,7 @@ namespace MinecraftServerInstaller.Forms {
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
+                statusLabel.Text = Program.Status.READY;
                 tabControl.Enabled = true;
             }
             else {
@@ -221,6 +234,7 @@ namespace MinecraftServerInstaller.Forms {
                     if (versionSelect.Result != null && versionSelect.Result.Length > 0)
                         forgeVersionTextBox.Text = versionSelect.Result;
                     tabControl.Enabled = true;
+                    statusLabel.Text = Program.Status.READY;
                     CheckInstallable();
                 });
                 versionSelect.Show();
@@ -674,6 +688,8 @@ namespace MinecraftServerInstaller.Forms {
             StartServerBat.MinRam = minRamTrackBar.Value;
             maxRamTextBox.Text = StartServerBat.MaxRam.ToString();
             minRamTextBox.Text = StartServerBat.MinRam.ToString();
+            statusProgressBar.Value = 0;
+            statusLabel.Text = Program.Status.READY;
 
             modVersionComboBox.Enabled = false;
             forgeVersionTextBox.Enabled = false;
@@ -739,19 +755,22 @@ namespace MinecraftServerInstaller.Forms {
         //
         private void InstallButton_Click(object sender, EventArgs e) {
 
+            statusLabel.Text = Program.Status.DOWNLOADING;
             tabControl.Enabled = false;
             statusProgressBar.Value = 0;
 
-            IInstaller installer;
+            InstallController installer;
             switch (modVersionComboBox.SelectedIndex) {
                 case 0: // Vanilla
-                    installer = new InstallVanilla( // url, filename
+                    installer = new InstallController( // url, filename
+                        InstallType.Vanilla,
                         gameVersionsDictionary[gameVersionTextBox.Text],
                         installPathTextBox.Text
                     );
                     break;
                 case 1: // Forge
-                    installer = new InstallForge( // url, filename
+                    installer = new InstallController( // url, filename
+                        InstallType.Forge,
                         forgeVersionsDictionary[forgeVersionTextBox.Text],
                         installPathTextBox.Text
                     );
@@ -759,7 +778,8 @@ namespace MinecraftServerInstaller.Forms {
                         Convert.ToInt32(gameVersionTextBox.Text.Split('.')[1]) >= 17;
                     break;
                 case 2: // Fabric
-                    installer = new InstallFabric( // gameVersion, filename
+                    installer = new InstallController( // gameVersion, filename
+                        InstallType.Fabric,
                         gameVersionTextBox.Text,
                         installPathTextBox.Text
                     );
@@ -767,13 +787,17 @@ namespace MinecraftServerInstaller.Forms {
                     break;
                 default: return;
             }
-            installer.InstallComplete += Install_InstallComplete;
-            installer.InstallProgressChanged += Install_InstallProgressChanged;
+            if (javaInstallCheckBox.Checked) {
+                installer.InstallJava = true;
+                installer.Version = gameVersionTextBox.Text;
+            }
+
+            installer.InstallComplete += Installer_InstallComplete;
+            installer.InstallProgressChanged += Installer_InstallProgressChanged;
             installer.Install();
-            installer.Dispose();
         }
 
-        private void Install_InstallComplete(object serder, InstallCompleteEventArgs e) {
+        private void Installer_InstallComplete(object serder, InstallCompleteEventArgs e) {
 
             if (e.Error != null) {
                 MessageBox.Show(
@@ -783,6 +807,7 @@ namespace MinecraftServerInstaller.Forms {
                     MessageBoxIcon.Error
                 );
                 tabControl.Enabled = true;
+                statusLabel.Text = Program.Status.ERROR;
                 return;
             }
 
@@ -795,6 +820,7 @@ namespace MinecraftServerInstaller.Forms {
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information
             );
+            statusLabel.Text = Program.Status.READY;
             tabControl.Enabled = true;
         }
     }

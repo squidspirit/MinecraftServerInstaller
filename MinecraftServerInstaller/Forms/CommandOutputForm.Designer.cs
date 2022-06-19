@@ -40,7 +40,7 @@ namespace MinecraftServerInstaller.Forms {
             this.textBox.Name = "textBox";
             this.textBox.ReadOnly = true;
             this.textBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox.Size = new System.Drawing.Size(584, 361);
+            this.textBox.Size = new System.Drawing.Size(580, 357);
             this.textBox.TabIndex = 0;
             this.textBox.WordWrap = false;
             // 
@@ -48,7 +48,7 @@ namespace MinecraftServerInstaller.Forms {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 361);
+            this.ClientSize = new System.Drawing.Size(580, 357);
             this.ControlBox = false;
             this.Controls.Add(this.textBox);
             this.Font = new System.Drawing.Font("微軟正黑體", 9.75F);
@@ -61,7 +61,6 @@ namespace MinecraftServerInstaller.Forms {
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "命令輸出";
-            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 

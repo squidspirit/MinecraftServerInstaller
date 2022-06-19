@@ -43,6 +43,7 @@ namespace MinecraftServerInstaller.Programs.Installers {
         private async void Client_DownloadFileCompleted(object sender, System.ComponentModel.AsyncCompletedEventArgs e) {
 
             if (e.Error != null) {
+                InstallProgressChanged?.Invoke(this, new InstallProgressChangedEventArgs(0));
                 InstallComplete?.Invoke(this, new InstallCompleteEventArgs(e.Error));
                 return;
             }

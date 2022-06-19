@@ -34,7 +34,7 @@ namespace MinecraftServerInstaller.Programs.Files {
         public static void CreateFile(string path) {
 
             using (StreamWriter writer = new StreamWriter(path + "\\StartServer.bat")) {
-                writer.Write(IsLocalJava ? "jdk\\bin\\" : "");
+                writer.Write(IsLocalJava ? "jre\\bin\\" : "");
                 writer.Write($"java -Xmx{MaxRam}M -Xms{MinRam}M");
                 if (IsNewForge) {
                     if (Directory.Exists(path + "\\libraries")) {

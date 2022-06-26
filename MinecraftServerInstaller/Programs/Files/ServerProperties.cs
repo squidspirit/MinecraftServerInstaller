@@ -10,7 +10,9 @@ namespace MinecraftServerInstaller.Programs.Files {
 
         public struct Property {
 
+
             public Property(string key, string value) {
+
                 Key = key;
                 Value = value;
             }
@@ -18,36 +20,22 @@ namespace MinecraftServerInstaller.Programs.Files {
             public string Key { get; }
             public string Value { get; set; }
 
-            public override string ToString() => $"{Key}={Value}";
+            public override string ToString() {
+
+                return $"{Key}={Value}";
+            }
         }
 
-        private static Property serverPort;
-        private static Property maxPlayer;
-        private static Property spawnProtection;
-        private static Property viewDistance;
-        private static Property pvp;
-        private static Property gamemode;
-        private static Property difficulty;
-        private static Property enableCommandBlock;
-        private static Property onlineMode;
-        private static Property motd;
-
-
-        public ServerProperties() {
-
-            serverPort = new Property("server-port", null);
-            maxPlayer = new Property("max-player", null);
-            spawnProtection = new Property("spawn-protection", null);
-            viewDistance = new Property("view-distance", null);
-            pvp = new Property("pvp", null);
-            gamemode = new Property("gamemode", null);
-            difficulty = new Property("difficulty", null);
-            enableCommandBlock = new Property("enable-command-block", null);
-            onlineMode = new Property("online-mode", null);
-            motd = new Property("motd", null);
-
-            ResetProperties();
-        }
+        private static Property serverPort = new Property("server-port", null);
+        private static Property maxPlayer = new Property("max-player", null);
+        private static Property spawnProtection = new Property("spawn-protection", null);
+        private static Property viewDistance = new Property("view-distance", null);
+        private static Property pvp = new Property("pvp", null);
+        private static Property gamemode = new Property("gamemode", null);
+        private static Property difficulty = new Property("difficulty", null);
+        private static Property enableCommandBlock = new Property("enable-command-block", null);
+        private static Property onlineMode = new Property("online-mode", null);
+        private static Property motd = new Property("motd", null);
 
         public static string ServerPort { get => serverPort.Value; set => serverPort.Value = value; }
         public static string MaxPlayer { get => maxPlayer.Value; set => maxPlayer.Value = value; }
@@ -77,6 +65,7 @@ namespace MinecraftServerInstaller.Programs.Files {
         public static void CreateFile(string path) {
 
             using (StreamWriter writer = new StreamWriter(path + "\\server.properties")) {
+                Console.WriteLine("X" + serverPort.Key);
                 writer.WriteLine(serverPort.ToString());
                 writer.WriteLine(maxPlayer.ToString());
                 writer.WriteLine(spawnProtection.ToString());

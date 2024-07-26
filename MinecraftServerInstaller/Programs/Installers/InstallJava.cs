@@ -36,7 +36,8 @@ namespace MinecraftServerInstaller.Programs.Installers {
             }
             int gameMinorVersion = Convert.ToInt32(Version.Split('.')[1]);
             string javaUrl = null;
-            if (gameMinorVersion >= 16) javaUrl = javaVersionsDictionary[17];
+            if (gameMinorVersion >= 21) javaUrl = javaVersionsDictionary[21];
+            else if (gameMinorVersion >= 16) javaUrl = javaVersionsDictionary[17];
             else javaUrl = javaVersionsDictionary[8];
 
             using (WebClient client = new WebClient()) {
